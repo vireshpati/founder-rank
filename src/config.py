@@ -57,8 +57,8 @@ class Config:
         'SENIORITY': {
             'TIERS': {
                 1: set(),  # Tier 1 (other)
-                2: {'Head', 'Senior', 'Vice President'},  # Tier 2
-                3: {'Executive', 'SVP', 'VP', "Senior Vice President", 'Director', 'Principal'}  # Tier 3
+                2: {'Head', 'Senior', 'Vice President', 'Director'},  # Tier 2
+                3: {'Executive', 'SVP', 'VP', "Senior Vice President", 'Principal'}  # Tier 3
             },
             'WEIGHT': 3,
             'DIMENSION': 3
