@@ -1,0 +1,456 @@
+{
+    "results": [
+        {
+            "linkedin_profile_url": "https://www.linkedin.com/in/cantino",
+            "profile": {
+                "public_identifier": "cantino",
+                "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/cantino/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250303%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250303T090109Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b0afb8ea625a1d9f40f6915d3257254c4b15b8d89d051da173aca9105bb437a8",
+                "background_cover_image_url": null,
+                "first_name": "Andrew",
+                "last_name": "Cantino",
+                "full_name": "Andrew Cantino",
+                "follower_count": 1258,
+                "occupation": "Founder / Chief Strategy Officer at Overview Energy",
+                "headline": "Climate \u25ca Space \u25ca Science \u25ca Software",
+                "summary": "I am a hands-on technical leader specializing in strategic planning, technical prioritization, and engineering practices. I've founded companies, raised money, and built teams. I've also managed philanthropic grant programs, connected scientists with funders, and mapped nascent scientific fields. I currently work primarily in aerospace and climate tech.\n\nOn the engineering side, I have experience architecting software systems, hiring and mentoring engineers, managing teams, maintaining open source packages, running security programs, developing articulate APIs, prioritizing product and technical roadmaps, optimizing the performance of complex codebases, cajoling LLMs, integrating numerical machine learning systems... and generally just writing a lot of code. I created Huginn, an open source application for web automation, and a number of other open source packages (https://github.com/cantino).\n\nWhen I'm not building things, I think about scientific progress, climate, and the space industry (https://orbitalindex.com).\n\nTo contact me or learn more about my interests, please visit: https://andrewcantino.com",
+                "country": "US",
+                "country_full_name": "United States",
+                "city": "Oakland",
+                "state": "California",
+                "experiences": [
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 8,
+                            "year": 2024
+                        },
+                        "ends_at": null,
+                        "company": "Overview Energy",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/overviewenergy",
+                        "company_facebook_profile_url": null,
+                        "title": "Founder / Chief Strategy Officer",
+                        "description": null,
+                        "location": "Ashburn, Virginia, United States",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/D560BAQGENPhGm0PeXw/company-logo_400_400/company-logo_400_400/0/1666979311756/overviewenergy_logo?e=1747872000&v=beta&t=5shv4M4wRDbRxd8x5jjow2lD1twyusEQBkKIu3zafi0"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 6,
+                            "year": 2024
+                        },
+                        "ends_at": null,
+                        "company": "The Navigation Fund",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/the-navigation-fund",
+                        "company_facebook_profile_url": null,
+                        "title": "Climate Program Consultant",
+                        "description": "Continuing the climate program that I started and ran at the Astera Institute in 2021, I supported The Navigation Fund's Climate Change program in selecting and funding projects and organizations with a focus on nascent and under-explored climate technologies.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/D4E0BAQEpQAxesz2OsA/company-logo_400_400/company-logo_400_400/0/1698543971677?e=1747872000&v=beta&t=jQU1M7yCTAprYpWEL0e-QKAlra6RH6AuUedxOMLfP7Q"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 2,
+                            "year": 2019
+                        },
+                        "ends_at": null,
+                        "company": "The Orbital Index",
+                        "company_linkedin_profile_url": null,
+                        "company_facebook_profile_url": null,
+                        "title": "Co-Creator",
+                        "description": "The Orbital Index is a concise and technical weekly newsletter highlighting developments in space science and industry. https://orbitalindex.com",
+                        "location": "1au",
+                        "logo_url": null
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 2,
+                            "year": 2022
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 8,
+                            "year": 2024
+                        },
+                        "company": "Overview Energy",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/overviewenergy",
+                        "company_facebook_profile_url": null,
+                        "title": "Founder / CEO",
+                        "description": null,
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/D560BAQGENPhGm0PeXw/company-logo_400_400/company-logo_400_400/0/1666979311756/overviewenergy_logo?e=1747872000&v=beta&t=5shv4M4wRDbRxd8x5jjow2lD1twyusEQBkKIu3zafi0"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 9,
+                            "year": 2021
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 1,
+                            "year": 2024
+                        },
+                        "company": "Astera Institute",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/astera-institute",
+                        "company_facebook_profile_url": null,
+                        "title": "Program Director, Climate",
+                        "description": "I founded and then ran the Astera climate program for two years, selecting and funding projects with a focus on nascent and under-explored climate technologies. I'm proud to say that we were the first funder of multiple new NGOs in the climate space.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/D560BAQHOmzumT6hVxQ/company-logo_400_400/company-logo_400_400/0/1711995829669/astera_institute_logo?e=1747872000&v=beta&t=kwFx8-rzAhXgSOMMspTDBguXfHGgs-AG1ihk-j1T-Zo"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 5,
+                            "year": 2021
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 10,
+                            "year": 2022
+                        },
+                        "company": "VAST",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/vastspace",
+                        "company_facebook_profile_url": null,
+                        "title": "Head of Research",
+                        "description": "Founding Team at Vast. I helped to get a commercial space station company off the ground.",
+                        "location": "California, United States",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/D560BAQEPQ2mJ1pTmSg/company-logo_400_400/company-logo_400_400/0/1728665439702/vastspace_logo?e=1747872000&v=beta&t=666QJs4mZcPSZPLjGVLRMWEq-wCQOfW-AFc9bPhPM2Y"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 1,
+                            "year": 2016
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 10,
+                            "year": 2022
+                        },
+                        "company": "Andrew Cantino",
+                        "company_linkedin_profile_url": null,
+                        "company_facebook_profile_url": null,
+                        "title": "Software Engineering Consultant",
+                        "description": "Leadership in team and technical development through prioritization, architectural and security audits, mentoring engineers, engineering management, performance optimization, applications of machine learning, and software development in Ruby, JavaScript, Python, and Rust.\n\nSelected clients:\n\nBenchling - Hired to mentor emerging technical leaders and help evaluate outstanding tech debt with a focus on engineering team scalability.\n\nHOVER Inc - Hired to evaluate and improve security posture through auditing, prioritization, and training engineers in security culture and best practices. Also assisted with cross-team system architecture and long-term technical strategy.\n\nStealth Startup - Applying GPT-3 and custom ML/NLP code to multiple new entertainment products.\n\nPivotal Software, Inc - Consulted with Pivotal on Pivotal Cloud Foundry. Projects included Rails, Java, and Go application development, service architecture design, and extensive application security auditing & improvements.\n\nStates Title - Hired to help grow the engineering team and launch the first version of States Title's product. Audited their MVP software architecture and helped to design its next iteration. Also performed system security reviews, interviewed engineers, and recommended and coached an existing engineer into a technical leadership role.\n\nHightower Inc - Hired by CTO to fact-find and advise. Interviewed engineering team, audited codebase, and recommended technical and process changes. Identified DevOps as a point of technical and process weakness, revised the process, and directly implemented technical improvements. Optimized API performance; built ETL process for a new data warehouse.\n\nPotential Labs - Contributed to the development of Glow, a whole-home energy monitor, through a successful Kickstarter campaign. Performed architectural and security audits and developed software in Ruby and Rust.",
+                        "location": null,
+                        "logo_url": null
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 5,
+                            "year": 2018
+                        },
+                        "ends_at": {
+                            "day": 30,
+                            "month": 4,
+                            "year": 2020
+                        },
+                        "company": "Kubos Corporation",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/kubos-corporation",
+                        "company_facebook_profile_url": null,
+                        "title": "Principal Engineer and then Chief Architect, Ground Systems",
+                        "description": "I led technical development of Major Tom, our modern mission control system for smallsat operations\u2014Major Tom allows operators to use the same tools, workflows, and processes throughout their satellite's lifecycle. My efforts included service & data model architecture, realtime API design, telemetry storage, DevOps, recruiting, and integrations with KubOS, our open-source satellite OS.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQE-5hReo3TOvQ/company-logo_400_400/company-logo_400_400/0/1630667140368/kubos_corporation_logo?e=1747872000&v=beta&t=gTRBazyFbNEDKg5sggovPREu9JyUAZVTYRRQdbnkTqA"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 9,
+                            "year": 2013
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 8,
+                            "year": 2019
+                        },
+                        "company": "BeeLine Reader",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/beelinereader",
+                        "company_facebook_profile_url": null,
+                        "title": "CTO and then Technical Advisor",
+                        "description": "BeeLine Reader makes reading faster and easier by using a color gradient that guides your eyes from the end of one line to the beginning of the next.\n\nhttp://www.beelinereader.com",
+                        "location": "San Francisco Bay Area",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C4E0BAQGl0T-wTYeqpw/company-logo_400_400/company-logo_400_400/0/1630571659852/beelinereader_logo?e=1747872000&v=beta&t=2gaaju4oW_VqwPM9_6O3PpEeRcb1tv5AIqReE1QX2OY"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 6,
+                            "year": 2014
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 12,
+                            "year": 2015
+                        },
+                        "company": "Mavenlink",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/mavenlink",
+                        "company_facebook_profile_url": null,
+                        "title": "Chief Architect",
+                        "description": "As the Chief Architect at Mavenlink, I ensured that our technical decisions and architecture aligned with business goals, both by managing technical efforts and by directly writing code.  I helped to run the 25-person engineering team that I had built as the VP of Engineering, continued to manage our security program, directly developed the next version of the Mavenlink API with automatic documentation, contributed to the launch of a new team structure, and coached and hired engineers.\n",
+                        "location": "San Francisco",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQF7vb8IR0iOCw/company-logo_400_400/company-logo_400_400/0/1630655983253/mavenlink_logo?e=1747872000&v=beta&t=IBeI2K8q9i_f7gGIiZCMDXfzrRQ8sJUhXwsbzlkIPc8"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 2,
+                            "year": 2012
+                        },
+                        "ends_at": {
+                            "day": 30,
+                            "month": 6,
+                            "year": 2014
+                        },
+                        "company": "Mavenlink",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/mavenlink",
+                        "company_facebook_profile_url": null,
+                        "title": "VP of Engineering",
+                        "description": "My role as VP of Engineering involved hiring, team management, technical architectural design, security auditing, and significant direct code contribution.\n\nAchievements include growing the engineering team from 7 to 25 engineers, implementing a one-on-one coaching program, maintaining a team-wide focus on code quality (primarily via testing and pair programming), developing a robust public API, and launching a Responsible Disclosure security program.",
+                        "location": "San Francisco",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQF7vb8IR0iOCw/company-logo_400_400/company-logo_400_400/0/1630655983253/mavenlink_logo?e=1747872000&v=beta&t=IBeI2K8q9i_f7gGIiZCMDXfzrRQ8sJUhXwsbzlkIPc8"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 8,
+                            "year": 2009
+                        },
+                        "ends_at": {
+                            "day": 30,
+                            "month": 6,
+                            "year": 2011
+                        },
+                        "company": "Pivotal Labs",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/vmware-tanzu-labs",
+                        "company_facebook_profile_url": null,
+                        "title": "Software Engineer",
+                        "description": "Pair programed to write efficient, maintainable software with test-driven development practices with a variety of startup and enterprise clients. Supported clients including Twitter.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQHf67WGRz98OA/company-logo_400_400/company-logo_400_400/0/1630641886685/vmware_tanzu_labs_logo?e=1747872000&v=beta&t=4Gfvf4455nGSGtV52LI6i2X4Ow15Qf45q05b64XEqUM"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 1,
+                            "year": 2007
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 10,
+                            "year": 2008
+                        },
+                        "company": "CastTV",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/casttv",
+                        "company_facebook_profile_url": null,
+                        "title": "Software Engineer",
+                        "description": "Built both frontend and backend systems in Ruby; applied machine learning techniques for spam and content filtering; helped to develop and tune a search engine covering millions of web videos; built in-house architecture for large scale data processing.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQE08kLH3Td1vQ/company-logo_400_400/company-logo_400_400/0/1631370742713?e=1747872000&v=beta&t=oUAijyM4W9-POG_W8w4ilfm4qWtJuOzWvl3CCoJovqc"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 6,
+                            "year": 2007
+                        },
+                        "ends_at": {
+                            "day": 31,
+                            "month": 8,
+                            "year": 2007
+                        },
+                        "company": "Google",
+                        "company_linkedin_profile_url": "https://www.linkedin.com/company/google",
+                        "company_facebook_profile_url": null,
+                        "title": "Summer Intern",
+                        "description": "I built new features for Gmail in JavaScript and Java, including the current \"filter messages like this\" and search auto-complete features.",
+                        "location": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_400_400/company-logo_400_400/0/1631311446380?e=1747872000&v=beta&t=qelxSJjkqyd1AnStkz-DbHxJCJRESawbtLLAP3yh38g"
+                    }
+                ],
+                "education": [
+                    {
+                        "starts_at": null,
+                        "ends_at": null,
+                        "field_of_study": "Computer Science / Artificial Intelligence",
+                        "degree_name": "Masters",
+                        "school": "Georgia Institute of Technology",
+                        "school_linkedin_profile_url": "https://www.linkedin.com/company/3558/",
+                        "school_facebook_profile_url": null,
+                        "description": "Focus on Machine Learning",
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C4E0BAQFuhLQoh5_7yA/company-logo_400_400/company-logo_400_400/0/1640110532212/georgia_institute_of_technology_logo?e=1747872000&v=beta&t=fpWhOwUetn304LYg7oJVbXqMpeceRjqEWPBFimBOUnc",
+                        "grade": null,
+                        "activities_and_societies": null
+                    },
+                    {
+                        "starts_at": null,
+                        "ends_at": null,
+                        "field_of_study": "Physics and Computational Science",
+                        "degree_name": "BS",
+                        "school": "Haverford College",
+                        "school_linkedin_profile_url": "https://www.linkedin.com/company/19674/",
+                        "school_facebook_profile_url": null,
+                        "description": null,
+                        "logo_url": "https://media.licdn.com/dms/image/v2/C4E0BAQFTG6mtqky2hQ/company-logo_400_400/company-logo_400_400/0/1631333509917?e=1747872000&v=beta&t=lo0MKJFjA2xHdmEPssYljTK-VXKAQlIY1qcxBrSbuc0",
+                        "grade": null,
+                        "activities_and_societies": null
+                    }
+                ],
+                "languages": [],
+                "languages_and_proficiencies": [],
+                "accomplishment_organisations": [],
+                "accomplishment_publications": [],
+                "accomplishment_honors_awards": [],
+                "accomplishment_patents": [
+                    {
+                        "title": "Clustering Multimedia Search",
+                        "issuer": "US",
+                        "issued_on": {
+                            "day": 9,
+                            "month": 10,
+                            "year": 2012
+                        },
+                        "description": null,
+                        "application_number": null,
+                        "patent_number": null,
+                        "url": null
+                    }
+                ],
+                "accomplishment_courses": [],
+                "accomplishment_projects": [
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 2,
+                            "year": 2019
+                        },
+                        "ends_at": null,
+                        "title": "Orbital Index",
+                        "description": "Space: weekly, technical, curated.",
+                        "url": "https://orbitalindex.com"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 8,
+                            "year": 2018
+                        },
+                        "ends_at": null,
+                        "title": "McFly",
+                        "description": "Rust-based Bash shell history search powered by a neural network.",
+                        "url": "https://github.com/cantino/mcfly"
+                    },
+                    {
+                        "starts_at": {
+                            "day": 1,
+                            "month": 3,
+                            "year": 2013
+                        },
+                        "ends_at": null,
+                        "title": "Huginn",
+                        "description": "Huginn is an open-source system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf.  We recently reached 18,000 stars on GitHub.",
+                        "url": "https://github.com/huginn/huginn"
+                    },
+                    {
+                        "starts_at": null,
+                        "ends_at": null,
+                        "title": "SelectorGadget",
+                        "description": "An open-source bookmarklet and Chrome extension for generating optimal CSS selectors through a process of iterative selection and rejection.",
+                        "url": "http://selectorgadget.com"
+                    }
+                ],
+                "accomplishment_test_scores": [],
+                "volunteer_work": [],
+                "certifications": [],
+                "connections": 1195,
+                "people_also_viewed": [
+                    {
+                        "link": "https://www.linkedin.com/in/jed-mccaleb-4052a4?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAK30UBmnDeyyZRk2S3KxxP3737WWPadVo",
+                        "name": "Jed McCaleb",
+                        "summary": "Cofounder of Stellar Development Foundation",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/dcajacob?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAIslGwBDVTnwuQLpXcZmwwSMoCpbIjMjCY",
+                        "name": "Daniel CaJacob",
+                        "summary": "Experienced, Hands-On Space Executive",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/alex-greenberg-b1971845?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAmJ8UUB67tEABFP8g8fTL9b3Pf9TXWqil8",
+                        "name": "Alex Greenberg",
+                        "summary": "Co-Founder and COO at Loft Orbital - We're Hiring!",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/marc-berte-90559554?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAt5-9UBRf0uzDPAWAq1jlIXH2lJaPac_38",
+                        "name": "Marc Berte",
+                        "summary": "Aerospace, Defense, and Cutting edge technology SME, Technical Advisor to Startups",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/dawnumlah?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAATwuXEB08XZ_V7r1jTOVRam-TRdYKzYX30",
+                        "name": "Dawn Umlah (she / her)",
+                        "summary": "Company Builder | Founder Growth Strategist | Board Member",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/michael-liang-3686a01a0?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC8WdAABkmWt-Oxh6E-qLxnZ5lgTpZ4pUX4",
+                        "name": "Michael Liang",
+                        "summary": "Embedded Hardware Engineer @ Overview Energy | Cornell University | ex-Tesla",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/jennifer-grinsteiner?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABqGmc4BGad-ZcQpS4aQGfj0OEf_K43yl6U",
+                        "name": "Jennifer La Rosa",
+                        "summary": "Scaling Climate Tech",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/rachaelannecollins?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABSVYZ0BQoDBeyp03jRWwC0-JjQ5qm1nEh4",
+                        "name": "Rachael Collins",
+                        "summary": "Space Software Engineer",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/jeffrey-joy-9698426?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAExFuEBzQCJN3Ufi2Ufn8QJExuhygJ63uA",
+                        "name": "Jeffrey Joy",
+                        "summary": "Executive Recruiter @ Overview Energy | HR, Attraction Strategies",
+                        "location": null
+                    },
+                    {
+                        "link": "https://www.linkedin.com/in/vaujour?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAFZ3XgB15aMczbnlBw7DuWMO7zSkHuTn4s",
+                        "name": "Pierre-Damien Vaujour",
+                        "summary": "Co-Founder & CEO at Loft Orbital Solutions",
+                        "location": null
+                    }
+                ],
+                "recommendations": [],
+                "activities": [],
+                "similarly_named_profiles": [],
+                "articles": [],
+                "groups": [
+                    {
+                        "profile_pic_url": null,
+                        "name": "GeoH2 - Geologic Hydrogen",
+                        "url": "https://www.linkedin.com/groups/14229126"
+                    },
+                    {
+                        "profile_pic_url": "https://media.licdn.com/dms/image/v2/C4D07AQG9E1wfrU-q-g/group-logo_image-shrink_48x48/group-logo_image-shrink_48x48/0/1631366640287?e=1740697200&v=beta&t=NZLYV1sUDDy1kaYRCAVLMqS_12aVCxaiFF1LhCN9-z0",
+                        "name": "The Pivotal Labs Network",
+                        "url": "https://www.linkedin.com/groups/2328314"
+                    }
+                ],
+                "skills": []
+            },
+            "last_updated": "2025-02-24T01:12:05"
+        }
+    ],
+    "next_page": "https://nubela.co/proxycurl/api/v2/search/person?country=US&enrich_profiles=enrich&page_size=1&use_cache=if-present&next_token=5nWXpWX9fTHLjLpmLQl28ZVfRu6kecWFRoo8wu6tjr7S2rGB0o5J1x1r6pXbwwlpl9snefK8LA8WepsjXChyw5X0Leb17w6DJHpYl9WJoP0h2ZNKVa5UMP7d5DhJeceDDi2fpdMLlTlVLjc8zTTEXUhw1SpCLFyPGqAKJTDqnpRi9vHwSFHmkSBw0FSBkAbljTXKpxgDyIJ4ComKw5WuOl9EK90Tb6QxgtfqYUWTMrxcKTHV7y8wwPT6Y3Eg7VtlHizA363kr9xW1isdENbBxReN7Xj7zXBVGX8qH8SP1h4LhjlFBbUR5A8vzlayBcjeotphS84KgwJ05LkAMCowHe4pYCtFXwK0tHoPx2ynlrWo9sFSXdZwN7YhxbqgEfvHfWMfsyU9fFEtBJ7XsKlGv1kYmJA2gW1jpElmxlcjOV42puzPVvZL1tv2JdEilX69oAZ6mAtbYxXbphKfZcaCQe53q28LMz8rOBuOoCNO9o8Bty5wB4QVWFA",
+    "total_result_count": 8211
+}
