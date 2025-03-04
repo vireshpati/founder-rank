@@ -110,69 +110,73 @@ class Config:
         }
     }
 
+    # ... existing code ...
+
     SYNTH = {
         'POPULATIONS' : {
             "successful": {
-                "fraction": 0.25,
+                "fraction": 0.6,  # Increased from 0.5
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.10, 0.40, 0.50]),
-                    "GRADUATE":  np.array([0.30, 0.20, 0.20, 0.30]),
-                    "EXIT":      np.array([0.60, 0.15, 0.10, 0.15]),
-                    "FOUNDER":   np.array([0.40, 0.30, 0.30]),
-                    "STARTUP":   np.array([0.30, 0.30, 0.40]),
-                    "COMPANY":   np.array([0.20, 0.30, 0.50]),
-                    "SENIORITY": np.array([0.20, 0.30, 0.50]),
-                    "EXPERTISE": np.array([0.20, 0.30, 0.50])
+                    "UNDERGRAD": np.array([0.05, 0.35, 0.60]),  # More emphasis on tier 3
+                    "GRADUATE":  np.array([0.20, 0.15, 0.25, 0.40]),  # More emphasis on tier 3
+                    "EXIT":      np.array([0.50, 0.20, 0.10, 0.20]),  # More exits
+                    "FOUNDER":   np.array([0.30, 0.30, 0.40]),  # More successful founders
+                    "STARTUP":   np.array([0.20, 0.30, 0.50]),  # More successful startup experience
+                    "COMPANY":   np.array([0.15, 0.25, 0.60]),  # More tier 3 companies
+                    "SENIORITY": np.array([0.15, 0.25, 0.60]),  # More senior roles
+                    "EXPERTISE": np.array([0.15, 0.25, 0.60])   # More expertise in key areas
                 },
-                "p_funding": 0.80,
-                "mu_funding": 15.0,
-                "sigma_funding": 1.2,
-                "p_exit": 0.30,
-                "mu_exit": 18.0,
-                "sigma_exit": 1.3
+                "p_funding": 0.95,  # Higher funding probability
+                "mu_funding": 15.5,  # Higher funding amount
+                "sigma_funding": 1.0,  # Tighter distribution
+                "p_exit": 0.6,  # Higher exit probability
+                "mu_exit": 18.5,  # Higher exit value
+                "sigma_exit": 1.1  # Tighter distribution
             },
             "midtier": {
-                "fraction": 0.25,
+                "fraction": 0.15,  # Decreased from 0.2
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.30, 0.50, 0.20]),
-                    "GRADUATE":  np.array([0.50, 0.20, 0.20, 0.10]),
-                    "EXIT":      np.array([0.85, 0.10, 0.03, 0.02]),
-                    "FOUNDER":   np.array([0.55, 0.30, 0.15]),
-                    "STARTUP":   np.array([0.50, 0.30, 0.20]),
-                    "COMPANY":   np.array([0.50, 0.30, 0.20]),
-                    "SENIORITY": np.array([0.40, 0.35, 0.25]),
-                    "EXPERTISE": np.array([0.40, 0.30, 0.30])
+                    "UNDERGRAD": np.array([0.40, 0.45, 0.15]),  # Less overlap with successful
+                    "GRADUATE":  np.array([0.60, 0.25, 0.10, 0.05]),  # Less overlap with successful
+                    "EXIT":      np.array([0.90, 0.07, 0.02, 0.01]),  # Clearer separation
+                    "FOUNDER":   np.array([0.65, 0.25, 0.10]),  # Less overlap
+                    "STARTUP":   np.array([0.60, 0.30, 0.10]),  # Less overlap
+                    "COMPANY":   np.array([0.60, 0.30, 0.10]),  # Less overlap
+                    "SENIORITY": np.array([0.50, 0.40, 0.10]),  # Less overlap
+                    "EXPERTISE": np.array([0.50, 0.35, 0.15])   # Less overlap
                 },
-                "p_funding": 0.50,
-                "mu_funding": 14.5,
-                "sigma_funding": 1.0,
-                "p_exit": 0.10,
-                "mu_exit": 17.0,
-                "sigma_exit": 1.2
+                "p_funding": 0.40,  # Lower than successful
+                "mu_funding": 14.0,  # Lower than successful
+                "sigma_funding": 0.9,  # Tighter distribution
+                "p_exit": 0.08,  # Lower exit probability
+                "mu_exit": 16.5,  # Lower exit value
+                "sigma_exit": 1.0  # Tighter distribution
             },
             "control": {
-                "fraction": 0.50,
+                "fraction": 0.25,  # Decreased from 0.4
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.80, 0.15, 0.05]),
-                    "GRADUATE":  np.array([0.75, 0.15, 0.05, 0.05]),
-                    "EXIT":      np.array([0.95, 0.03, 0.01, 0.01]),
-                    "FOUNDER":   np.array([0.70, 0.20, 0.10]),
-                    "STARTUP":   np.array([0.65, 0.25, 0.10]),
-                    "COMPANY":   np.array([0.70, 0.20, 0.10]),
-                    "SENIORITY": np.array([0.70, 0.20, 0.10]),
-                    "EXPERTISE": np.array([0.60, 0.20, 0.20])
+                    "UNDERGRAD": np.array([0.90, 0.08, 0.02]),  # More extreme separation
+                    "GRADUATE":  np.array([0.85, 0.10, 0.03, 0.02]),  # More extreme separation
+                    "EXIT":      np.array([0.98, 0.01, 0.005, 0.005]),  # Almost no exits
+                    "FOUNDER":   np.array([0.85, 0.10, 0.05]),  # Less founder experience
+                    "STARTUP":   np.array([0.80, 0.15, 0.05]),  # Less startup experience
+                    "COMPANY":   np.array([0.85, 0.10, 0.05]),  # Less prestigious companies
+                    "SENIORITY": np.array([0.85, 0.10, 0.05]),  # Less senior roles
+                    "EXPERTISE": np.array([0.75, 0.15, 0.10])   # Less expertise
                 },
-                "p_funding": 0.15,
-                "mu_funding": 14.0,
-                "sigma_funding": 0.8,
-                "p_exit": 0.02,
-                "mu_exit": 16.0,
-                "sigma_exit": 1.2
+                "p_funding": 0.10,  # Lower funding probability
+                "mu_funding": 13.5,  # Lower funding amount
+                "sigma_funding": 0.7,  # Tighter distribution
+                "p_exit": 0.01,  # Very low exit probability
+                "mu_exit": 15.5,  # Lower exit value
+                "sigma_exit": 1.0  # Tighter distribution
             }
         },
-        'alpha' : 2.0,
-        'beta'  : 10.0,
-        'noise_std' : 0.1
+        'alpha' : 2.5,  # Increased from 2.0 for more separation
+        'beta'  : 12.0,  # Increased from 10.0 for more separation
+        'noise_std' : 0.08  # Reduced noise for clearer signal
     }
+
+# ... existing code ...
 
 cfg = Config()

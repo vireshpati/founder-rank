@@ -16,9 +16,9 @@ def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=42):
         W[indices, indices] = tiers
         start_idx = end_idx
 
-    # Add small random noise to off-diagonal elements
+    #Add small random noise to off-diagonal elements
     np.random.seed(seed) 
-    noise = np.random.normal(0, 0.005, (K, K))
+    noise = np.random.normal(0, 0.25, (K, K))
     np.fill_diagonal(noise, 0)
     W += noise
 
