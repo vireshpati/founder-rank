@@ -113,68 +113,65 @@ class Config:
     SYNTH = {
         'POPULATIONS' : {
             "successful": {
-                "fraction": 0.5,  
+                "fraction": 0.5,
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.05, 0.35, 0.60]), 
-                    "GRADUATE":  np.array([0.20, 0.15, 0.25, 0.40]), 
-                    "EXIT":      np.array([0.50, 0.20, 0.10, 0.20]),  
-                    "FOUNDER":   np.array([0.30, 0.30, 0.40]),  
-                    "STARTUP":   np.array([0.20, 0.30, 0.50]),  
-                    "COMPANY":   np.array([0.15, 0.25, 0.60]), 
-                    "SENIORITY": np.array([0.15, 0.25, 0.60]),  #
-                    "EXPERTISE": np.array([0.15, 0.25, 0.60])   
+                    "UNDERGRAD": np.array([0.02, 0.28, 0.70]),
+                    "GRADUATE":  np.array([0.10, 0.15, 0.25, 0.50]),
+                    "EXIT":      np.array([0.30, 0.25, 0.20, 0.25]),
+                    "FOUNDER":   np.array([0.20, 0.30, 0.50]),
+                    "STARTUP":   np.array([0.05, 0.25, 0.70]),
+                    "COMPANY":   np.array([0.10, 0.20, 0.70]),
+                    "SENIORITY": np.array([0.10, 0.40, 0.50]),
+                    "EXPERTISE": np.array([0.05, 0.05, 0.90])
                 },
-                "p_funding": 0.90,  
-                "mu_funding": 15.5,  
-                "sigma_funding": 1.0,  
-                "p_exit": 0.6,  
-                "mu_exit": 18.5,  
-                "sigma_exit": 1.1  
+                "p_funding": 0.95,
+                "mu_funding": 16.0,
+                "sigma_funding": 0.8,
+                "p_exit": 0.6,
+                "mu_exit": 18.5,
+                "sigma_exit": 1.1
             },
             "midtier": {
-                "fraction": 0.2,  
+                "fraction": 0.3,
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.40, 0.45, 0.15]), 
-                    "GRADUATE":  np.array([0.60, 0.25, 0.10, 0.05]), 
-                    "EXIT":      np.array([0.90, 0.07, 0.02, 0.01]),  
-                    "FOUNDER":   np.array([0.65, 0.25, 0.10]), 
-                    "STARTUP":   np.array([0.60, 0.30, 0.10]),  
-                    "COMPANY":   np.array([0.60, 0.30, 0.10]),  
-                    "SENIORITY": np.array([0.50, 0.40, 0.10]),  
-                    "EXPERTISE": np.array([0.50, 0.35, 0.15])  
+                    "UNDERGRAD": np.array([0.45, 0.40, 0.15]),
+                    "GRADUATE":  np.array([0.60, 0.25, 0.10, 0.05]),
+                    "EXIT":      np.array([0.90, 0.07, 0.02, 0.01]),
+                    "FOUNDER":   np.array([0.65, 0.25, 0.10]),
+                    "STARTUP":   np.array([0.20, 30.0, 0.40]),
+                    "COMPANY":   np.array([0.60, 0.30, 0.10]),
+                    "SENIORITY": np.array([0.50, 0.40, 0.10]),
+                    "EXPERTISE": np.array([0.15, 0.35, 0.50])
                 },
-                "p_funding": 0.40, 
-                "mu_funding": 14.0,  
-                "sigma_funding": 0.9,  
-                "p_exit": 0.08,  
-                "mu_exit": 16.5,  
-                "sigma_exit": 1.0  
+                "p_funding": 0.40,
+                "mu_funding": 14.0,
+                "sigma_funding": 0.9,
+                "p_exit": 0.08,
+                "mu_exit": 16.5,
+                "sigma_exit": 1.0
             },
             "control": {
-                "fraction": 0.3,  #
+                "fraction": 0.20,
                 "sampling_probs": {
-                    "UNDERGRAD": np.array([0.90, 0.08, 0.02]),  
-                    "GRADUATE":  np.array([0.85, 0.10, 0.03, 0.02]), 
-                    "EXIT":      np.array([0.98, 0.01, 0.005, 0.005]),  
-                    "FOUNDER":   np.array([0.85, 0.10, 0.05]), 
-                    "STARTUP":   np.array([0.80, 0.15, 0.05]),  
-                    "COMPANY":   np.array([0.85, 0.10, 0.05]),  
-                    "SENIORITY": np.array([0.85, 0.10, 0.05]),  
-                    "EXPERTISE": np.array([0.75, 0.15, 0.10])   
+                    "UNDERGRAD": np.array([0.65, 0.30, 0.05]),
+                    "GRADUATE":  np.array([0.85, 0.10, 0.03, 0.02]),
+                    "EXIT":      np.array([0.98, 0.01, 0.005, 0.005]),
+                    "FOUNDER":   np.array([0.85, 0.10, 0.05]),
+                    "STARTUP":   np.array([0.80, 0.15, 0.05]),
+                    "COMPANY":   np.array([0.85, 0.10, 0.05]),
+                    "SENIORITY": np.array([0.85, 0.10, 0.05]),
+                    "EXPERTISE": np.array([0.50, 0.25, 0.25])
                 },
-                "p_funding": 0.10,  
-                "mu_funding": 13.5,  
-                "sigma_funding": 0.7,  
-                "p_exit": 0.01,  
-                "mu_exit": 15.5,  
-                "sigma_exit": 1.0  
+                "p_funding": 0.10,
+                "mu_funding": 13.5,
+                "sigma_funding": 0.7,
+                "p_exit": 0.01,
+                "mu_exit": 15.5,
+                "sigma_exit": 1.0
             }
         },
-        'alpha' : 2.5, 
-        'beta'  : 12.0,  
-        'noise_std' : 0.08  
+
     }
 
-# ... existing code ...
 
 cfg = Config()
