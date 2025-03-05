@@ -2,12 +2,12 @@ import numpy as np
 from src.config import cfg
 
 
-def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=42):
+def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=2):
 
     W = np.zeros((K, K))
 
     start_idx = 0
-    for cat, cfg in MATRIX.items():
+    for _, cfg in MATRIX.items():
         weight = cfg['WEIGHT']
         dim = cfg['DIMENSION']
         end_idx = start_idx + dim
@@ -16,16 +16,8 @@ def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=42):
         W[indices, indices] = tiers
         start_idx = end_idx
 
-    #Add small random noise to off-diagonal elements
-    np.random.seed(seed) 
-    noise = np.random.normal(0, 0.25, (K, K))
-    np.fill_diagonal(noise, 0)
-    W += noise
-
     #enforce symmetry:
-    W = 0.5 * (W + W.T)
-    
-    return W
+    return 0.5 * (W + W.T)
 
 def score_feature_matrix(feature_matrix, W):
 
