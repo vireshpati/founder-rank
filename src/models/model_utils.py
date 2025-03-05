@@ -1,5 +1,5 @@
 import numpy as np
-from src.config import cfg
+from ..config.config import cfg
 
 
 def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=2):
