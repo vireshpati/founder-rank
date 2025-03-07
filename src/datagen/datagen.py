@@ -30,8 +30,7 @@ class DataGenerator:
             exit_val = 0
         return exit_val, funding_amt
 
-
-    def generate_subpopulation(self, num_samples, pop_cfg, W_star):
+    def generate_subpopulation(self, num_samples, pop_cfg):
         X_list, e_list, f_list = [], [], []
         for _ in range(num_samples):
             x_parts = []
@@ -40,7 +39,6 @@ class DataGenerator:
                 oh = one_hot_encode_column(val, self.MATRIX[cat]["DIMENSION"])
                 x_parts.append(oh)
             x = np.concatenate(x_parts)
-
             e_val, f_val = self.sample_exit_and_funding(
                 pop_cfg["p_funding"],
                 pop_cfg["mu_funding"],
@@ -55,30 +53,11 @@ class DataGenerator:
         return np.array(X_list), np.array(e_list), np.array(f_list)
 
     def generate_dataset(self, total_samples, populations):
-        K = sum(self.MATRIX[c]["DIMENSION"] for c in self.MATRIX)
-
-        # Build W*
-        W_star = np.zeros((K, K))
-        start_idx = 0
-        for cat in self.MATRIX:
-            w = self.MATRIX[cat]["WEIGHT"]
-            dim = self.MATRIX[cat]["DIMENSION"]
-            end_idx = start_idx + dim
-            tiers = np.array(list(range(3, 3 - dim, -1))[::-1]) * w
-            W_star[np.arange(start_idx, end_idx), np.arange(start_idx, end_idx)] = tiers
-            start_idx = end_idx
-
-        # Add small random noise off-diagonal
-        noise = np.random.normal(0, 0.005, (K, K))
-        np.fill_diagonal(noise, 0)
-        W_star += noise
-        W_star = 0.5 * (W_star + W_star.T)
-
         X_all, e_all, f_all = [], [], []
         labels = []
         for pop_name, pop_cfg in populations.items():
             n_sub = int(round(pop_cfg["fraction"] * total_samples))
-            X_sub, e_sub, f_sub = self.generate_subpopulation(n_sub, pop_cfg, W_star)
+            X_sub, e_sub, f_sub = self.generate_subpopulation(n_sub, pop_cfg)
             X_all.append(X_sub)
             e_all.append(e_sub)
             f_all.append(f_sub)
@@ -89,9 +68,11 @@ class DataGenerator:
         fund_final = np.concatenate(f_all)
         labels = np.array(labels[: len(exit_final)])
 
-        return X_final, exit_final, fund_final, labels, W_star
-    
-    def save_synthetic_dataset(self, X, exit_values, funding_amounts, matrix, output_path="../data/synth/encoded_founders_composites.csv", success_funding_threshold=None):
+        return X_final, exit_final, fund_final, labels
+
+    def save_synthetic_dataset(self, X, exit_values, funding_amounts, matrix, 
+                               output_path="../data/synth/encoded_founders_composites.csv", 
+                               success_funding_threshold=None):
 
         if success_funding_threshold is None:
             success_funding_threshold = cfg.SYNTH["SUCCESS_FUNDING_THRESHOLD"]
@@ -111,6 +92,5 @@ class DataGenerator:
         df["success"] = ((df["exit_value"] > 0) | (df["funding_amount"] > success_funding_threshold)).astype(int)
         
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
         df.to_csv(output_path, index=False)
         return df

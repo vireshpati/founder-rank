@@ -42,8 +42,18 @@ class ModelTrainer:
 
             self.optimizer.zero_grad()
             outputs = self.model(X_batch)
-            loss = self.criterion(outputs, y_batch)
+            
+            # Add L2 regularization
+            l2_reg = 0.0
+            for param in self.model.parameters():
+                l2_reg += torch.norm(param)
+            
+            loss = self.criterion(outputs, y_batch) + 0.01 * l2_reg
             loss.backward()
+            
+            # Gradient clipping
+            torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1.0)
+            
             self.optimizer.step()
 
             epoch_loss += loss.item() * X_batch.size(0)

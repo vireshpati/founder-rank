@@ -296,8 +296,9 @@ class ProfileTransforms:
         self.df["FOUNDER"] = ai_evaluations.apply(lambda x: x.get("previous_founder", 1))
         self.df["STARTUP"] = ai_evaluations.apply(lambda x: x.get("startup_experience", 1))
 
-    def transform(self, perplexity_client=None, cutoff_date=None):
-        self._process_profiles(cutoff_date)
+    def transform(self, perplexity_client=None, cutoff_date=None, process_profiles=True):
+        if process_profiles:
+            self._process_profiles(cutoff_date)
         self._add_ordinal_columns()
         if perplexity_client:
             self._add_ai_evaluations(perplexity_client)
@@ -314,6 +315,41 @@ class ProfileTransforms:
 
         feature_matrix = np.concatenate(one_hot_matrices, axis=1)
         return feature_matrix
+    
+    def process_person_endpt(self, profile_dict, cutoff_date=None):
+        if profile_dict.get("code") == 404:
+            return None
+        
+        # top-level keys
+        experiences = profile_dict.get("experiences", [])
+        education   = profile_dict.get("education", [])
+        full_name   = profile_dict.get("full_name", "")
+        linkedin    = f"https://www.linkedin.com/in/{profile_dict.get('public_identifier','')}"
+
+        undergrad = self._extract_undergrad_school(education, cutoff_date)
+        grad      = self._extract_grad_school(education, cutoff_date)
+        curr_comp, curr_title = self._extract_current_experience(experiences, cutoff_date)
+        prev_exps_titles      = self._extract_previous_experience(experiences, cutoff_date)
+        
+        row = {
+            "Name": full_name,
+            "Undergrad School": undergrad,
+            "Graduate School": grad,
+            "Current Company": curr_comp,
+            "Current Title": curr_title,
+            "Previous Companies": [p[0] for p in prev_exps_titles] if prev_exps_titles else [],
+            "Previous Titles":    [p[1] for p in prev_exps_titles] if prev_exps_titles else [],
+            "Linkedin": linkedin
+        }
+        return row
+
+    def transform_person_endpt(self, profile_list, cutoff_date=None):
+        rows = []
+        for profile in profile_list:
+            row = self.process_person_endpt(profile, cutoff_date)
+            if row:
+                rows.append(row)
+        return pd.DataFrame(rows)
 
 def one_hot_encode_column(values, dimension):
         indices = values.copy()

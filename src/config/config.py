@@ -384,8 +384,8 @@ class Config:
                 "sigma_exit": 1.0,
             },
         },
-        "SUCCESS_FUNDING_THRESHOLD": 10_000_000
     }
+    SUCCESS_FUNDING_THRESHOLD = 15000000 # series B
 
 
 cfg = Config()

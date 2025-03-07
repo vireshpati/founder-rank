@@ -18,20 +18,19 @@ class ProxycurlClient:
         params["use_cache"] = use_cache
 
         response = requests.get(
-            f"{self.base_url}/search/person",
+            f"{self.base_url}search/person",
             params=params,
             headers=self.headers,
         )
         return response.json()
 
     def get_linkedin_data(self, params, use_cache="if-present"):
-        if "linkedin_profile_url" in params:
-            params["use-cache"] = use_cache
-            response = requests.get(
-                f"{self.base_url}/linkedin",
-                headers=self.headers,
-                params=params,
-            )
-            return response.json()
+    
+        params["use_cache"] = use_cache
+        response = requests.get(
+            f"{self.base_url}linkedin",
+            headers=self.headers,
+            params=params,
+        )
+        return response.json()
 
-        return None
