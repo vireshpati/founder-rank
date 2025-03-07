@@ -2,7 +2,12 @@ import numpy as np
 from ..config.config import cfg
 
 
-def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=2, eps=0.0):
+def initialize_weight_matrix(
+    K,
+    MATRIX=cfg.MATRIX,
+    seed=2,
+    eps=0.0,
+):
     np.random.seed(seed)
     W = np.zeros((K, K))
 
@@ -25,4 +30,7 @@ def initialize_weight_matrix(K, MATRIX=cfg.MATRIX, seed=2, eps=0.0):
 
 
 def score_feature_matrix(feature_matrix, W):
-    return np.sum((feature_matrix @ W) * feature_matrix, axis=1)
+    return np.sum(
+        (feature_matrix @ W) * feature_matrix,
+        axis=1,
+    )

@@ -1,799 +1,792 @@
-,Name,Company,LinkedIn,Batch
-0,Ivan Tsybaev,Careerist,https://www.linkedin.com/in/ivantsybaev/,S21
-1,Max Glubochansky,Careerist,https://www.linkedin.com/in/maxqa/,S21
-2,Max Gusakov,Careerist,https://www.linkedin.com/in/gusakovm/,S21
-3,David Akinin,JABU,https://www.linkedin.com/in/davidakinin/,S21
-4,Alex Gordon,Revolve Surgical,https://www.linkedin.com/in/alex-gordon-01/,S21
-5,Peter Francis,Revolve Surgical,https://www.linkedin.com/in/peterfrancis19/,S21
-6,Matthew Kang,Revolve Surgical,https://www.linkedin.com/in/matthew-kang/,S21
-7,Melody Roberts,Liv Labs,https://www.linkedin.com/in/melodyannroberts/,S21
-8,Carly Price,Liv Labs,https://www.linkedin.com/in/pricecarly/,S21
-9,Olusegun Owoade,Mecho Autotech,https://www.linkedin.com/in/olusegun-owoade-0437a916/,S21
-10,Ahmed Omar,Sully.ai,https://www.linkedin.com/in/ao7/,S21
-11,Ahmed Nasser,Sully.ai,https://www.linkedin.com/in/realahmednasser,S21
-12,Mila Dayan,Beau,https://www.linkedin.com/in/mila-dayan,S21
-13,Kyril Kulikov,Beau,https://www.linkedin.com/in/kyril-ku/,S21
-14,Kirill Zakharov,Beau,https://www.linkedin.com/in/kirillzaharov/,S21
-15,Francisca Noguera,Toku,https://www.linkedin.com/in/francisca-noguera-toku/,S21
-16,Cristina Etcheberry,Toku,https://www.linkedin.com/in/cristina-etcheberry-toku/,S21
-17,Enzo Tamburini,Toku,https://www.linkedin.com/in/entamburini/,S21
-18,Will Bryk,Exa,https://www.linkedin.com/in/william-bryk,S21
-19,Fredrick Burns,Safer Management,https://linkedin.com/in/fred-burns-63a8b07b,S21
-20,,Chipax,,S21
-21,Shady El Tohfa,Amenli,https://www.linkedin.com/in/shady-el-tohfa-13023258/,S21
-22,Adham Nauman,Amenli,https://www.linkedin.com/in/adham-nauman-a6882ba3/,S21
-23,Hussein Fawzi,Pide Directo,https://www.linkedin.com/in/hussein-a-fawzi-4427031a4/,S21
-24,Antonio Nacoud,Pide Directo,https://linkedin.com/in/antonionacoud,S21
-25,Ronni Samir Sulaka,Pide Directo,https://www.linkedin.com/in/ronnisamir?originalSubdomain=se,S21
-26,Anders Steiner,Pide Directo,https://www.linkedin.com/in/anders-steiner-a6478aa/,S21
-27,Igor Susmelj,Lightly,https://www.linkedin.com/in/igorsusmelj/,S21
-28,Matthias Heller,Lightly,https://www.linkedin.com/in/matthiasheller/,S21
-29,Mahmoud Ghulman,Nash,https://www.linkedin.com/in/mahmoudghulman/,S21
-30,Aziz Alghunaim,Nash,https://www.linkedin.com/in/azizkag,S21
-31,Rebecca Weisinger,Equipt Health,https://www.linkedin.com/in/rebecca-weisinger-62ab44/,S21
-32,Max Greenfeld,Equipt Health,https://www.linkedin.com/in/max-greenfeld-9718309/,S21
-33,Avinash Sukhwai,Payflow,https://www.linkedin.com/in/avinash-sukhwani,S21
-34,Benoit Menardo,Payflow,https://www.linkedin.com/in/benoitmenardo/,S21
-35,Banks Hunter,Charge Robotics,https://www.linkedin.com/in/banksh/,S21
-36,Max Justicz,Charge Robotics,https://www.linkedin.com/in/maxj/,S21
-37,Rui K Miadaira,Ahazou,https://www.linkedin.com/in/ruikm/,S21
-38,Henri Suhardja,Titipku,https://www.linkedin.com/in/henri-suhardja-1881a4109/?originalSubdomain=id,S21
-39,Ong Tek Tjan,Titipku,https://www.linkedin.com/in/ong-tek-tjan-533b2616/?originalSubdomain=id,S21
-40,Will Crowe,HEO Robotics,http://www.linkedin.com/in/william-crowe-space,S21
-41,Hiranya Jayakody,HEO Robotics,https://www.linkedin.com/in/hiranya-jayakody/,S21
-42,Ryan Westerdahl,Turion Space,https://www.linkedin.com/in/rwesterdahl/,S21
-43,Tyler James Pierce,Turion Space,https://www.linkedin.com/in/tylerjpierce/,S21
-44,Patryk Wiatr,Turion Space,https://www.linkedin.com/in/patryk-wiatr/,S21
-45,Carl Madi,Stepful,http://www.linkedin.com/in/carlmadi,S21
-46,Tressia Hobeika,Stepful,https://www.linkedin.com/in/tressia-hobeika/,S21
-47,Edoardo Serra,Stepful,https://www.linkedin.com/in/eserra/,S21
-48,Michael Astreiko,Synder,https://www.linkedin.com/in/michaelastreiko/,S21
-49,Ilya Kisel,Synder,https://www.linkedin.com/in/ilya-kisel-cb/,S21
-50,Tom Nguyen,Café,https://www.linkedin.com/in/tom-nguyen-49437650/,S21
-51,Arthur Lorotte de Banes,Café,https://www.linkedin.com/in/sysless/,S21
-52,Mateus Felini,Datlo,https://br.linkedin.com/in/mateus-felini,S21
-53,Raisa Spagnol,Datlo,https://www.linkedin.com/in/raisa-spagnol-a589999b/,S21
-54,Chase Bonhag,FirstIgnite,https://www.linkedin.com/in/chasebonhag/,S21
-55,Cody Pawlowski,FirstIgnite,https://www.linkedin.com/in/codypawlowski,S21
-56,Ankit Jain,Aviator,https://www.linkedin.com/in/ankitjaindce,S21
-57,Anurup Ganguli,VedaBio,https://www.linkedin.com/in/anurup-ganguli-phd-24a22419/,S21
-58,Martin Lykke Suhr,GamerPay,https://www.linkedin.com/in/martingeorgesuhrmadsen/,S21
-59,Morten Byskov,GamerPay,https://www.linkedin.com/in/mortenbyskov,S21
-60,Peter Haldbæk,GamerPay,https://www.linkedin.com/in/peterhaldbaek/,S21
-61,Mathias Hermansen,GamerPay,https://www.linkedin.com/in/mathias-hermansen-34b1b88/ ,S21
-62,Daniel Campion,Sitenna,https://www.linkedin.com/in/danielcampion/,S21
-63,Brian Sexton,Sitenna,https://www.linkedin.com/in/briansexton-ire/,S21
-64,Adam McAskill,Evidence,https://www.linkedin.com/in/adam-mcaskill-74515720/,S21
-65,Sean Hughes,Evidence,https://ca.linkedin.com/in/hughessean,S21
-66,Aaron Hannon,Luminate Medical,https://www.linkedin.com/in/aaronhannon/,S21
-67,Barbara Oliveira,Luminate Medical,https://www.linkedin.com/in/barbaralolive/,S21
-68,Moktar Yusuf,Pactima,https://www.linkedin.com/in/moktar-yusuf/,S21
-69,Joel Kapongo,Pactima,https://www.linkedin.com/in/joelkapongo,S21
-70,Adil Yusuf,Medium Biosciences,https://www.linkedin.com/in/adil-yusuf,S21
-71,Mohamed Hassan Kane,Medium Biosciences,https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a?trk=nav_responsive_tab_profile,S21
-72,Hamed Fesharaki,Adra,http://www.linkedin.com/in/hamedfesharaki,S21
-73,Liushifeng Chen,Adra,https://www.linkedin.com/in/shifeng-chen-120534219/,S21
-74,Yasaman Nematbakhsh,Adra,https://www.linkedin.com/in/yasaman-nemat/,S21
-75,Uzo Ometu,BlackOakTV,https://www.linkedin.com/in/ometu/,S21
-76,Iyanu Obidele,BlackOakTV,https://www.linkedin.com/in/iyanu-obidele-8513a879,S21
-77,Carl Atupem,Bytebot,https://www.linkedin.com/in/carl-atupem-94873245/,S21
-78,Dane Hurtubise,Spoken,https://www.linkedin.com/in/hurtubise/,S21
-79,Geoff Abraham,Spoken,https://www.linkedin.com/in/lawrence-geoffrey-abraham/,S21
-80,Daniel Hung,Birdie,https://www.linkedin.com/in/dhung09,S21
-81,Ira Spector,SFA Therapeutics,https://www.linkedin.com/in/ira-spector-00414310/,S21
-82,Alla Arzumanyan,SFA Therapeutics,https://www.linkedin.com/in/alla-arzumanyan-66a79a18b,S21
-83,Mark Feitelson,SFA Therapeutics,https://www.linkedin.com/in/mark-feitelson-707771a,S21
-84,Amine Skalli,Crew,https://www.linkedin.com/in/amineskalli/,S21
-85,James Murray,Therify,https://www.linkedin.com/in/jamesedwmurray/,S21
-86,Warren Sadler,Therify,https://www.linkedin.com/in/warren-sadler-24638466/,S21
-87,Nico Julian,Phykos,https://www.linkedin.com/in/nico-julian-77586111/,S21
-88,Jeff Zerger,Phykos,https://www.linkedin.com/in/jeff-zerger-8a49159/,S21
-89,Alex Zhou,Hirebolt,https://www.linkedin.com/in/alexanderzhou/,S21
-90,Lorenzo Sani,Hirebolt,https://www.linkedin.com/in/lorenzo-sani/,S21
-91,Logan Welbaum,Plai,https://www.linkedin.com/in/logan-welbaum,S21
-92,Yi Sung (Sung) Yong,Atlas,https://www.linkedin.com/in/yongyisung/,S21
-93,Shawn Liam,Atlas,https://www.linkedin.com/in/shawnliam/,S21
-94,Ernest Sim,Atlas,https://www.linkedin.com/in/ernestsim/,S21
-95,Dan Meyer,CellChorus,https://www.linkedin.com/in/danmeyer/,S21
-96,Navin Varadarajan,CellChorus,https://www.linkedin.com/in/navin-varadarajan-95207814,S21
-97,Mirella Mashiach,Output Biosciences,https://www.linkedin.com/in/mirella-mashiach/,S21
-98,"Adi Mashiach, MD",Output Biosciences,https://www.linkedin.com/in/adi-mashiach/,S21
-99,Maria Eugenia Filmanovic,Abatable,https://www.linkedin.com/in/mariafilmanovic/,S21
-100,Valerio Magliulo,Abatable,https://www.linkedin.com/in/valerio-magliulo/,S21
-101,Stanislav Golubchik,ContraForce,https://www.linkedin.com/in/stan-golubchik/,S21
-102,Ricky Melendez,ContraForce,http://linkedin.com/in/ricky-melendez-9707a7b2,S21
-103,Akash Bansal,Storylane,https://www.linkedin.com/in/akashbansal/,S21
-104,Nalin Senthamil,Storylane,https://www.linkedin.com/in/nalinpradeep/,S21
-105,Shreyansh Gandhi,StrideQ,https://www.linkedin.com/in/shreyanshgandhi/,S21
-106,Sreehari Pulikkal Sivadasan,StrideQ,https://www.linkedin.com/in/sreeharips,S21
-107,Miroslav Gasparek,Sensible Biotechnologies,https://www.linkedin.com/in/miroslavgasparek/,S21
-108,Marian Kupculak,Sensible Biotechnologies,https://www.linkedin.com/in/marian-kupculak-34468a85/,S21
-109,Divyang Arora,Byte Kitchen,https://www.linkedin.com/in/divyang7/,S21
-110,Rahul Madadi,Byte Kitchen,https://www.linkedin.com/in/rahul-madadi-85734161/,S21
-111,Quinn McKenna,Byte Kitchen,https://www.linkedin.com/in/quinnmckenna/,S21
-112,Dorus van den Oord,Orderli,https://linkedin.com/in/dorusvandenoord,S21
-113,Maurits Franken,Orderli,https://www.linkedin.com/in/maurits-franken,S21
-114,Sefa Ikyaator,Suplias,https://www.linkedin.com/in/sefa-ikyaator-52617946/,S21
-115,Stephen Igwue,Suplias,https://www.linkedin.com/in/stigwue/,S21
-116,Omair Ansari,Abhi,https://linkedin.com/in/omair-ansari-40494329,S21
-117,Ali Ladhubhai,Abhi,https://pk.linkedin.com › ali-ladhubhai-205b0710a,S21
-118,Khairul Anwar Mohamad Zaki,Pandai,https://www.linkedin.com/in/khairul-anwar-mohamad-zaki,S21
-119,Akmal Akhpah,Pandai,https://www.linkedin.com/in/akmalakhpah,S21
-120,Suhaimi Ramly,Pandai,https://www.linkedin.com/in/suhaimi-ramly/,S21
-121,Lucas Martins,Verde,https://www.linkedin.com/in/lucasvbm/,S21
-122,Jorge Silveira,Verde,https://www.linkedin.com/in/jorgemlsilveira/?locale=en_US,S21
-123,Nik Poturnak,idemeum,https://www.linkedin.com/in/npoturnak/,S21
-124,Jagjit Sethi,idemeum,http://www.linkedin.com/in/jagjit-sethi-aa012b4,S21
-125,Namit Chadha,Shape,https://www.linkedin.com/in/namitchadha/,S21
-126,Roberto Salcedo,Baubap,https://www.linkedin.com/in/roberto-salcedo-nieto/,S21
-127,Luis Villarreal,Baubap,https://www.linkedin.com/in/luisvcastilla/,S21
-128,Harkunwar Singh,Novatr,https://www.linkedin.com/in/harkunwar-oneistox/,S21
-129,Vipanchi Handa,Novatr,https://in.linkedin.com/in/vipanchi-handa,S21
-130,Chaithanya Murali,Novatr,https://www.linkedin.com/in/chaithanya-murali-23b235139/,S21
-131,Alex Vilhena,Malga,https://www.linkedin.com/in/alexvilhena/,S21
-132,Thiago Garuti,Malga,https://www.linkedin.com/in/thiago-garuti-6844b557/,S21
-133,Jiawei Li,Tuli Health,https://www.linkedin.com/in/jiawei-c-li/,S21
-134,Jialu Tu,Tuli Health,https://www.linkedin.com/in/jialu-tu-b2295615/,S21
-135,Sudhindra Subbarao,Stownest,https://linkedin.com/in/sudhindra-subbarao,S21
-136,Ramesh Chincholi,Stownest,https://www.linkedin.com/in/rameshchincholi,S21
-137,AMIETH KUMAR,Stownest,https://www.linkedin.com/in/sudhindra-subbarao,S21
-138,Srinivasa Murthy,Stownest,,S21
-139,Joaquin olmedo,Filadd,https://www.linkedin.com/in/joaquin-olmedo-9619b1100/,S21
-140,Guillermo Bruchmann Tanodi,Filadd,https://www.linkedin.com/in/guillermo-bruchmann-4a3b9713b/,S21
-141,Nicolás Ferrer,Filadd,https://www.linkedin.com/in/nicol%C3%A1s-ferrer-6b1527117/,S21
-142,Agustin Trombotto,Filadd,https://www.linkedin.com/in/agustin-trombotto-a258b512a/,S21
-143,Anjie Liu,Kiwi Biosciences,https://www.linkedin.com/in/anjie-l-b2715810b/,S21
-144,David Hachuel Gurska,Kiwi Biosciences,https://www.linkedin.com/in/david-hachuel/,S21
-145,Charlie Correa,Luable,https://www.linkedin.com/in/carloscorreavega/,S21
-146,David Susa,Luable,https://www.linkedin.com/in/davidsusa,S21
-147,Anmol Warman,Caire Health,https://www.linkedin.com/in/anmol-warman-139820160/,S21
-148,Pranav Warman,Caire Health,https://www.linkedin.com/in/pranavwarman/,S21
-149,Roshan Warman,Caire Health,,S21
-150,Louis Knight-Webb,bloop,https://www.linkedin.com/in/knightwebb/,S21
-151,Gabriel Gordon-Hall,bloop,https://www.linkedin.com/in/gabriel-gordon-hall-54a18812a/,S21
-152,Urvin Soneta,Infer,https://www.linkedin.com/in/urvin-soneta-b77925146/,S21
-153,Suneel Matham,Infer,https://www.linkedin.com/in/suneel-matham/,S21
-154,Vaibhav Saxena,Infer,https://www.linkedin.com/in/vaib93/,S21
-155,Ahmed Ashour,Pylon,https://www.linkedin.com/in/ahmed-ashour-80a9562b/,S21
-156,Omar Radi,Pylon,https://www.linkedin.com/in/omar-radi,S21
-157,Naren Sathiya,Telivy,https://www.linkedin.com/in/naren-sathiya-01197a19,S21
-158,Shiv Gettu,Zuma,https://www.linkedin.com/in/shiv-gettu-735309ab/,S21
-159,Kendrick Bradley,Zuma,https://www.linkedin.com/in/kendrick-bradley-3b094a108/,S21
-160,Gega Tsurtsumia,PAYZE,https://www.linkedin.com/in/giorgitsurtsumia/,S21
-161,Peter Weijmarshausen,Humane Genomics,https://www.linkedin.com/in/peterweijmarshausen/,S21
-162,Chad Moles,Humane Genomics,https://www.linkedin.com/in/chadmoles/,S21
-163,Anna-Sophie Hartvigsen,Female Invest,https://www.linkedin.com/in/anna-sophie-hartvigsen-46352611a/,S21
-164,Emma Bitz,Female Invest,https://www.linkedin.com/in/emmabitz/?originalSubdomain=dk,S21
-165,Camilla Falkenberg,Female Invest,https://www.linkedin.com/in/camilla-clo%C3%ABtta-falkenberg-69b78895/,S21
-166,Reza Azizian,Ferveret,https://www.linkedin.com/in/reza-azizian-6821184a/,S21
-167,Matteo Bucci,Ferveret,https://www.linkedin.com/in/matteo-bucci-10206b60,S21
-168,Chris Horne,Filta,https://www.linkedin.com/in/chris-horne-28b24266/,S21
-169,Joel Phillips,Siglo,https://www.linkedin.com/in/joelwp/,S21
-170,Isaac Phillips,Siglo,https://www.linkedin.com/in/isaacphillips/,S21
-171,Jose Ignacio Galindo,Waterplan,https://www.linkedin.com/in/joseignaciosg/,S21
-172,Nicolas Wertheimer,Waterplan,https://www.linkedin.com/in/nicolas-wertheimer/,S21
-173,Benjamin Claman,Buoyant Aero,https://www.linkedin.com/in/benjaminclaman/,S21
-174,Kris Bennatti,Hudson Labs (formerly Bedrock AI),https://www.linkedin.com/in/kbennatti/,S21
-175,Suhas Pai,Hudson Labs (formerly Bedrock AI),https://www.linkedin.com/in/piesauce/,S21
-176,Gautam Jayaraman,Onsite Pro,https://www.linkedin.com/in/gautamj/,S21
-177,Omar Kassim,Nomod,https://www.linkedin.com/in/okassim/,S21
-178,Colum Donahue,Genuity,https://www.linkedin.com/in/colum-p-donahue/,S21
-179,Jason Noble,Genuity,www.linkedin.com/in/jason-noble-chicago,S21
-180,Zaeem asif,Genuity,https://www.linkedin.com/in/zaeem-asif/,S21
-181,Tomohiro Takano,Genomelink,https://www.linkedin.com/in/tomohiro-takano-a0b3662a/,S21
-182,Yuta Matsuda,Genomelink,https://www.linkedin.com/in/yuta-matsuda-a492b6118/,S21
-183,Kensuke Numakura,Genomelink,https://www.linkedin.com/in/knmkr/,S21
-184,Mona Rakibe,Telmai,https://www.linkedin.com/in/monarakibe/,S21
-185,Maxim Lukichev,Telmai,http://linkedin.com/in/maximlukichev,S21
-186,James Vuong,Infina,https://www.linkedin.com/in/jameslvuong/,S21
-187,Anthony Scarpone-Lambert,Adni,https://www.linkedin.com/in/anthony-scarpone-lambert-669052138/,S21
-188,Jennifferre Mancillas,Adni,https://www.linkedin.com/in/jennifferre-mancillas/,S21
-189,Jasmine Mansouri,Pillar,https://www.linkedin.com/in/jasminemansouri/,S21
-190,Caroline Early,Pillar,https://www.linkedin.com/in/ccearly/,S21
-191,Botty Dimanov,Tenyks,https://www.linkedin.com/in/botty-dimanov/,S21
-192,Dmitry Kazhdan,Tenyks,https://www.linkedin.com/in/dmitry-kazhdan/,S21
-193,Ismael Belkhayat,Chari,https://www.linkedin.com/in/belkhayat,S21
-194,Sophia Alj,Chari,https://www.linkedin.com/in/sophia-alj-40333960/,S21
-195,Darragh Mc Kay,Noloco,https://www.linkedin.com/in/darraghmckay/,S21
-196,Anisa Mirza,Litnerd,https://www.linkedin.com/in/anisa-mirza-2781a045/,S21
-197,Sahil Hasan,Dots 💸,https://www.linkedin.com/in/sahilhasan/,S21
-198,Kartikye Mittal,Dots 💸,https://www.linkedin.com/in/kartikye/,S21
-199,Kedan Li,Revery AI,https://www.linkedin.com/in/kedanli/,S21
-200,Min Jin Chong,Revery AI,https://www.linkedin.com/in/min-jin-chong-ab566212a/,S21
-201,Jeffrey Zhang,Revery AI,https://www.linkedin.com/in/jeffrey-zhang-5a8030aa/,S21
-202,Kenneth Cassel,RMFG,https://www.linkedin.com/in/kenneth-cassel/,S21
-203,Alexander Baikovitz,Mach9,https://www.linkedin.com/in/alexbaikovitz/,S21
-204,Haowen Shi,Mach9,https://www.linkedin.com/in/haowensh/,S21
-205,Joshua Spisak,Mach9,https://www.linkedin.com/in/josh-spisak-b573b972,S21
-206,Ian Lee,Examedi,https://www.linkedin.com/in/eunbin-lee-a38868169/,S21
-207,Andres Kemeny,Examedi,https://www.linkedin.com/in/andres-kemeny/,S21
-208,Juan Pablo Zepeda,Examedi,https://www.linkedin.com/in/juan-pablo-zepeda-nu%C3%B1ez-38423570/,S21
-209,Andres Barrios,Ancana,https://www.linkedin.com/in/anbarrios/,S21
-210,Ryan Black,Ancana,https://www.linkedin.com/in/ryanablack/,S21
-211,Naz Malik,Onfolk,https://www.linkedin.com/in/naz-malik-72401199/,S21
-212,Charlie Thomas,Onfolk,https://www.linkedin.com/in/charlie-t-4bba09118/,S21
-213,Mike Bignold,Bolster,https://www.linkedin.com/in/michael-bignold-6092a27/,S21
-214,Simon Ward,Floatpays Inc,https://www.linkedin.com/in/wardsimon/,S21
-215,Aditya Haripurkar,HitPay,https://www.linkedin.com/in/adityaharipurkar/,S21
-216,Nitin Muthyala,HitPay,http://linkedin.com/in/nitinmuthyala/,S21
-217,Spencer Levitt,Coast,https://www.linkedin.com/in/spencer-levitt,S21
-218,Austin Pager,Coast,https://www.linkedin.com/in/austin-pager/,S21
-219,Joel Sercel,TransAstra Corporation,https://www.linkedin.com/in/joelsercel/,S21
-220,Rob LaFave,Float,https://www.linkedin.com/in/roblafave,S21
-221,Zachary Kim,Float,https://www.linkedin.com/pub/zachary-kim/3/a48/456,S21
-222,Jordan Kobert,The Breakaway,https://www.linkedin.com/in/jordankobert/,S21
-223,Kyle Yugawa,The Breakaway,https://www.linkedin.com/in/kyleyugawa,S21
-224,Ishita Shah,Matrubials,https://www.linkedin.com/in/ishita-m-shah-ph-d-a6a9664/,S21
-225,Bruce German,Matrubials,https://www.linkedin.com/in/bruce-german-2632a28,S21
-226,Carlito Lebrilla,Matrubials,https://www.linkedin.com/in/carlito-lebrilla-9166429/,S21
-227,David Mills,Matrubials,https://www.linkedin.com/in/david-a-mills-82256b4/,S21
-228,Samanyou Garg,Writesonic,https://www.linkedin.com/in/samanyougarg/,S21
-229,Sharud Agarwal,Akute Health,https://www.linkedin.com/in/sharud-agarwal-2441093b/,S21
-230,Sasha Miagkyi,outloud.ai,https://www.linkedin.com/in/oleksandr-miagkyi/,S21
-231,Igor Shelvinskyi,outloud.ai,https://www.linkedin.com/in/igor-shelvinskyi-96055249/,S21
-232,Ditto R,Sirka,,S21
-233,Dito Krista,Sirka,https://www.linkedin.com/in/dito-holanda/,S21
-234,Gus Trigos,Mentum,https://www.linkedin.com/in/gustavoatrigos,S21
-235,Gabriel Spencer-Harper,Meticulous,https://www.linkedin.com/in/gabrielsharper,S21
-236,Anushree Goenka,Spark Studio,https://www.linkedin.com/in/anushreegoenka/,S21
-237,Namita Goel,Spark Studio,https://www.linkedin.com/in/namita-goel-33918b5/,S21
-238,Kaustubh Khade,Spark Studio,https://www.linkedin.com/in/kaustubhkhade/,S21
-239,Jyothika Sahajanandan,Spark Studio,https://www.linkedin.com/in/jyothikas/,S21
-240,Julian Englert,Adaptyv,https://linkedin.com/in/julian-englert,S21
-241,Daniel Nakhaee-Zadeh Gutierrez,Adaptyv,https://www.linkedin.com/in/danielnzg,S21
-242,Riley O'Donnell,Endla,https://www.linkedin.com/in/rileyodonnell-1/,S21
-243,Michael Moore,Endla,https://www.linkedin.com/in/michaelmoore1997/,S21
-244,Daniel Li,aSim,https://www.linkedin.com/in/dli123/,S21
-245,Daniel Kim,aSim,https://www.linkedin.com/in/dankim714/,S21
-246,Chris Carde,HeyCharge,https://www.linkedin.com/in/pilotchris/,S21
-247,Robert Lasowski,HeyCharge,https://www.linkedin.com/in/dr-robert-lasowski-0b60077b/,S21
-248,Marcus Lima,Heimdal,https://www.linkedin.com/in/marcus-lima-144974101/,S21
-249,Daniel Ruhman,Cumbuca,http://linkedin.com/in/daniel-ruhman-0b739353,S21
-250,Elena Samuylova,Evidently AI,https://www.linkedin.com/in/elenasamuylova/,S21
-251,Emeli Dral,Evidently AI,https://www.linkedin.com/in/emelidral/,S21
-252,Emilien Sanchez,Whaly,https://www.linkedin.com/in/emiliensanchez/,S21
-253,Florian Buguet,Whaly,https://www.linkedin.com/in/florian-buguet-a1150812/,S21
-254,Pierre de Poulpiquet,Whaly,https://www.linkedin.com/in/pierre-de-poulpiquet-28ba1a95/,S21
-255,Zach Bijesse,Payhippo,https://linkedin.com/in/zbijesse,S21
-256,Uche Nnadi,Payhippo,https://www.linkedin.com/in/nnadi/,S21
-257,Chioma Okotcha,Payhippo,https://www.linkedin.com/in/chiomaokotcha/,S21
-258,Fernando Nery,Portão 3,https://www.linkedin.com/in/fernandonery/,S21
-259,Anuraag Jain,Zensors,https://www.linkedin.com/in/jainanuraag/,S21
-260,Celine Tien,Flowly,https://www.linkedin.com/in/celine-tien-70828698/,S21
-261,Narae Kim,Flowly,https://www.linkedin.com/in/narae-kim-933b7669/,S21
-262,Julien Soros,Flowly,https://www.linkedin.com/in/julien-s-7268a9140/,S21
-263,Rayees Rahman,Harmonic Discovery,https://www.linkedin.com/in/rayees-rahman-61896117b/,S21
-264,J Lee,Harmonic Discovery,http://www.linkedin.com/in/jason-l-14043522,S21
-265,Marcel Patek,Harmonic Discovery,https://www.linkedin.com/in/marcelpatek/,S21
-266,Michael Chu,Makani Science,https://www.linkedin.com/in/mchu8/,S21
-267,Michelle Khine,Makani Science,https://www.linkedin.com/in/michelle-khine-a7111315/,S21
-268,Carlo Kobe,Fizz,https://www.linkedin.com/in/carlokobe/,S21
-269,Scott Smith,Fizz,https://www.linkedin.com/in/alxscottsmith/,S21
-270,Santiago Maldonado,lapzo,https://www.linkedin.com/in/smaldonadog/,S21
-271,Mustafa Al-Adhami,Astek Diagnostics,,S21
-272,Mehdi Cherif Alami,Freterium,https://www.linkedin.com/in/mehdi-ca/,S21
-273,Omar El Kouhene,Freterium,https://www.linkedin.com/in/omar-el-kouhene-981b0412/,S21
-274,Hemmel Amrania,Digistain,https://www.linkedin.com/in/hemmel-amrania/,S21
-275,Chris Phillips,Digistain,https://www.linkedin.com/in/chris-phillips-a650151b/,S21
-276,Dan Hobbs,Protex AI,https://www.linkedin.com/in/dan-hobbs-258998ab/,S21
-277,Ciarán O'Mara,Protex AI,https://www.linkedin.com/in/ciaranomara/,S21
-278,Levi Epstein,Inflow,https://www.linkedin.com/in/levi-epstein-423539a2/,S21
-279,Seb Isaacs,Inflow,https://www.linkedin.com/in/sebastianisaacs/,S21
-280,Lissy Giacoman,Vinco,https://www.linkedin.com/in/lissymgiacoman/,S21
-281,Miriam Fernandez,Vinco,https://www.linkedin.com/in/miriam-fernandezgg/,S21
-282,Sofia Sada,Vinco,http://linkedin.com/in/sasegovs/,S21
-283,Albert Gozzi,Aleph,https://www.linkedin.com/in/albertgozzi/,S21
-284,Santiago Perez De Rosso,Aleph,https://www.linkedin.com/in/spderosso/,S21
-285,Amar Kumar,KaiPod Learning,https://www.linkedin.com/in/kumaramar/,S21
-286,Emilio Antun,Kodda,https://www.linkedin.com/in/emilio-antun-598b68136/,S21
-287,Mike Alvarado,Kodda,https://www.linkedin.com/in/mikealvaradol/,S21
-288,Gaston Zelerteins,Aleph Solutions (Alephee),https://www.linkedin.com/in/gzelerteins,S21
-289,Javier Neumann,Aleph Solutions (Alephee),https://www.linkedin.com/in/javierneumann/,S21
-290,Jonathan Saiegh,Aleph Solutions (Alephee),https://www.linkedin.com/in/jonathansaiegh/,S21
-291,Christian Højbo Møller,Zoios.,https://www.linkedin.com/in/christianhojbo/,S21
-292,Mikkel Agesen,Zoios.,https://www.linkedin.com/in/mikkel-agesen/,S21
-293,Carlos Lau,Kurios,https://www.linkedin.com/in/carloslauv/,S21
-294,Luis Ubillas Door,Kurios,https://www.linkedin.com/in/lubillas/,S21
-295,Thomas Maremaa,Encuadrado,https://www.linkedin.com/in/tmaremaa,S21
-296,Tomas Aguilera,Encuadrado,https://www.linkedin.com/in/tomasaguilera/,S21
-297,Richie Bonilla,Forage Mail,https://www.linkedin.com/in/richie-bonilla,S21
-298,Eni Jaupi,Forage Mail,https://www.linkedin.com/in/enijaupi/,S21
-299,Sanket Chauhan,Stardex,https://www.linkedin.com/in/sanketchauhan,S21
-300,Pranav Badami,Stardex,https://www.linkedin.com/in/pranavbadami/,S21
-301,Christal Wang,Shimmer,https://www.linkedin.com/in/wangchristal/,S21
-302,Vikram Sreedhar,Shimmer,https://www.linkedin.com/in/vikramsreedhar/,S21
-303,Andrew Luo,OneSchema,https://www.linkedin.com/in/andrew-luo-6495704a/,S21
-304,Emmett Miller,Multibase,https://www.linkedin.com/in/emmettmiller/,S21
-305,Wyatt Miller,Multibase,https://www.linkedin.com/in/wyattmiller14/,S21
-306,Leo Schottenstein,Multibase,https://www.linkedin.com/in/leo-schottenstein-0513/,S21
-307,Jack Bowen,CoLoop,https://www.linkedin.com/in/jack-bowen-ab6b7018a/,S21
-308,Adrien Wald,CoLoop,https://www.linkedin.com/in/adrien-wald-862495136,S21
-309,Theo Tortorici,Dot,https://www.linkedin.com/in/theo-tortorici/,S21
-310,Rick Radewagen,Dot,https://www.linkedin.com/in/radewagen/,S21
-311,Sven Rudolph,Dot,https://www.linkedin.com/in/sven-rudolph-0b7910a0/,S21
-312,Ali Nasser,ShipBlu,https://www.linkedin.com/in/alifnasser,S21
-313,Ahmed ElKawass,ShipBlu,https://www.linkedin.com/in/ahmad-kawass-56b65815/,S21
-314,Abdelrahman Hosny,ShipBlu,https://www.linkedin.com/in/abdelrahmanhosny/,S21
-315,Curtis Fonger,Whalesync,https://www.linkedin.com/in/cfonger/,S21
-316,Matthew Busel,Whalesync,https://www.linkedin.com/in/matthew-busel/,S21
-317,Maria Terzi,Malloc,https://www.linkedin.com/in/maria-terzi/,S21
-318,Liza Charalambous,Malloc,https://www.linkedin.com/in/lzcharalambous/,S21
-319,Vrinda Gupta,Sequin,https://www.linkedin.com/in/vrindag/,S21
-320,Mark Thomas,Sequin,https://www.linkedin.com/in/markmthomas/,S21
-321,Clément Salaün,Formance,https://www.linkedin.com/in/clementsalaun,S21
-322,James Martinez,Mergent,https://www.linkedin.com/in/jamescmartinez,S21
-323,Gabriele Musella,Coinrule,http://www.linkedin.com/in/gabrielemusella,S21
-324,Oleg Giberstein,Coinrule,https://www.linkedin.com/in/giberstein,S21
-325,Zdenek Hofler,Coinrule,https://www.linkedin.com/in/zdenekhofler/,S21
-326,Melissa Bime,Infiuss Health,https://www.linkedin.com/in/melissa-jane-bime-b833b5126/,S21
-327,Ridwan Olalere,LemFi,https://www.linkedin.com/in/darilldrems/,S21
-328,Rian Cochran,LemFi,https://www.linkedin.com/in/rian-p-cochran-a3a9404/,S21
-329,Menno Gravemaker,Momo Medical,https://www.linkedin.com/in/menno-gravemaker-70674b53/,S21
-330,Thomas Bakker,Momo Medical,https://www.linkedin.com/in/thomasbakker118,S21
-331,Yaw Bediako,Yemaachi Biotechnology,https://www.linkedin.com/in/yaw-bediako-ph-d-8082a152/,S21
-332,Yaw Attua-Afari,Yemaachi Biotechnology,https://www.linkedin.com/in/yaw-a-930b8312/,S21
-333,David Hutchful,Yemaachi Biotechnology,https://www.linkedin.com/in/dhutchful/,S21
-334,Joyce Ngoi,Yemaachi Biotechnology,,S21
-335,Guru Singh,Scispot,https://www.linkedin.com/in/iamguru/,S21
-336,Satya Singh,Scispot,https://www.linkedin.com/in/satyaravisingh/,S21
-337,Anderson Ferminiano,LootRush,http://www.linkedin.com/in/andferminiano,S21
-338,Lucas Castellani,Cartpanda,https://www.linkedin.com/in/lucascastellani/,S21
-339,Theodoric Chew,Intellect,https://linkedin.com/in/theodoricchew,S21
-340,Anurag Chutani,Intellect,https://www.linkedin.com/in/a7urag/,S21
-341,Liat Beng Neo,Arrow,https://www.linkedin.com/in/liatbeng/,S21
-342,Sudhan Raj,Arrow,https://www.linkedin.com/in/sudhan-raj/,S21
-343,Sebastian Roervig,Arrow,https://www.linkedin.com/in/sebastianroervig/,S21
-344,Ilia Semenov,Cloudthread,https://www.linkedin.com/in/iliavsemenov/,S21
-345,matthew smith,Truss,https://www.linkedin.com/in/matthew-smith250/,S21
-346,Nick Addison,Truss,https://www.linkedin.com/in/nick-addison-42a90012a/,S21
-347,Bjorn Lee,MindFi,https://www.linkedin.com/in/bjornlee/,S21
-348,Gangeshwar Krishnamurthy,MindFi,https://www.linkedin.com/in/gangeshwark,S21
-349,Leon CK Leong,MindFi,https://www.linkedin.com/in/leonck/,S21
-350,Anita Sadasivan,MindFi,https://www.linkedin.com/in/anitasadasivan/,S21
-351,Mack McConnell,Markix,https://www.linkedin.com/in/mackmcconnell/,S21
-352,Cihan Tas,Markix,https://www.linkedin.com/in/cihan-tas-01a0501ba/,S21
-353,Surya Oruganti,WarpBuild,https://www.linkedin.com/in/suryaoruganti/,S21
-354,Vincent Lam,Matidor.com,https://www.linkedin.com/in/lamvincent/,S21
-355,Sean Huang,Matidor.com,https://www.linkedin.com/in/sean-huang/,S21
-356,Felipe Rodríguez,Cero,https://cl.linkedin.com/in/luis-felipe-rodríguez-besa-31ba772a,S21
-357,Jorge Pérez,Cero,https://www.linkedin.com/NA,S21
-358,Mauricio Quezada,Cero,https://www.linkedin.com/in/mauricio-quezada-317100199/,S21
-359,Vijayaraj Gopinath,OneStopKitchen,https://linkedin.com/in/vijayarajgopinath,S21
-360,Viggnesh Kandasamy,OneStopKitchen,https://linkedin.com/in/viggnesh,S21
-361,Marcos Oliveira Jr,fluke,https://www.linkedin.com/in/marcos-ant%C3%B4nio-oliveira-jr-3a0526137/,S21
-362,Augusto Pinheiro,fluke,https://www.linkedin.com/in/augusto-pinheiro-173896114/,S21
-363,Yuki Watanabe Kuramoto,fluke,https://www.linkedin.com/in/yuki-watanabe-kuramoto-858856146/,S21
-364,Robert Salvador,DigiBuild,https://www.linkedin.com/in/robert-salvador-7a72aa91/,S21
-365,Ivan Franco,DigiBuild,https://www.linkedin.com/in/theivanfranco/,S21
-366,Mahyad G,SigmaOS,https://www.linkedin.com/in/mahyad-ghassemi/,S21
-367,Ali Attar,SigmaOS,https://www.linkedin.com/in/attarali,S21
-368,Saurav Mitra,SigmaOS,https://www.linkedin.com/in/thesauravmitra/,S21
-369,José Carlos Aguilar,Palenca,https://www.linkedin.com/in/pepejcar/,S21
-370,Pierre Delarroqua,Palenca,https://www.linkedin.com/in/delarroqua,S21
-371,Antoine Nguyen Hong Duc,Palenca,https://www.linkedin.com/in/antoinenguyenhd/,S21
-372,Sujay Maheshwari,Cloudanix,http://www.linkedin.com/in/sujaymaheshwari/,S21
-373,Purusottam Mupunu,Cloudanix,https://www.linkedin.com/pub/purusottam-mupunu/b/905/56,S21
-374,Eduardo Narvaez,TrackChain,https://www.linkedin.com/in/eduardoakil/,S21
-375,Hugo Alvarez,TrackChain,https://www.linkedin.com/in/hugo-alvarez-248867132/,S21
-376,Wojciech Danilo,Enso,http://linkedin.com/in/wojciechdanilo/,S21
-377,Sylwia Brodacka,Enso,https://www.linkedin.com/in/sylwia-brodacka/,S21
-378,Leonardo Devincenzi,Monet,https://www.linkedin.com/in/leonardo-devincenzi-5a57a8209/,S21
-379,Artem Golubev,testRigor,https://www.linkedin.com/in/agolubev/,S21
-380,Enzo Biancato,testRigor,https://www.linkedin.com/in/enzobiancato/,S21
-381,Ana Ramos,Glitzi,https://www.linkedin.com/in/ana-ramos-b2681a32/,S21
-382,Luis Enrique Vazquez,Glitzi,https://www.linkedin.com/in/luis-enrique-vazquez-escobar-35230464/,S21
-383,Maximilian Marquart,Planet A Foods,https://www.linkedin.com/in/dr-maximilian-marquart-24a802107/,S21
-384,Sara Marquart,Planet A Foods,https://www.linkedin.com/in/saramarquart/,S21
-385,Deepak Garg,Warpfy,https://www.linkedin.com/in/deepak-garg-03675911/,S21
-386,Harris Cheng,Warpfy,https://www.linkedin.com/in/harrischeng/,S21
-387,Ravi Bharihoke,Enerjazz,https://www.linkedin.com/in/ravi-b-hiring-for-operations-and-tech-9a92a412/,S21
-388,Pratik Ranjan Das,Enerjazz,https://www.linkedin.com/in/pratikrdas,S21
-389,Trent Harvey,Covie,https://www.linkedin.com/in/trentharvey/,S21
-390,William Dearie,Covie,https://www.linkedin.com/in/william-dearie-202403209/,S21
-391,Benjamin Ha,Muse,https://www.linkedin.com/in/benjaminha/,S21
-392,Jose Akle,Okani,https://www.linkedin.com/in/joseakle,S21
-393,Rogerio Correa,Pluggy,https://www.linkedin.com/in/rogério-corrêa-26789131,S21
-394,Victor Braga,Pluggy,https://www.linkedin.com/in/victor-urano-braga-75434521/,S21
-395,Bruno Loiola,Pluggy,https://www.linkedin.com/in/brunoloiola/,S21
-396,Federico Miras,Pluggy,https://www.linkedin.com/in/fmiras,S21
-397,Gabriel Pan Gantes,Pluggy,https://www.linkedin.com/in/gabrielpangantes,S21
-398,Michael Weiland,Govly,https://www.linkedin.com/in/mikeweiland/,S21
-399,Nick Weiland,Govly,www.linkedin.com/in/weilandia,S21
-400,Jon Wright,Govly,https://www.linkedin.com/in/jon-wright-a9227a2/,S21
-401,Carlos Tejeda,Pideaky,https://www.linkedin.com/in/carlos-tejeda-b8096a2a/,S21
-402,Oscar Rydberg,Pideaky,https://www.linkedin.com/in/oscar-rydberg-ba170b15,S21
-403,Rafael Tejeda Elizondo,Pideaky,https://www.linkedin.com/in/rafael-tejeda-elizondo-3853b5211/,S21
-404,Armando Biondi,Breadcrumbs.io,https://www.linkedin.com/in/armandobiondi,S21
-405,Gary Amaral,Breadcrumbs.io,https://www.linkedin.com/in/garyamaral/,S21
-406,Massimo Chieruzzi,Breadcrumbs.io,https://www.linkedin.com/in/massimochieruzzi,S21
-407,Andres Quintanilla,Monto,https://www.linkedin.com/in/andres-quintanilla-440897125/,S21
-408,Karina Derbez,Monto,https://www.linkedin.com/in/karinaderbez,S21
-409,Alexander Li,Bree,https://www.linkedin.com/in/alexander-li-19900783/,S21
-410,Adam Kang,Bree,https://www.linkedin.com/in/adamkang/,S21
-411,Kevin Fu,Repool,https://www.linkedin.com/in/kevinfu93/,S21
-412,Grant Demaree,Onebrief,https://www.linkedin.com/in/gkdemaree/,S21
-413,Rafa Pereira,Onebrief,https://linkedin.com/in/rflprr,S21
-414,Jonathan Baker,Iona Mind,https://www.linkedin.com/in/jonathan-baker/,S21
-415,Philip Howson,Iona Mind,https://www.linkedin.com/in/philiphowson/,S21
-416,Shri Sukhani,Hyperbrowser,https://linkedin.com/in/shrisukhani,S21
-417,Akshay Shekhawat,Hyperbrowser,https://www.linkedin.com/in/akshay-shekhawat/,S21
-418,Aakash N S,Jovian,https://www.linkedin.com/in/aakashns,S21
-419,Siddhant Ujjain,Jovian,https://www.linkedin.com/in/sidujjain/,S21
-420,Alex Perelman,Sentiyen,https://www.linkedin.com/in/alexperelman/,S21
-421,Nathan Shinder,Sentiyen,https://www.linkedin.com/in/nathan-shinder-6387221/,S21
-422,Viet Long Tran,Dreamerly,https://www.linkedin.com/in/longvtran/,S21
-423,Thanh Nguyen,Dreamerly,https://www.linkedin.com/in/thanh-n-43467a3a/,S21
-424,Casey Harlin,Rinse,https://www.linkedin.com/in/caseyharlin/,S21
-425,Nikhil Goel,SalaryBox,https://www.linkedin.com/in/nikhil-goel/,S21
-426,Peeyush Goyal,SalaryBox,https://www.linkedin.com/in/peeyushgoyal1991/,S21
-427,Florian Raetzer,Hilos,https://www.linkedin.com/in/florian-raetzer/,S21
-428,Alfonso Lizárraga,Hilos,https://www.linkedin.com/,S21
-429,Sunny Rekhi,Tarsal,https://www.linkedin.com/in/sunny-rekhi/,S21
-430,Rohan Marwaha,Aqua,https://www.linkedin.com/in/rohanmarwahanj/,S21
-431,Dev Patel,Aqua,https://www.linkedin.com/in/devpatel9/,S21
-432,Brian Low,Kaya,https://www.linkedin.com/in/brianlowzh/,S21
-433,Etai Mizrahi,Secoda,https://www.linkedin.com/in/etai-mizrahi-07656aa1/,S21
-434,Andrew McEwen,Secoda,https://www.linkedin.com/in/armcewen,S21
-435,Christopher Clark,Locale,https://www.linkedin.com/in/christopher-clark-a78620103/,S21
-436,Jonathan Friedland,Locale,https://www.linkedin.com/in/jonathan-friedland-46b897126/,S21
-437,Kaveh Nemati,Locale,https://www.linkedin.com/in/kaveh-nemati-1b6205100/,S21
-438,Conor Cullinane,Pirouette Pharma,https://www.linkedin.com/in/conorrcullinane/,S21
-439,Matthew Kane,Pirouette Pharma,https://www.linkedin.com/in/matthew-kane-321423139/,S21
-440,Elijah Kapas,Pirouette Pharma,https://www.linkedin.com/in/eli-kapas-0b176366/,S21
-441,Matt Donahue,Kodex,https://www.linkedin.com/in/matt-donahue-9bb60188/,S21
-442,Danny Mendoza,Kodex,https://www.linkedin.com/in/jdmendoza1/,S21
-443,Rick Firnando,Verihubs,https://www.linkedin.com/in/rickfirnando/,S21
-444,Amar Gautam,HyperTrader,https://linkedin.com/in/amargautam,S21
-445,Kunal Kumar,HyperTrader,https://www.linkedin.com/in/engineer-kunal-kumar/,S21
-446,Alex Nikityuk,Maroo,https://www.linkedin.com/in/alexnikityuk/,S21
-447,Stacy Pavlyshyna,Awesomic,https://www.linkedin.com/in/stacy-pavlyshyna,S21
-448,Roman Sevast,Awesomic,https://www.linkedin.com/in/roman-sevast/,S21
-449,Piero Linares,Fitia,https://www.linkedin.com/in/piero-linares-1a9397121/,S21
-450,Ulises Olave,Fitia,https://pe.linkedin.com/in/ulises-olave-mendoza-3bb448100,S21
-451,Esteban Penaloza,trii,https://www.linkedin.com/in/m-esteban-peñaloza-guzmán-08496411b/,S21
-452,Carlos Guayara,trii,https://www.linkedin.com/in/cguayara/,S21
-453,Luis Patt,trii,https://www.linkedin.com/in/luis-eduardo-patt-23463034/,S21
-454,Phil Wittig,Kindamagical,https://www.linkedin.com/in/pdwittig/,S21
-455,Rachita Navara,SafeBeat,https://www.linkedin.com/in/rachita-navara-md-3b49551b8/,S21
-456,Kunj Patel,SafeBeat,https://www.linkedin.com/in/kunj-patel-md-msc-1b10156,S21
-457,Landon Fielding,Brite,https://www.linkedin.com/in/landon-fielding-970808b4,S21
-458,Jake Parkinson,Brite,https://www.linkedin.com/in/jakeparkinson/,S21
-459,Colton Shields,Brite,https://www.linkedin.com/in/coltonshields/,S21
-460,Abhilash Narahari,Ivy Homes,https://www.linkedin.com/in/abhilash-narahari-a33284a9/,S21
-461,Pritam Thakur,Ivy Homes,https://www.linkedin.com/in/pritamthakur/,S21
-462,jose menendez,Konta.com,https://www.linkedin.com/in/jose-antonio-menendez-80a872102/,S21
-463,Pablo Icaza,Konta.com,https://www.linkedin.com/in/pablo-icaza/,S21
-464,Hassaan Raza,Tavus,http://linkedin.com/in/hassaanraza/,S21
-465,Quinn Favret,Tavus,https://www.linkedin.com/in/quinn-favret/,S21
-466,Daniel James,Zen,https://www.linkedin.com/in/daniel-j-1b52a2111/,S21
-467,Chris Stanley,Patterns,https://www.linkedin.com/in/chris-stanley-29b20519/,S21
-468,Victor E. Fimbres,Forage,https://www.linkedin.com/in/victorefimbres/,S21
-469,Jeroen Rutten,Tablevibe,https://www.linkedin.com/in/jeroen-rutten-60499921/,S21
-470,Guido Caldara,Tablevibe,https://www.linkedin.com/in/guidocaldara/,S21
-471,Mathieu Sneep,Tablevibe,http://linkedin.com/in/mathieusneep,S21
-472,Mauricio Morales,DailyBot,https://www.linkedin.com/in/maomorales/,S21
-473,Sergio Florez,DailyBot,https://www.linkedin.com/in/xergioalex/,S21
-474,Ariel Vaisman,RendaloMaq,https://www.linkedin.com/in/ariel-vaisman/,S21
-475,Juan Pablo Mir,RendaloMaq,https://cl.linkedin.com/in/juan-pablo-mir-39a948a8,S21
-476,Anh-Tho CHUONG,Lago,https://www.linkedin.com/in/anhthochuong/,S21
-477,Raffi SARKISSIAN,Lago,https://www.linkedin.com/in/sarkissianraffi,S21
-478,Daniel Liechtenstein,Hypercore,https://www.linkedin.com/in/daniel-liechtenstein-ba338370/,S21
-479,Eitan Frailich,Hypercore,https://www.linkedin.com/in/eitan-frailich-81b69390/,S21
-480,Tomer Moshe,Hypercore,https://www.linkedin.com/in/tomer-moshe-033a2b69,S21
-481,David Yahalomi,Hypercore,https://www.linkedin.com/in/david-yahalomi-441b3863/,S21
-482,Perseus Mlambo,Union54,https://www.linkedin.com/in/perseus,S21
-483,Alessandra Martini,Union54,https://za.linkedin.com/in/alessandra-martini-5bb15991,S21
-484,Sarujan Ranjan,StudyStream,https://www.linkedin.com/in/sarujanr/,S21
-485,Erfan Soliman,StudyStream,https://uk.linkedin.com/in/erfansoliman,S21
-486,Yasir Shirazi,InstaKin,https://www.linkedin.com/in/shirazi/,S21
-487,Zain Khan,InstaKin,https://www.linkedin.com/in/zainmk,S21
-488,Wade Norris,SnapCalorie,https://www.linkedin.com/in/wadenorris/,S21
-489,Scott Baron,SnapCalorie,https://www.linkedin.com/in/scott-baron-7b09b011/,S21
-490,Mohit Prateek,Anakin,http://linkedin.com/in/mohitprateek,S21
-491,Rashmi Bala,Anakin,https://www.linkedin.com/in/kumari-rashmi-bala/,S21
-492,William Clem,Bite Ninja,https://www.linkedin.com/in/willclem/,S21
-493,Aimee DeGolyer,REPROSENT,https://www.linkedin.com/in/aimee-degolyer/,S21
-494,Michael Sample,REPROSENT,https://www.linkedin.com/in/mike-sample-1547521/,S21
-495,Varun Govil,Epinoma,https://www.linkedin.com/in/varun-govil/,S21
-496,Ishan Goyal,Epinoma,https://www.linkedin.com/in/ishan-goyal/,S21
-497,Zhijian Li,Epinoma,https://www.linkedin.com/in/zhl223/,S21
-498,Omar Thanawalla,ShopMyGPT.com,https://www.linkedin.com/in/omarthanawalla/,S21
-499,Adam MacEachern,Sleek,http://www.linkedin.com/in/adam-maceachern-120536109,S21
-500,Daniel Baum,Sleek,http://www.linkedin.com/in/daniel-baum,S21
-501,Palmer McCutcheon,Sleek,https://www.linkedin.com/in/palmm,S21
-502,Ben Stein,Keeper,https://www.linkedin.com/in/benfstein/,S21
-503,Kenny Song,Keeper,https://www.linkedin.com/in/kennysong1/,S21
-504,Pulkit Agarwal,Strive Math,https://www.linkedin.com/in/agarwalpulkit/,S21
-505,Channy Hong,Vansec,https://www.linkedin.com/in/channyhong/,S21
-506,Ike Jin Park,Vansec,https://www.linkedin.com/in/ikejinpark/,S21
-507,Fahim Ferdous,Cabal,https://linkedin.com/in/fahimferdous,S21
-508,Christian Schiller,MobileBoost,https://www.linkedin.com/in/chschiller/,S21
-509,Christian Hartung,MobileBoost,https://www.linkedin.com/in/christian-hartung-17887840/,S21
-510,Sameer Sadana,AppX,https://www.linkedin.com/in/sameer-s-73a13a13a,S21
-511,Anuj Gupta,AppX,https://www.linkedin.com/in/anuj-gupta-9264b9b8/,S21
-512,Nikunj Malpani,Neodocs,https://www.linkedin.com/in/nikunjmalpani/,S21
-513,Pratik Lodha,Neodocs,https://www.linkedin.com/in/pratiklodha/,S21
-514,Anurag Meena,Neodocs,https://www.linkedin.com/in/anurag-meena/,S21
-515,Manas Kumar Verma,AlgoUniversity,https://www.linkedin.com/in/thenextmkv/,S21
-516,Swapnil Daga,AlgoUniversity,https://www.linkedin.com/in/swapnil-daga-b42762130/,S21
-517,Aditya Vemuganti,Swipe,https://www.linkedin.com/in/aditya-v-b0838622/,S21
-518,Sri Teja Allaparthi,Swipe,https://www.linkedin.com/in/sriteja95,S21
-519,Arnaud Porterie,Echoes HQ,https://linkedin.com/in/aporterie,S21
-520,Sourabh Deorah,Advantage Club,https://in.linkedin.com/in/sourabh-deorah-a4912b1a,S21
-521,Smiti Bhatt Deorah,Advantage Club,https://in.linkedin.com/in/smitibhattdeorah,S21
-522,Nishant Jhaveri,Nino Foods,https://www.linkedin.com/in/nishantjhaveri23/,S21
-523,Pranav Mehra,Nino Foods,https://www.linkedin.com/in/pranav-mehra/,S21
-524,Samay Jain,Rivia.AI,https://www.linkedin.com/in/samaystops4no1/,S21
-525,Katherine French,BLUUMBIO,https://www.linkedin.com/in/katherine-french-a8452b1b4/,S21
-526,Robert DiFazio,Parallel Bio,https://www.linkedin.com/in/rdifazio/,S21
-527,Juliana Hilliard,Parallel Bio,https://www.linkedin.com/in/juliana-hilliard-774717100/,S21
-528,Murilo Narciso,Zazos,https://www.linkedin.com/in/mknarciso/,S21
-529,Mario Bustamante,Instacrops,https://www.linkedin.com/in/mario-andr%C3%A9s-bustamante-bernucci-36a79030/,S21
-530,Anada Lakra,BoldVoice,https://www.linkedin.com/in/anadalakra/,S21
-531,Ilya Usorov,BoldVoice,https://www.linkedin.com/in/ilyausorov/,S21
-532,Kara Holinski,Confido,https://www.linkedin.com/in/kara-holinski-77b673b6/,S21
-533,Justin Hunter,Confido,https://www.linkedin.com/in/justin-hunter/,S21
-534,Apoorva Sharma,SalaryBook,http://linkedin.com/in/as2406,S21
-535,Ankita Sharma,SalaryBook,https://www.linkedin.com/in/ankita-sharma-a5028a160/,S21
-536,Poorva Dixit,SalaryBook,https://www.linkedin.com/in/poorva-dixit-53305627/,S21
-537,Orestis Vardoulis,Zeit Medical,https://www.linkedin.com/in/orestisvardoulis/,S21
-538,Urs Naber,Zeit Medical,https://www.linkedin.com/in/urs-naber-2393b62a/,S21
-539,Tejas Bala,Atmana,https://www.linkedin.com/in/tejaspm/,S21
-540,VIJAY ANAND BHAGAVATULA,ODWEN,https://www.linkedin.com/in/vijay-anand-bhagavatula-09b4863/,S21
-541,Deevee Kashi,Deed,https://www.linkedin.com/in/deeveekashi,S21
-542,Aske Ertmann,Deed,https://www.linkedin.com/in/aske-ertmann-816a07101/,S21
-543,Steve Liu,Deed,https://www.linkedin.com/in/stevenliu98/,S21
-544,Jayant Panwar,PropReturns,https://www.linkedin.com/in/jayant-panwar/,S21
-545,Somil Mathur,PropReturns,https://www.linkedin.com/in/somilmathur,S21
-546,Kenish Shah,PropReturns,https://www.linkedin.com/in/kenishshah/,S21
-547,Khushboo Shrivastava,Coulomb AI,https://www.linkedin.com/in/khushboo-shrivastava-18575aa7/,S21
-548,Santanu Mondal,Coulomb AI,https://www.linkedin.com/in/santanumondal/,S21
-549,Apurv Gupta,Mailmodo,https://www.linkedin.com/in/apurvgpt/,S21
-550,Aquibur Rahman,Mailmodo,https://www.linkedin.com/in/aquibur/,S21
-551,Sajal Khanna,Akudo,https://www.linkedin.com/in/sajal-khanna-52aa9b126,S21
-552,Lavika Aggarwal,Akudo,https://www.linkedin.com/in/lavika-aggarwal-463a4b132/,S21
-553,Jagveer Gandhi,Akudo,https://www.linkedin.com/in/jagveer-gandhi-1344b016/,S21
-554,Akash Agrawal,Koshex,https://www.linkedin.com/in/akashagrawal1291/,S21
-555,Komal Kumar Gupta,Koshex,https://www.linkedin.com/in/komal-kumar-g-9a3198113/,S21
-556,Bhagaban Behera,RenderNet,https://www.linkedin.com/in/bhagaban/,S21
-557,Nakul Kelkar,RenderNet,https://www.linkedin.com/in/nakulkelkar/,S21
-558,Sriharsha Setty,RenderNet,https://www.linkedin.com/in/sriharshasetty/,S21
-559,Ahmad Faraaz,Kalam Labs,https://www.linkedin.com/feed/,S21
-560,Sashakt Tripathi,Kalam Labs,https://www.linkedin.com/in/sashakt-tripathi,S21
-561,Harshit Awasthi,Kalam Labs,https://www.linkedin.com/in/harshit016/,S21
-562,Avijit Sharma,FrontPage,https://www.linkedin.com/in/avijitsharma/,S21
-563,Cathy Han,Levro,https://www.linkedin.com/in/cathyhan/,S21
-564,Abeer Agrawal,Levro,https://www.linkedin.com/in/abeera/,S21
-565,Anu Parvatiyar,Ananya Health,https://www.linkedin.com/in/anuparvatiyar/,S21
-566,Daniel Kang,Flowbo,https://www.linkedin.com/in/itsdankang/,S21
-567,Norman Yu,Flowbo,https://www.linkedin.com/in/normanyu1/,S21
-568,Victor Gardrinier,SolarMente,https://www.linkedin.com/in/victor-gardrinier/,S21
-569,Wouter Draijer,SolarMente,http://www.linkedin.com/in/solarmanwouterdraijer,S21
-570,Marco Lobba,Catena Biosciences,https://www.linkedin.com/in/marco-lobba/,S21
-571,Matthew Francis,Catena Biosciences,https://www.linkedin.com/in/matthew-francis-b5018a146?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BheGjvsiEQVaZjFM4Oe07YA%3D%3D,S21
-572,Pei-fu Hsieh,Karbon Card,https://www.linkedin.com/in/pei-fu-hsieh-a214b24/,S21
-573,Jack Chen,Karbon Card,https://www.linkedin.com/in/jianwei-chen-082b80109/,S21
-574,Sunil Kumar,Karbon Card,https://in.linkedin.com/in/sunilkumar14,S21
-575,Amit Jangir,Karbon Card,https://www.linkedin.com/in/amit-jangir-5966b9101/,S21
-576,Bo Li,Karbon Card,https://www.linkedin.com/in/boli1285/,S21
-577,Zach Garman,DolarApp,https://www.linkedin.com/in/zachgarman,S21
-578,Fernando Terres,DolarApp,https://www.linkedin.com/in/fterres/,S21
-579,Alvaro Correa,DolarApp,https://uk.linkedin.com/in/álvaro-correa-gallardo-082b4a90,S21
-580,Kiiru Muhoya,Fingo Africa,https://www.linkedin.com/in/kiiru-muhoya-251360131,S21
-581,Ian Njuguna,Fingo Africa,https://www.linkedin.com/in/ian-n/,S21
-582,Gitari Tirima,Fingo Africa,https://www.linkedin.com/in/gitari-t/,S21
-583,James da Costa,Fingo Africa,https://www.linkedin.com/in/jamesdacosta,S21
-584,Carlo Badini,FirstQuadrant,https://www.linkedin.com/in/carlobadini/,S21
-585,Anand Chowdhary,FirstQuadrant,https://linkedin.com/in/anandchowdhary,S21
-586,Yuxin Zhu,Replo,https://www.linkedin.com/in/yuxinzhu/,S21
-587,Noah Gilmore,Replo,https://www.linkedin.com/in/noahgilmore/,S21
-588,Quentin Rousseau,Rootly,https://www.linkedin.com/in/quentinrousseau/,S21
-589,JJ Tang,Rootly,https://www.linkedin.com/in/jjrichardtang/,S21
-590,Yahya Syed,Potion,https://www.linkedin.com/in/yahya-syed/,S21
-591,Hejab Malik,Potion,https://www.linkedin.com/in/hejab-malik-873135b8/,S21
-592,Alex Stec,Potion,https://www.linkedin.com/in/alex-stec/,S21
-593,Bruno Bannach,Jestor,https://www.linkedin.com/in/bruno-lehmann-bannach-07909556/,S21
-594,Ricky Yean,Flow Club,https://www.linkedin.com/in/rickyyean/,S21
-595,David Tran,Flow Club,https://linkedin.com/in/davetran,S21
-596,Anthony Valente,Concord Materials,https://www.linkedin.com/in/anthony-valente-wmc,S21
-597,Feras Jalbout,Baraka,http://www.linkedin.com/in/feras-jalbout-252b0942,S21
-598,Kunal Taneja,Baraka,https://www.linkedin.com/in/kunal-taneja-yc/,S21
-599,Dragos Bulugean,Archbee,https://www.linkedin.com/in/dragos-bulugean/,S21
-600,Yarden Shaked,Varos,https://www.linkedin.com/in/yarden-shaked-b2011082/,S21
-601,Lior Chen,Varos,https://www.linkedin.com/in/lior-chen-2a939127/,S21
-602,Gil Shaked,Varos,https://www.linkedin.com/in/gshaked/,S21
-603,Marc Laurent,Carbonfact,https://www.linkedin.com/in/mrclrnt/,S21
-604,Romain Champourlier,Carbonfact,https://linkedin.com/rchampourlier?_l=en_US,S21
-605,Martin Daniel,Carbonfact,https://www.linkedin.com/in/martindaniel4/,S21
-606,Talal Ahmad Gondal,TAG,https://www.linkedin.com/in/talalgondal/,S21
-607,Ahsan K. Khan,TAG,https://www.linkedin.com/in/ahsan-k-k/,S21
-608,Alexander Lukianchuk,TAG,http://linkedin.com/in/alexanderland/,S21
-609,Bruno Vieira Costa,Abstra,https://www.linkedin.com/in/brunovcosta/,S21
-610,Tony Park,Stipop,https://www.linkedin.com/in/tonypark-stipop/,S21
-611,Daniel Cho,Stipop,https://www.linkedin.com/in/danielcho6/,S21
-612,Martina Möring,Customily,http://uy.linkedin.com/in/martinamoring,S21
-613,Alejandro Lozdziejski,Customily,https://www.linkedin.com/in/alelozd/,S21
-614,Christian Mischler,Deskimo,https://www.linkedin.com/in/christianmischler,S21
-615,Raphael Cohen,Deskimo,https://www.linkedin.com/in/raphaelc/,S21
-616,Camille Ang,Hive Health,https://www.linkedin.com/in/camille-ang-19224647/,S21
-617,Jiawen Tang,Hive Health,https://www.linkedin.com/in/jiawentang/,S21
-618,Vicente Zavarce,Yummy,https://www.linkedin.com/in/vzavarce/,S21
-619,Dillan DiNardo,Mindstate Design Labs,https://www.linkedin.com/in/dillandinardo/,S21
-620,Tom Ray,Mindstate Design Labs,https://www.linkedin.com/in/tom-ray-a44a59204/,S21
-621,Caelan Urquhart,Pipekit,https://www.linkedin.com/in/caelan-urquhart/,S21
-622,J.P. Zivalich,Pipekit,https://www.linkedin.com/in/jpzivalich/,S21
-623,Brian Anglin,Superwall,https://www.linkedin.com/in/anglinb/,S21
-624,Jake Mor,Superwall,https://www.linkedin.com/in/jake-mor-3b397392/,S21
-625,James Dorris,Odys Aviation,https://www.linkedin.com/in/jdorris3/,S21
-626,Axel Radermacher,Odys Aviation,https://www.linkedin.com/in/axel-radermacher/,S21
-627,Yash Patel,Legion Health,https://www.linkedin.com/in/yashmpatel1/,S21
-628,Arthur MacWaters,Legion Health,https://www.linkedin.com/in/arthur-macwaters/,S21
-629,Daniel Wilson,Legion Health,https://www.linkedin.com/in/danielgwilson,S21
-630,Alex Federation,Talus Bio,https://www.linkedin.com/in/afederation/,S21
-631,Lindsay Pino,Talus Bio,https://www.linkedin.com/in/lindsaykpino/,S21
-632,Hassan Syyid,hotglue,https://www.linkedin.com/in/hassan-syyid-7031a870/,S21
-633,David Molot,hotglue,https://linkedin.com/in/davidmolot,S21
-634,Hassy Veldstra,Artillery,https://uk.linkedin.com/in/hveldstra,S21
-635,Sharique Samsudheen,marketfeed,https://www.linkedin.com/in/shariquesamsudheen/,S21
-636,Sooraj Elamana,marketfeed,https://www.linkedin.com/in/sooraje/,S21
-637,Oriana Papin-Zoghbi,AOA Dx,https://www.linkedin.com/in/orianazh/,S21
-638,Alex Fisher,AOA Dx,https://www.linkedin.com/in/alexanderjfisher/,S21
-639,Anna Jeter,AOA Dx,https://www.linkedin.com/in/anna-milik-jeter-88036329/,S21
-640,Eduardo Williams,Contalink,https://www.linkedin.com/in/eduardowilliams/,S21
-641,Carlos Salinas,Contalink,https://www.linkedin.com/in/carlos-salinas-a83a9493/,S21
-642,Matthew Lenhard,Positional,https://www.linkedin.com/pub/matthew-lenhard/37/bb0/ba/en,S21
-643,Kadie Okwudili,Agapé,https://www.linkedin.com/in/khadeshaokwudili,S21
-644,Ron Rogge,Agapé,https://scholar.google.com/citations?user=FsHLlf4AAAAJ&hl=en&oi=ao,S21
-645,Vedant Pradeep,Reframe (Glucobit),https://www.linkedin.com/in/vedantpradeep,S21
-646,Ziyi Gao,Reframe (Glucobit),https://www.linkedin.com/in/ziyigao67/,S21
-647,Danilo Stern-Sapad,Blixo,https://www.linkedin.com/in/danilosapad/,S21
-648,Justin Fiaschetti,Inversion Space,https://www.linkedin.com/in/justin-fiaschetti-097b10166/,S21
-649,Austin Briggs,Inversion Space,https://www.linkedin.com/in/austinbriggs7/,S21
-650,Rune Hauge,Mentorcam,https://www.linkedin.com/in/runelohrhauge/,S21
-651,Laura Crabtree,Epsilon3,https://www.linkedin.com/in/lauracrabtree/,S21
-652,Max Mednik,Epsilon3,https://www.linkedin.com/in/maxmednik,S21
-653,Lawrence Lin Murata,Slope,https://www.linkedin.com/in/lawrencelm,S21
-654,Alice Deng,Slope,https://www.linkedin.com/in/alicedeng/,S21
-655,Katerina Chatzi,Promakhos Therapeutics,https://www.linkedin.com/in/katerina-chatzi-phd-366625179/,S21
-656,Jasper Edgar Neggers,Promakhos Therapeutics,https://www.linkedin.com/in/jasperneggers,S21
-657,Gabriel Bayomi Kalejaiye,Openlayer,https://www.linkedin.com/in/gbayomi/,S21
-658,Vikas Nair,Openlayer,https://www.linkedin.com/in/vikasnair/,S21
-659,Rishab Ramanathan,Openlayer,https://www.linkedin.com/in/rishramanathan,S21
-660,Jean-Edern Lorillon,PaletteHQ,https://www.linkedin.com/in/jeanedernlorillon/,S21
-661,Derek Low,Cococart,https://www.linkedin.com/in/dereklmy/,S21
-662,Enrique Perezalonso,Palla,https://www.linkedin.com/in/perezalonso/,S21
-663,Andrew Mason,Palla,https://www.linkedin.com/in/andrew-s-mason/,S21
-664,Greg Piccolo,Palla,https://www.linkedin.com/in/gregorypiccolo/,S21
-665,Mark Lee,MarqVision,https://www.linkedin.com/in/insup/,S21
-666,Victor Cardenas,Slash,https://www.linkedin.com/in/victor-d-cardenas/,S21
-667,Kevin Bai,Slash,https://www.linkedin.com/in/kevinbai0,S21
-668,Jagath Vytheeswaran,Vogent,http://www.linkedin.com/in/jagathv,S21
-669,Vignesh Varadarajan,Vogent,http://linkedin.com/in/vignesh-varadarajan-22469937/,S21
-670,Jonathan Kau,Satsuma,http://www.linkedin.com/in/jonathankau,S21
-671,Dan Li,Satsuma,https://www.linkedin.com/in/dan-li-463aa81b/,S21
-672,Karin Underwood,Verano Health,https://www.linkedin.com/in/karin-underwood-b380ab32/,S21
-673,Bharat Kilaru,Verano Health,http://www.linkedin.com/in/bharatkilaru/,S21
-674,Jaakko Rauhala,Kapacity.io,https://www.linkedin.com/in/jaakko-rauhala/,S21
-675,Rami El Geneidy,Kapacity.io,https://www.linkedin.com/in/ramielgeneidy/,S21
-676,Sonja Salo,Kapacity.io,https://www.linkedin.com/in/sonja-salo/,S21
-677,Cam Korzecke,Nasdisc,https://www.linkedin.com/in/cam-korzecke/,S21
-678,Simeon Goolsby,Nasdisc,https://www.linkedin.com/in/simeon-goolsby-15859210a/,S21
-679,Christian White,Nasdisc,https://www.linkedin.com/in/christian-white-2630967a/,S21
-680,Owen Rapaport,Aer,https://www.linkedin.com/in/owenrapaport,S21
-681,Aditya Kajla,Warrant,https://www.linkedin.com/in/akajla,S21
-682,Karan Kajla,Warrant,https://linkedin.com/in/kkajla/,S21
-683,Jacobo Vidal Abeigón,Arengu,https://www.linkedin.com/in/jacobovidal/,S21
-684,Pablo Castro Valiño,Arengu,https://www.linkedin.com/in/pablocastrovalino/,S21
-685,Sergio Regueira,Arengu,https://www.linkedin.com/in/sergioregueira/,S21
-686,Roman Rothaermel,Mable,https://www.linkedin.com/in/rrothaermel/,S21
-687,Inna Thalmann,Mable,https://www.linkedin.com/in/ithalmann/,S21
-688,Anta Pattabiraman,inai,https://www.linkedin.com/in/anantharaman-pattabiraman-87532a4/,S21
-689,Karthik Narayanan,inai,https://www.linkedin.com/in/karthik-narayanan-1b92241/,S21
-690,Angela Ferrante,Laudable,https://www.linkedin.com/in/angela-ferrante/,S21
-691,Ruben Guerrero,Sproutfi,https://linkedin.com/in/ruben-g-08019a2,S21
-692,Tyler Richie,Sproutfi,https://www.linkedin.com/in/tyler-richie-1096b58/,S21
-693,Zain Azeem,Keyri,https://www.linkedin.com/in/zain-azeem/,S21
-694,Grant La Count,Keyri,https://www.linkedin.com/in/grant-la-count-8abb6b40/,S21
-695,Saif Malik,Keyri,https://www.linkedin.com/in/saif-malik-929b961a,S21
-696,Mikee Villareal,MadEats,https://www.linkedin.com/in/mikeevillareal,S21
-697,Andie Cruz,MadEats,https://www.linkedin.com/in/andrea-cruz-a46155148,S21
-698,Keisha Lao,MadEats,http://linkedin.com/in/keisha-lao-8713681b0,S21
-699,Justin Rotman,Goodkind,https://www.linkedin.com/in/jrotman/,S21
-700,Michael Warshafsky,Goodkind,https://www.linkedin.com/in/michael-warshafsky-b8946033/,S21
-701,Vladimir Korshin,Level,https://www.linkedin.com/in/vladimirkorshin/,S21
-702,Molly Hogan,Level,https://www.linkedin.com/in/mollyhogan/,S21
-703,Asa Schachar,Level,https://linkedin.com/in/asaschachar,S21
-704,Eric Migicovsky,Beeper,https://linkedin.com/in/ericmigi,S21
-705,Brad Murray,Beeper,https://www.linkedin.com/in/bradtgmurray,S21
-706,Ben Botvinick,Hyper,https://www.linkedin.com/in/botv,S21
-707,Christopher Wu,Cache,https://www.linkedin.com/in/christopher-wu-b00a5719/,S21
-708,Jimmy Young,Cache,https://www.linkedin.com/in/jimmyyoungsydney/,S21
-709,Robert Gaal,Quest,https://www.linkedin.com/in/robertgaal,S21
-710,Emiel van Liere,Quest,https://www.linkedin.com/in/emielvanliere/,S21
-711,Albert Chuang,OneShop,https://www.linkedin.com/in/yonajune/,S21
-712,Aaron Evans,OneShop,https://www.linkedin.com/in/aaronptb/,S21
-713,Maddy Nguyen,Talentdrop,https://www.linkedin.com/in/madeleinen/,S21
-714,Janelle Tiulentino,Talentdrop,https://www.linkedin.com/in/janelletiulentino/,S21
-715,Pablo Rojas,Protego,https://www.linkedin.com/in/pablo-rojas-contreras-0a3525140/,S21
-716,Brandon Waselnuk,Squire.ai,http://ca.linkedin.com/in/brandonwaselnuk/,S21
-717,Karl Clement,Squire.ai,https://www.linkedin.com/in/karlclement/,S21
-718,Saumil Patel,Squire.ai,https://www.linkedin.com/in/saumilptl/,S21
-719,Raffaele Colella,Mindmesh,https://www.linkedin.com/in/raffaelecolella/,S21
-720,Ulysse Mizrahi,Mindmesh,https://www.linkedin.com/in/ulysse-mizrahi-3357a978/,S21
-721,Sherwood Callaway,Opkit,https://www.linkedin.com/in/sherwoodcallaway/,S21
-722,Justin Ko,Opkit,https://www.linkedin.com/in/justinmko/,S21
-723,Taishi Nojima,Canopi,https://www.linkedin.com/in/taishi-nojima/,S21
-724,Tomas Alvarez Belon,Canopi,https://www.linkedin.com/in/tomas-alvarez-belon/,S21
-725,Robb Böhnke,Moving Parts,,S21
-726,Michael Nino Evensen,Moving Parts,https://www.linkedin.com/in/michaelevensen/,S21
-727,Vahur Hansen,Membo,https://linkedin.com/in/vahur-hansen-5372a498,S21
-728,Paula Kink,Membo,https://www.linkedin.com/in/paulakink/,S21
-729,Alison Greenberg,Ruth Health,https://www.linkedin.com/in/greenbergalison/,S21
-730,Audrey Wu,Ruth Health,https://www.linkedin.com/in/audreyellenwu/,S21
-731,Ben Share,Dime,https://www.linkedin.com/in/benshare/,S21
-732,Aaron Barbieri-Aghib,Dime,https://www.linkedin.com/in/aaron-barbieri-aghib-85b760103/,S21
-733,Owen Colegrove,Algofi,https://linkedin.com/in/owencolegrove,S21
-734,John Clarke,Algofi,https://www.linkedin.com/in/jaclarke1/,S21
-735,Salvador Rivero,Levo,https://www.linkedin.com/in/salvador-rivero-3031182b/,S21
-736,Max Mergenthaler,Levo,https://www.linkedin.com/in/mergenthaler/,S21
-737,Bruno Vegreville,Hera,https://www.linkedin.com/in/brunovegreville/,S21
-738,Louise Bayssat,Hera,https://www.linkedin.com/in/louise-bayssat-53488a127/,S21
-739,Blaze Cerovcec,Mixr,https://linkedin.com/in/blaze-cerovcec-201089161,S21
-740,Eunice Wong,Milky Way AI,https://linkedin.com/in/eunicewes,S21
-741,Sagar Setu,Milky Way AI,https://www.linkedin.com/in/sagarsetu/,S21
-742,Santiago Ribadeneira,FastFarma,https://www.linkedin.com/in/sribadeneira/,S21
-743,Marcelo Albuja,FastFarma,https://www.linkedin.com/in/marceloalbuja/,S21
-744,Juan Carlos Holguin,FastFarma,https://www.linkedin.com/in/holguinjc/,S21
-745,Nina Lu,Comet Health,https://www.linkedin.com/in/ninajlu,S21
-746,Katy Honda,Comet Health,https://www.linkedin.com/in/katy-honda/,S21
-747,Brennan McEachran,Hypercontext,https://www.linkedin.com/in/brennanmceachran/,S21
-748,Graham McCarthy,Hypercontext,https://www.linkedin.com/in/grahammccarthy,S21
-749,Skyler Aspegren,Apollo,https://www.linkedin.com/in/skyler-aspegren/,S21
-750,Josh Wright,Apollo,https://www.linkedin.com/in/joshlwright/,S21
-751,CG Chen,Ruta Health,https://www.linkedin.com/in/cgchen1/,S21
-752,Geordie Graham,Ruta Health,https://www.linkedin.com/in/geordieg/,S21
-753,Derek Ruohao Zhang,Ruta Health,https://www.linkedin.com/in/derek-r-zhang,S21
-754,Alex Zvaniga,Ruta Health,https://www.linkedin.com/in/alexzvaniga/,S21
-755,Jay Goel,Scratch Data,https://www.linkedin.com/in/jay-goel-67588220/,S21
-756,Len Boyette,Scratch Data,https://www.linkedin.com/in/lenb/,S21
-757,Kahlil Lalji,Ivella,https://www.linkedin.com/in/bykahlil/,S21
-758,Vishal Dubey,Ivella,https://www.linkedin.com/in/vishaldubey01/,S21
-759,Eric Wang,Ivella,https://www.linkedin.com/in/ericww2/,S21
-760,Anahí Sosa,Perfekto,https://www.linkedin.com/in/anahisosa/,S21
-761,Jan Heinvirta,Perfekto,https://www.linkedin.com/in/janheinvirta/,S21
-762,Olcay Yilmazcoban,SenpAI.GG,https://www.linkedin.com/in/olcay-y%C4%B1lmaz%C3%A7oban-51303161/,S21
-763,Berk Ozer,SenpAI.GG,https://www.linkedin.com/in/ozerberk/,S21
-764,Anne-Sophie Mertgen,Micro Meat,https://www.linkedin.com/in/anne-sophie-mertgen/,S21
-765,Vincent Pribble,Micro Meat,https://www.linkedin.com/in/vincentpribble/,S21
-766,Andrew Zhou,Commery,https://www.linkedin.com/in/andrewjzhou/,S21
-767,Lyon Aung,Commery,https://www.linkedin.com/in/lyonaung/,S21
-768,Eric He,Commery,https://www.linkedin.com/in/ehe3/,S21
-769,Stefan Heule,Nexus,https://www.linkedin.com/in/stefan-heule-b46ab991/,S21
-770,Chen-Chen Huo,Nexus,https://www.linkedin.com/in/chenchenhuo,S21
-771,Konstantin Weitz,Nexus,https://www.linkedin.com/in/konstantin-weitz-75979443/,S21
-772,Vikas Shanbhogue,Lariat Data,https://www.linkedin.com/in/vikas-shanbhogue-11315b4b/,S21
-773,Aaditya Talwai,Lariat Data,https://www.linkedin.com/in/talwai,S21
-774,Paul Nakata,Abbot,https://www.linkedin.com/in/paulnakata/,S21
-775,Phil Haack,Abbot,https://www.linkedin.com/in/haacked/,S21
-776,Peter Balmforth,V-Flow Medical,https://www.linkedin.com/in/peterbalmforth?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVXGI61CWQ1uAnVMiTMv9DQ%3D%3D,S21
-777,Rodney Brenneman,V-Flow Medical,https://www.linkedin.com/in/rodney-brenneman-2652688/,S21
-778,paul sobotka,V-Flow Medical,Paul Alan Sobotka,S21
-779,Darren Spencer,V-Flow Medical,http://linkedin.com/in/darren-spencer-5922717,S21
-780,Bhairav Mehta,Buzzle,https://linkedin.com/in/bhairav-mehta,S21
-781,Adithya Ramanathan,Buzzle,https://www.linkedin.com/in/adithyaramanathan/,S21
-782,Michael Staunton,Buzzle,http://www.linkedin.com/in/michaelbstaunton/,S21
-783,Jeff Wilson,Jupe,https://linkedin.com/in/jeffwilsonphd,S21
-784,Antonio Gonzalez,Jupe,https://www.linkedin.com/in/jantoniogonzalez/,S21
-785,Roshan Farhan,Gobillion,https://www.linkedin.com/in/roshanfarhan/,S21
-786,Kulapradip Bharali,Gobillion,https://www.linkedin.com/in/kulapradipbharali/,S21
-787,Gabriel Luque,Wabi,https://linkedin.com/in/gluquem,S21
-788,Javier Méndez,Wabi,https://www.linkedin.com/in/javierm25,S21
-789,Taylor Culbertson,Hedgehog,https://www.linkedin.com/in/taylorculbertson/,S21
-790,Colton Dillion,Hedgehog,https://linkedin.com/in/cadillion,S21
-791,Jason Dillion,Hedgehog,https://www.linkedin.com/in/jason-dillion/,S21
-792,Jibril Gudal,Lobby,https://linkedin.com/in/jibril-gudal-b5a92417b,S21
-793,Hootan Mahallati,Hyperseed,https://www.linkedin.com/in/hootanmahallati/,S21
-794,Georg Untersalmberger,Hyperseed,https://www.linkedin.com/in/untersalmberger/,S21
-795,Arsh Shah Dilbagi,Zage,https://www.linkedin.com/in/dilbagi,S21
-796,Cole Bransford,Zage,https://www.linkedin.com/in/cole-bransford-360b2013b/,S21
-797,Ryan Ozminkowski,Zage,https://linkedin.com/in/ryan-ozminkowski-85a3309a,S21
+Unnamed: 0,Name,Company,LinkedIn,Batch,exit_value_usd,total_funding_usd
+0,Ivan Tsybaev,Careerist,https://www.linkedin.com/in/ivantsybaev/,S21,0.0,8000000.0
+1,Max Glubochansky,Careerist,https://www.linkedin.com/in/maxqa/,S21,0.0,8000000.0
+2,Max Gusakov,Careerist,https://www.linkedin.com/in/gusakovm/,S21,0.0,8000000.0
+3,David Akinin,JABU,https://www.linkedin.com/in/davidakinin/,S21,0.0,18200000.0
+4,Alex Gordon,Revolve Surgical,https://www.linkedin.com/in/alex-gordon-01/,S21,0.0,130000.0
+5,Peter Francis,Revolve Surgical,https://www.linkedin.com/in/peterfrancis19/,S21,0.0,130000.0
+6,Matthew Kang,Revolve Surgical,https://www.linkedin.com/in/matthew-kang/,S21,0.0,130000.0
+7,Melody Roberts,Liv Labs,https://www.linkedin.com/in/melodyannroberts/,S21,0.0,2600000.0
+8,Carly Price,Liv Labs,https://www.linkedin.com/in/pricecarly/,S21,0.0,2600000.0
+9,Olusegun Owoade,Mecho Autotech,https://www.linkedin.com/in/olusegun-owoade-0437a916/,S21,0.0,4550000.0
+10,Ahmed Omar,Sully.ai,https://www.linkedin.com/in/ao7/,S21,0.0,11240000.0
+11,Ahmed Nasser,Sully.ai,https://www.linkedin.com/in/realahmednasser,S21,0.0,11240000.0
+12,Mila Dayan,Beau,https://www.linkedin.com/in/mila-dayan,S21,0.0,0.0
+13,Kyril Kulikov,Beau,https://www.linkedin.com/in/kyril-ku/,S21,0.0,0.0
+14,Kirill Zakharov,Beau,https://www.linkedin.com/in/kirillzaharov/,S21,0.0,0.0
+15,Francisca Noguera,Toku,https://www.linkedin.com/in/francisca-noguera-toku/,S21,0.0,20000000.0
+16,Cristina Etcheberry,Toku,https://www.linkedin.com/in/cristina-etcheberry-toku/,S21,0.0,20000000.0
+17,Enzo Tamburini,Toku,https://www.linkedin.com/in/entamburini/,S21,0.0,20000000.0
+18,Will Bryk,Exa,https://www.linkedin.com/in/william-bryk,S21,0.0,22000000.0
+19,Fredrick Burns,Safer Management,https://linkedin.com/in/fred-burns-63a8b07b,S21,0.0,0.0
+21,Shady El Tohfa,Amenli,https://www.linkedin.com/in/shady-el-tohfa-13023258/,S21,0.0,3300000.0
+22,Adham Nauman,Amenli,https://www.linkedin.com/in/adham-nauman-a6882ba3/,S21,0.0,3300000.0
+23,Hussein Fawzi,Pide Directo,https://www.linkedin.com/in/hussein-a-fawzi-4427031a4/,S21,0.0,10550000.0
+24,Antonio Nacoud,Pide Directo,https://linkedin.com/in/antonionacoud,S21,0.0,10550000.0
+25,Ronni Samir Sulaka,Pide Directo,https://www.linkedin.com/in/ronnisamir?originalSubdomain=se,S21,0.0,10550000.0
+26,Anders Steiner,Pide Directo,https://www.linkedin.com/in/anders-steiner-a6478aa/,S21,0.0,10550000.0
+27,Igor Susmelj,Lightly,https://www.linkedin.com/in/igorsusmelj/,S21,0.0,3000000.0
+28,Matthias Heller,Lightly,https://www.linkedin.com/in/matthiasheller/,S21,0.0,3000000.0
+29,Mahmoud Ghulman,Nash,https://www.linkedin.com/in/mahmoudghulman/,S21,0.0,27800000.0
+30,Aziz Alghunaim,Nash,https://www.linkedin.com/in/azizkag,S21,0.0,27800000.0
+31,Rebecca Weisinger,Equipt Health,https://www.linkedin.com/in/rebecca-weisinger-62ab44/,S21,0.0,75000000.0
+32,Max Greenfeld,Equipt Health,https://www.linkedin.com/in/max-greenfeld-9718309/,S21,0.0,75000000.0
+33,Avinash Sukhwai,Payflow,https://www.linkedin.com/in/avinash-sukhwani,S21,0.0,17000000.0
+34,Benoit Menardo,Payflow,https://www.linkedin.com/in/benoitmenardo/,S21,0.0,17000000.0
+35,Banks Hunter,Charge Robotics,https://www.linkedin.com/in/banksh/,S21,0.0,0.0
+36,Max Justicz,Charge Robotics,https://www.linkedin.com/in/maxj/,S21,0.0,0.0
+37,Rui K Miadaira,Ahazou,https://www.linkedin.com/in/ruikm/,S21,0.0,0.0
+38,Henri Suhardja,Titipku,https://www.linkedin.com/in/henri-suhardja-1881a4109/?originalSubdomain=id,S21,0.0,130000.0
+39,Ong Tek Tjan,Titipku,https://www.linkedin.com/in/ong-tek-tjan-533b2616/?originalSubdomain=id,S21,0.0,130000.0
+40,Will Crowe,HEO Robotics,http://www.linkedin.com/in/william-crowe-space,S21,0.0,15000000.0
+41,Hiranya Jayakody,HEO Robotics,https://www.linkedin.com/in/hiranya-jayakody/,S21,0.0,15000000.0
+42,Ryan Westerdahl,Turion Space,https://www.linkedin.com/in/rwesterdahl/,S21,0.0,20000000.0
+43,Tyler James Pierce,Turion Space,https://www.linkedin.com/in/tylerjpierce/,S21,0.0,20000000.0
+44,Patryk Wiatr,Turion Space,https://www.linkedin.com/in/patryk-wiatr/,S21,0.0,20000000.0
+45,Carl Madi,Stepful,http://www.linkedin.com/in/carlmadi,S21,0.0,51000000.0
+46,Tressia Hobeika,Stepful,https://www.linkedin.com/in/tressia-hobeika/,S21,0.0,51000000.0
+47,Edoardo Serra,Stepful,https://www.linkedin.com/in/eserra/,S21,0.0,51000000.0
+48,Michael Astreiko,Synder,https://www.linkedin.com/in/michaelastreiko/,S21,0.0,2000000.0
+49,Ilya Kisel,Synder,https://www.linkedin.com/in/ilya-kisel-cb/,S21,0.0,2000000.0
+50,Tom Nguyen,Café,https://www.linkedin.com/in/tom-nguyen-49437650/,S21,0.0,0.0
+51,Arthur Lorotte de Banes,Café,https://www.linkedin.com/in/sysless/,S21,0.0,0.0
+52,Mateus Felini,Datlo,https://br.linkedin.com/in/mateus-felini,S21,0.0,0.0
+53,Raisa Spagnol,Datlo,https://www.linkedin.com/in/raisa-spagnol-a589999b/,S21,0.0,0.0
+54,Chase Bonhag,FirstIgnite,https://www.linkedin.com/in/chasebonhag/,S21,0.0,150000.0
+55,Cody Pawlowski,FirstIgnite,https://www.linkedin.com/in/codypawlowski,S21,0.0,150000.0
+56,Ankit Jain,Aviator,https://www.linkedin.com/in/ankitjaindce,S21,0.0,0.0
+57,Anurup Ganguli,VedaBio,https://www.linkedin.com/in/anurup-ganguli-phd-24a22419/,S21,0.0,40000000.0
+58,Martin Lykke Suhr,GamerPay,https://www.linkedin.com/in/martingeorgesuhrmadsen/,S21,0.0,2000000.0
+59,Morten Byskov,GamerPay,https://www.linkedin.com/in/mortenbyskov,S21,0.0,2000000.0
+60,Peter Haldbæk,GamerPay,https://www.linkedin.com/in/peterhaldbaek/,S21,0.0,2000000.0
+61,Mathias Hermansen,GamerPay,https://www.linkedin.com/in/mathias-hermansen-34b1b88/ ,S21,0.0,2000000.0
+62,Daniel Campion,Sitenna,https://www.linkedin.com/in/danielcampion/,S21,0.0,5100000.0
+63,Brian Sexton,Sitenna,https://www.linkedin.com/in/briansexton-ire/,S21,0.0,5100000.0
+64,Adam McAskill,Evidence,https://www.linkedin.com/in/adam-mcaskill-74515720/,S21,0.0,2100000.0
+65,Sean Hughes,Evidence,https://ca.linkedin.com/in/hughessean,S21,0.0,2100000.0
+66,Aaron Hannon,Luminate Medical,https://www.linkedin.com/in/aaronhannon/,S21,0.0,25000000.0
+67,Barbara Oliveira,Luminate Medical,https://www.linkedin.com/in/barbaralolive/,S21,0.0,25000000.0
+68,Moktar Yusuf,Pactima,https://www.linkedin.com/in/moktar-yusuf/,S21,0.0,55000000.0
+69,Joel Kapongo,Pactima,https://www.linkedin.com/in/joelkapongo,S21,0.0,55000000.0
+70,Adil Yusuf,Medium Biosciences,https://www.linkedin.com/in/adil-yusuf,S21,0.0,0.0
+71,Mohamed Hassan Kane,Medium Biosciences,https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a?trk=nav_responsive_tab_profile,S21,0.0,0.0
+72,Hamed Fesharaki,Adra,http://www.linkedin.com/in/hamedfesharaki,S21,0.0,250000.0
+73,Liushifeng Chen,Adra,https://www.linkedin.com/in/shifeng-chen-120534219/,S21,0.0,250000.0
+74,Yasaman Nematbakhsh,Adra,https://www.linkedin.com/in/yasaman-nemat/,S21,0.0,250000.0
+75,Uzo Ometu,BlackOakTV,https://www.linkedin.com/in/ometu/,S21,0.0,17000000.0
+76,Iyanu Obidele,BlackOakTV,https://www.linkedin.com/in/iyanu-obidele-8513a879,S21,0.0,17000000.0
+77,Carl Atupem,Bytebot,https://www.linkedin.com/in/carl-atupem-94873245/,S21,0.0,0.0
+78,Dane Hurtubise,Spoken,https://www.linkedin.com/in/hurtubise/,S21,0.0,0.0
+79,Geoff Abraham,Spoken,https://www.linkedin.com/in/lawrence-geoffrey-abraham/,S21,0.0,0.0
+80,Daniel Hung,Birdie,https://www.linkedin.com/in/dhung09,S21,0.0,0.0
+81,Ira Spector,SFA Therapeutics,https://www.linkedin.com/in/ira-spector-00414310/,S21,0.0,9130000.0
+82,Alla Arzumanyan,SFA Therapeutics,https://www.linkedin.com/in/alla-arzumanyan-66a79a18b,S21,0.0,9130000.0
+83,Mark Feitelson,SFA Therapeutics,https://www.linkedin.com/in/mark-feitelson-707771a,S21,0.0,9130000.0
+84,Amine Skalli,Crew,https://www.linkedin.com/in/amineskalli/,S21,0.0,2300000.0
+85,James Murray,Therify,https://www.linkedin.com/in/jamesedwmurray/,S21,0.0,3430000.0
+86,Warren Sadler,Therify,https://www.linkedin.com/in/warren-sadler-24638466/,S21,0.0,3430000.0
+87,Nico Julian,Phykos,https://www.linkedin.com/in/nico-julian-77586111/,S21,0.0,0.0
+88,Jeff Zerger,Phykos,https://www.linkedin.com/in/jeff-zerger-8a49159/,S21,0.0,0.0
+89,Alex Zhou,Hirebolt,https://www.linkedin.com/in/alexanderzhou/,S21,0.0,1500000.0
+90,Lorenzo Sani,Hirebolt,https://www.linkedin.com/in/lorenzo-sani/,S21,0.0,1500000.0
+91,Logan Welbaum,Plai,https://www.linkedin.com/in/logan-welbaum,S21,0.0,0.0
+92,Yi Sung (Sung) Yong,Atlas,https://www.linkedin.com/in/yongyisung/,S21,0.0,1900000.0
+93,Shawn Liam,Atlas,https://www.linkedin.com/in/shawnliam/,S21,0.0,1900000.0
+94,Ernest Sim,Atlas,https://www.linkedin.com/in/ernestsim/,S21,0.0,1900000.0
+95,Dan Meyer,CellChorus,https://www.linkedin.com/in/danmeyer/,S21,0.0,4825000.0
+96,Navin Varadarajan,CellChorus,https://www.linkedin.com/in/navin-varadarajan-95207814,S21,0.0,4825000.0
+97,Mirella Mashiach,Output Biosciences,https://www.linkedin.com/in/mirella-mashiach/,S21,0.0,500000.0
+98,"Adi Mashiach, MD",Output Biosciences,https://www.linkedin.com/in/adi-mashiach/,S21,0.0,500000.0
+99,Maria Eugenia Filmanovic,Abatable,https://www.linkedin.com/in/mariafilmanovic/,S21,0.0,16500000.0
+100,Valerio Magliulo,Abatable,https://www.linkedin.com/in/valerio-magliulo/,S21,0.0,16500000.0
+101,Stanislav Golubchik,ContraForce,https://www.linkedin.com/in/stan-golubchik/,S21,0.0,5250000.0
+102,Ricky Melendez,ContraForce,http://linkedin.com/in/ricky-melendez-9707a7b2,S21,0.0,5250000.0
+103,Akash Bansal,Storylane,https://www.linkedin.com/in/akashbansal/,S21,0.0,0.0
+104,Nalin Senthamil,Storylane,https://www.linkedin.com/in/nalinpradeep/,S21,0.0,0.0
+105,Shreyansh Gandhi,StrideQ,https://www.linkedin.com/in/shreyanshgandhi/,S21,0.0,0.0
+106,Sreehari Pulikkal Sivadasan,StrideQ,https://www.linkedin.com/in/sreeharips,S21,0.0,0.0
+107,Miroslav Gasparek,Sensible Biotechnologies,https://www.linkedin.com/in/miroslavgasparek/,S21,0.0,4200000.0
+108,Marian Kupculak,Sensible Biotechnologies,https://www.linkedin.com/in/marian-kupculak-34468a85/,S21,0.0,4200000.0
+109,Divyang Arora,Byte Kitchen,https://www.linkedin.com/in/divyang7/,S21,0.0,6000000.0
+110,Rahul Madadi,Byte Kitchen,https://www.linkedin.com/in/rahul-madadi-85734161/,S21,0.0,6000000.0
+111,Quinn McKenna,Byte Kitchen,https://www.linkedin.com/in/quinnmckenna/,S21,0.0,6000000.0
+112,Dorus van den Oord,Orderli,https://linkedin.com/in/dorusvandenoord,S21,0.0,939310.0
+113,Maurits Franken,Orderli,https://www.linkedin.com/in/maurits-franken,S21,0.0,939310.0
+114,Sefa Ikyaator,Suplias,https://www.linkedin.com/in/sefa-ikyaator-52617946/,S21,0.0,0.0
+115,Stephen Igwue,Suplias,https://www.linkedin.com/in/stigwue/,S21,0.0,0.0
+116,Omair Ansari,Abhi,https://linkedin.com/in/omair-ansari-40494329,S21,0.0,2000000.0
+117,Ali Ladhubhai,Abhi,https://pk.linkedin.com › ali-ladhubhai-205b0710a,S21,0.0,2000000.0
+118,Khairul Anwar Mohamad Zaki,Pandai,https://www.linkedin.com/in/khairul-anwar-mohamad-zaki,S21,0.0,2030000.0
+119,Akmal Akhpah,Pandai,https://www.linkedin.com/in/akmalakhpah,S21,0.0,2030000.0
+120,Suhaimi Ramly,Pandai,https://www.linkedin.com/in/suhaimi-ramly/,S21,0.0,2030000.0
+121,Lucas Martins,Verde,https://www.linkedin.com/in/lucasvbm/,S21,0.0,0.0
+122,Jorge Silveira,Verde,https://www.linkedin.com/in/jorgemlsilveira/?locale=en_US,S21,0.0,0.0
+123,Nik Poturnak,idemeum,https://www.linkedin.com/in/npoturnak/,S21,0.0,0.0
+124,Jagjit Sethi,idemeum,http://www.linkedin.com/in/jagjit-sethi-aa012b4,S21,0.0,0.0
+125,Namit Chadha,Shape,https://www.linkedin.com/in/namitchadha/,S21,0.0,9900000.0
+126,Roberto Salcedo,Baubap,https://www.linkedin.com/in/roberto-salcedo-nieto/,S21,0.0,143000000.0
+127,Luis Villarreal,Baubap,https://www.linkedin.com/in/luisvcastilla/,S21,0.0,143000000.0
+128,Harkunwar Singh,Novatr,https://www.linkedin.com/in/harkunwar-oneistox/,S21,0.0,0.0
+129,Vipanchi Handa,Novatr,https://in.linkedin.com/in/vipanchi-handa,S21,0.0,0.0
+130,Chaithanya Murali,Novatr,https://www.linkedin.com/in/chaithanya-murali-23b235139/,S21,0.0,0.0
+131,Alex Vilhena,Malga,https://www.linkedin.com/in/alexvilhena/,S21,0.0,5500000.0
+132,Thiago Garuti,Malga,https://www.linkedin.com/in/thiago-garuti-6844b557/,S21,0.0,5500000.0
+133,Jiawei Li,Tuli Health,https://www.linkedin.com/in/jiawei-c-li/,S21,0.0,130000.0
+134,Jialu Tu,Tuli Health,https://www.linkedin.com/in/jialu-tu-b2295615/,S21,0.0,130000.0
+135,Sudhindra Subbarao,Stownest,https://linkedin.com/in/sudhindra-subbarao,S21,0.0,0.0
+136,Ramesh Chincholi,Stownest,https://www.linkedin.com/in/rameshchincholi,S21,0.0,0.0
+137,AMIETH KUMAR,Stownest,https://www.linkedin.com/in/sudhindra-subbarao,S21,0.0,0.0
+139,Joaquin olmedo,Filadd,https://www.linkedin.com/in/joaquin-olmedo-9619b1100/,S21,0.0,0.0
+140,Guillermo Bruchmann Tanodi,Filadd,https://www.linkedin.com/in/guillermo-bruchmann-4a3b9713b/,S21,0.0,0.0
+141,Nicolás Ferrer,Filadd,https://www.linkedin.com/in/nicol%C3%A1s-ferrer-6b1527117/,S21,0.0,0.0
+142,Agustin Trombotto,Filadd,https://www.linkedin.com/in/agustin-trombotto-a258b512a/,S21,0.0,0.0
+143,Anjie Liu,Kiwi Biosciences,https://www.linkedin.com/in/anjie-l-b2715810b/,S21,0.0,1630000.0
+144,David Hachuel Gurska,Kiwi Biosciences,https://www.linkedin.com/in/david-hachuel/,S21,0.0,1630000.0
+145,Charlie Correa,Luable,https://www.linkedin.com/in/carloscorreavega/,S21,0.0,0.0
+146,David Susa,Luable,https://www.linkedin.com/in/davidsusa,S21,0.0,0.0
+147,Anmol Warman,Caire Health,https://www.linkedin.com/in/anmol-warman-139820160/,S21,0.0,0.0
+148,Pranav Warman,Caire Health,https://www.linkedin.com/in/pranavwarman/,S21,0.0,0.0
+150,Louis Knight-Webb,bloop,https://www.linkedin.com/in/knightwebb/,S21,0.0,0.0
+151,Gabriel Gordon-Hall,bloop,https://www.linkedin.com/in/gabriel-gordon-hall-54a18812a/,S21,0.0,0.0
+152,Urvin Soneta,Infer,https://www.linkedin.com/in/urvin-soneta-b77925146/,S21,0.0,0.0
+153,Suneel Matham,Infer,https://www.linkedin.com/in/suneel-matham/,S21,0.0,0.0
+154,Vaibhav Saxena,Infer,https://www.linkedin.com/in/vaib93/,S21,0.0,0.0
+155,Ahmed Ashour,Pylon,https://www.linkedin.com/in/ahmed-ashour-80a9562b/,S21,0.0,36130000.0
+156,Omar Radi,Pylon,https://www.linkedin.com/in/omar-radi,S21,0.0,36130000.0
+157,Naren Sathiya,Telivy,https://www.linkedin.com/in/naren-sathiya-01197a19,S21,0.0,2630000.0
+158,Shiv Gettu,Zuma,https://www.linkedin.com/in/shiv-gettu-735309ab/,S21,0.0,7200000.0
+159,Kendrick Bradley,Zuma,https://www.linkedin.com/in/kendrick-bradley-3b094a108/,S21,0.0,7200000.0
+160,Gega Tsurtsumia,PAYZE,https://www.linkedin.com/in/giorgitsurtsumia/,S21,0.0,0.0
+161,Peter Weijmarshausen,Humane Genomics,https://www.linkedin.com/in/peterweijmarshausen/,S21,0.0,130000.0
+162,Chad Moles,Humane Genomics,https://www.linkedin.com/in/chadmoles/,S21,0.0,130000.0
+163,Anna-Sophie Hartvigsen,Female Invest,https://www.linkedin.com/in/anna-sophie-hartvigsen-46352611a/,S21,0.0,15700000.0
+164,Emma Bitz,Female Invest,https://www.linkedin.com/in/emmabitz/?originalSubdomain=dk,S21,0.0,15700000.0
+165,Camilla Falkenberg,Female Invest,https://www.linkedin.com/in/camilla-clo%C3%ABtta-falkenberg-69b78895/,S21,0.0,15700000.0
+166,Reza Azizian,Ferveret,https://www.linkedin.com/in/reza-azizian-6821184a/,S21,0.0,2130000.0
+167,Matteo Bucci,Ferveret,https://www.linkedin.com/in/matteo-bucci-10206b60,S21,0.0,2130000.0
+168,Chris Horne,Filta,https://www.linkedin.com/in/chris-horne-28b24266/,S21,0.0,0.0
+169,Joel Phillips,Siglo,https://www.linkedin.com/in/joelwp/,S21,0.0,0.0
+170,Isaac Phillips,Siglo,https://www.linkedin.com/in/isaacphillips/,S21,0.0,0.0
+171,Jose Ignacio Galindo,Waterplan,https://www.linkedin.com/in/joseignaciosg/,S21,0.0,18500000.0
+172,Nicolas Wertheimer,Waterplan,https://www.linkedin.com/in/nicolas-wertheimer/,S21,0.0,18500000.0
+173,Benjamin Claman,Buoyant Aero,https://www.linkedin.com/in/benjaminclaman/,S21,0.0,125000.0
+174,Kris Bennatti,Hudson Labs (formerly Bedrock AI),https://www.linkedin.com/in/kbennatti/,S21,0.0,5130000.0
+175,Suhas Pai,Hudson Labs (formerly Bedrock AI),https://www.linkedin.com/in/piesauce/,S21,0.0,5130000.0
+176,Gautam Jayaraman,Onsite Pro,https://www.linkedin.com/in/gautamj/,S21,0.0,0.0
+177,Omar Kassim,Nomod,https://www.linkedin.com/in/okassim/,S21,0.0,3400000.0
+178,Colum Donahue,Genuity,https://www.linkedin.com/in/colum-p-donahue/,S21,0.0,0.0
+179,Jason Noble,Genuity,www.linkedin.com/in/jason-noble-chicago,S21,0.0,0.0
+180,Zaeem asif,Genuity,https://www.linkedin.com/in/zaeem-asif/,S21,0.0,0.0
+181,Tomohiro Takano,Genomelink,https://www.linkedin.com/in/tomohiro-takano-a0b3662a/,S21,0.0,4490000.0
+182,Yuta Matsuda,Genomelink,https://www.linkedin.com/in/yuta-matsuda-a492b6118/,S21,0.0,4490000.0
+183,Kensuke Numakura,Genomelink,https://www.linkedin.com/in/knmkr/,S21,0.0,4490000.0
+184,Mona Rakibe,Telmai,https://www.linkedin.com/in/monarakibe/,S21,0.0,8300000.0
+185,Maxim Lukichev,Telmai,http://linkedin.com/in/maximlukichev,S21,0.0,8300000.0
+186,James Vuong,Infina,https://www.linkedin.com/in/jameslvuong/,S21,0.0,6000000.0
+187,Anthony Scarpone-Lambert,Adni,https://www.linkedin.com/in/anthony-scarpone-lambert-669052138/,S21,0.0,0.0
+188,Jennifferre Mancillas,Adni,https://www.linkedin.com/in/jennifferre-mancillas/,S21,0.0,0.0
+189,Jasmine Mansouri,Pillar,https://www.linkedin.com/in/jasminemansouri/,S21,0.0,0.0
+190,Caroline Early,Pillar,https://www.linkedin.com/in/ccearly/,S21,0.0,0.0
+191,Botty Dimanov,Tenyks,https://www.linkedin.com/in/botty-dimanov/,S21,0.0,3400000.0
+192,Dmitry Kazhdan,Tenyks,https://www.linkedin.com/in/dmitry-kazhdan/,S21,0.0,3400000.0
+193,Ismael Belkhayat,Chari,https://www.linkedin.com/in/belkhayat,S21,0.0,5240000.0
+194,Sophia Alj,Chari,https://www.linkedin.com/in/sophia-alj-40333960/,S21,0.0,5240000.0
+195,Darragh Mc Kay,Noloco,https://www.linkedin.com/in/darraghmckay/,S21,0.0,1400000.0
+196,Anisa Mirza,Litnerd,https://www.linkedin.com/in/anisa-mirza-2781a045/,S21,0.0,130000.0
+197,Sahil Hasan,Dots 💸,https://www.linkedin.com/in/sahilhasan/,S21,0.0,3000000.0
+198,Kartikye Mittal,Dots 💸,https://www.linkedin.com/in/kartikye/,S21,0.0,3000000.0
+199,Kedan Li,Revery AI,https://www.linkedin.com/in/kedanli/,S21,0.0,1330000.0
+200,Min Jin Chong,Revery AI,https://www.linkedin.com/in/min-jin-chong-ab566212a/,S21,0.0,1330000.0
+201,Jeffrey Zhang,Revery AI,https://www.linkedin.com/in/jeffrey-zhang-5a8030aa/,S21,0.0,1330000.0
+202,Kenneth Cassel,RMFG,https://www.linkedin.com/in/kenneth-cassel/,S21,0.0,0.0
+203,Alexander Baikovitz,Mach9,https://www.linkedin.com/in/alexbaikovitz/,S21,0.0,12000000.0
+204,Haowen Shi,Mach9,https://www.linkedin.com/in/haowensh/,S21,0.0,12000000.0
+205,Joshua Spisak,Mach9,https://www.linkedin.com/in/josh-spisak-b573b972,S21,0.0,12000000.0
+206,Ian Lee,Examedi,https://www.linkedin.com/in/eunbin-lee-a38868169/,S21,0.0,19980000.0
+207,Andres Kemeny,Examedi,https://www.linkedin.com/in/andres-kemeny/,S21,0.0,19980000.0
+208,Juan Pablo Zepeda,Examedi,https://www.linkedin.com/in/juan-pablo-zepeda-nu%C3%B1ez-38423570/,S21,0.0,19980000.0
+209,Andres Barrios,Ancana,https://www.linkedin.com/in/anbarrios/,S21,0.0,0.0
+210,Ryan Black,Ancana,https://www.linkedin.com/in/ryanablack/,S21,0.0,0.0
+211,Naz Malik,Onfolk,https://www.linkedin.com/in/naz-malik-72401199/,S21,0.0,0.0
+212,Charlie Thomas,Onfolk,https://www.linkedin.com/in/charlie-t-4bba09118/,S21,0.0,0.0
+213,Mike Bignold,Bolster,https://www.linkedin.com/in/michael-bignold-6092a27/,S21,0.0,40000000.0
+214,Simon Ward,Floatpays Inc,https://www.linkedin.com/in/wardsimon/,S21,0.0,4000000.0
+215,Aditya Haripurkar,HitPay,https://www.linkedin.com/in/adityaharipurkar/,S21,0.0,15750000.0
+216,Nitin Muthyala,HitPay,http://linkedin.com/in/nitinmuthyala/,S21,0.0,15750000.0
+217,Spencer Levitt,Coast,https://www.linkedin.com/in/spencer-levitt,S21,0.0,73500000.0
+218,Austin Pager,Coast,https://www.linkedin.com/in/austin-pager/,S21,0.0,73500000.0
+219,Joel Sercel,TransAstra Corporation,https://www.linkedin.com/in/joelsercel/,S21,0.0,3370000.0
+220,Rob LaFave,Float,https://www.linkedin.com/in/roblafave,S21,0.0,0.0
+221,Zachary Kim,Float,https://www.linkedin.com/pub/zachary-kim/3/a48/456,S21,0.0,0.0
+222,Jordan Kobert,The Breakaway,https://www.linkedin.com/in/jordankobert/,S21,0.0,2900000.0
+223,Kyle Yugawa,The Breakaway,https://www.linkedin.com/in/kyleyugawa,S21,0.0,2900000.0
+224,Ishita Shah,Matrubials,https://www.linkedin.com/in/ishita-m-shah-ph-d-a6a9664/,S21,0.0,1225000.0
+225,Bruce German,Matrubials,https://www.linkedin.com/in/bruce-german-2632a28,S21,0.0,1225000.0
+226,Carlito Lebrilla,Matrubials,https://www.linkedin.com/in/carlito-lebrilla-9166429/,S21,0.0,1225000.0
+227,David Mills,Matrubials,https://www.linkedin.com/in/david-a-mills-82256b4/,S21,0.0,1225000.0
+228,Samanyou Garg,Writesonic,https://www.linkedin.com/in/samanyougarg/,S21,0.0,2600000.0
+229,Sharud Agarwal,Akute Health,https://www.linkedin.com/in/sharud-agarwal-2441093b/,S21,0.0,130000.0
+230,Sasha Miagkyi,outloud.ai,https://www.linkedin.com/in/oleksandr-miagkyi/,S21,0.0,50000.0
+231,Igor Shelvinskyi,outloud.ai,https://www.linkedin.com/in/igor-shelvinskyi-96055249/,S21,0.0,50000.0
+233,Dito Krista,Sirka,https://www.linkedin.com/in/dito-holanda/,S21,0.0,2600000.0
+234,Gus Trigos,Mentum,https://www.linkedin.com/in/gustavoatrigos,S21,0.0,125000.0
+235,Gabriel Spencer-Harper,Meticulous,https://www.linkedin.com/in/gabrielsharper,S21,0.0,4000000.0
+236,Anushree Goenka,Spark Studio,https://www.linkedin.com/in/anushreegoenka/,S21,0.0,125000.0
+237,Namita Goel,Spark Studio,https://www.linkedin.com/in/namita-goel-33918b5/,S21,0.0,125000.0
+238,Kaustubh Khade,Spark Studio,https://www.linkedin.com/in/kaustubhkhade/,S21,0.0,125000.0
+239,Jyothika Sahajanandan,Spark Studio,https://www.linkedin.com/in/jyothikas/,S21,0.0,125000.0
+240,Julian Englert,Adaptyv,https://linkedin.com/in/julian-englert,S21,0.0,2500000.0
+241,Daniel Nakhaee-Zadeh Gutierrez,Adaptyv,https://www.linkedin.com/in/danielnzg,S21,0.0,2500000.0
+242,Riley O'Donnell,Endla,https://www.linkedin.com/in/rileyodonnell-1/,S21,0.0,500000.0
+243,Michael Moore,Endla,https://www.linkedin.com/in/michaelmoore1997/,S21,0.0,500000.0
+244,Daniel Li,aSim,https://www.linkedin.com/in/dli123/,S21,0.0,0.0
+245,Daniel Kim,aSim,https://www.linkedin.com/in/dankim714/,S21,0.0,0.0
+246,Chris Carde,HeyCharge,https://www.linkedin.com/in/pilotchris/,S21,0.0,4700000.0
+247,Robert Lasowski,HeyCharge,https://www.linkedin.com/in/dr-robert-lasowski-0b60077b/,S21,0.0,4700000.0
+248,Marcus Lima,Heimdal,https://www.linkedin.com/in/marcus-lima-144974101/,S21,0.0,6400000.0
+249,Daniel Ruhman,Cumbuca,http://linkedin.com/in/daniel-ruhman-0b739353,S21,0.0,0.0
+250,Elena Samuylova,Evidently AI,https://www.linkedin.com/in/elenasamuylova/,S21,0.0,15000000.0
+251,Emeli Dral,Evidently AI,https://www.linkedin.com/in/emelidral/,S21,0.0,15000000.0
+252,Emilien Sanchez,Whaly,https://www.linkedin.com/in/emiliensanchez/,S21,0.0,1900000.0
+253,Florian Buguet,Whaly,https://www.linkedin.com/in/florian-buguet-a1150812/,S21,0.0,1900000.0
+254,Pierre de Poulpiquet,Whaly,https://www.linkedin.com/in/pierre-de-poulpiquet-28ba1a95/,S21,0.0,1900000.0
+255,Zach Bijesse,Payhippo,https://linkedin.com/in/zbijesse,S21,0.0,4000000.0
+256,Uche Nnadi,Payhippo,https://www.linkedin.com/in/nnadi/,S21,0.0,4000000.0
+257,Chioma Okotcha,Payhippo,https://www.linkedin.com/in/chiomaokotcha/,S21,0.0,4000000.0
+258,Fernando Nery,Portão 3,https://www.linkedin.com/in/fernandonery/,S21,0.0,3725000.0
+259,Anuraag Jain,Zensors,https://www.linkedin.com/in/jainanuraag/,S21,0.0,160000.0
+260,Celine Tien,Flowly,https://www.linkedin.com/in/celine-tien-70828698/,S21,0.0,1900000.0
+261,Narae Kim,Flowly,https://www.linkedin.com/in/narae-kim-933b7669/,S21,0.0,1900000.0
+262,Julien Soros,Flowly,https://www.linkedin.com/in/julien-s-7268a9140/,S21,0.0,1900000.0
+263,Rayees Rahman,Harmonic Discovery,https://www.linkedin.com/in/rayees-rahman-61896117b/,S21,0.0,83000000.0
+264,J Lee,Harmonic Discovery,http://www.linkedin.com/in/jason-l-14043522,S21,0.0,83000000.0
+265,Marcel Patek,Harmonic Discovery,https://www.linkedin.com/in/marcelpatek/,S21,0.0,83000000.0
+266,Michael Chu,Makani Science,https://www.linkedin.com/in/mchu8/,S21,0.0,550000.0
+267,Michelle Khine,Makani Science,https://www.linkedin.com/in/michelle-khine-a7111315/,S21,0.0,550000.0
+268,Carlo Kobe,Fizz,https://www.linkedin.com/in/carlokobe/,S21,0.0,14400000.0
+269,Scott Smith,Fizz,https://www.linkedin.com/in/alxscottsmith/,S21,0.0,14400000.0
+270,Santiago Maldonado,lapzo,https://www.linkedin.com/in/smaldonadog/,S21,0.0,0.0
+272,Mehdi Cherif Alami,Freterium,https://www.linkedin.com/in/mehdi-ca/,S21,0.0,4460000.0
+273,Omar El Kouhene,Freterium,https://www.linkedin.com/in/omar-el-kouhene-981b0412/,S21,0.0,4460000.0
+274,Hemmel Amrania,Digistain,https://www.linkedin.com/in/hemmel-amrania/,S21,0.0,1125000.0
+275,Chris Phillips,Digistain,https://www.linkedin.com/in/chris-phillips-a650151b/,S21,0.0,1125000.0
+276,Dan Hobbs,Protex AI,https://www.linkedin.com/in/dan-hobbs-258998ab/,S21,0.0,54000000.0
+277,Ciarán O'Mara,Protex AI,https://www.linkedin.com/in/ciaranomara/,S21,0.0,54000000.0
+278,Levi Epstein,Inflow,https://www.linkedin.com/in/levi-epstein-423539a2/,S21,0.0,14000000.0
+279,Seb Isaacs,Inflow,https://www.linkedin.com/in/sebastianisaacs/,S21,0.0,14000000.0
+280,Lissy Giacoman,Vinco,https://www.linkedin.com/in/lissymgiacoman/,S21,0.0,2400000.0
+281,Miriam Fernandez,Vinco,https://www.linkedin.com/in/miriam-fernandezgg/,S21,0.0,2400000.0
+282,Sofia Sada,Vinco,http://linkedin.com/in/sasegovs/,S21,0.0,2400000.0
+283,Albert Gozzi,Aleph,https://www.linkedin.com/in/albertgozzi/,S21,0.0,16700000.0
+284,Santiago Perez De Rosso,Aleph,https://www.linkedin.com/in/spderosso/,S21,0.0,16700000.0
+285,Amar Kumar,KaiPod Learning,https://www.linkedin.com/in/kumaramar/,S21,0.0,1500000.0
+286,Emilio Antun,Kodda,https://www.linkedin.com/in/emilio-antun-598b68136/,S21,0.0,0.0
+287,Mike Alvarado,Kodda,https://www.linkedin.com/in/mikealvaradol/,S21,0.0,0.0
+288,Gaston Zelerteins,Aleph Solutions (Alephee),https://www.linkedin.com/in/gzelerteins,S21,0.0,0.0
+289,Javier Neumann,Aleph Solutions (Alephee),https://www.linkedin.com/in/javierneumann/,S21,0.0,0.0
+290,Jonathan Saiegh,Aleph Solutions (Alephee),https://www.linkedin.com/in/jonathansaiegh/,S21,0.0,0.0
+291,Christian Højbo Møller,Zoios.,https://www.linkedin.com/in/christianhojbo/,S21,0.0,1000000.0
+292,Mikkel Agesen,Zoios.,https://www.linkedin.com/in/mikkel-agesen/,S21,0.0,1000000.0
+293,Carlos Lau,Kurios,https://www.linkedin.com/in/carloslauv/,S21,0.0,2430000.0
+294,Luis Ubillas Door,Kurios,https://www.linkedin.com/in/lubillas/,S21,0.0,2430000.0
+295,Thomas Maremaa,Encuadrado,https://www.linkedin.com/in/tmaremaa,S21,0.0,1625000.0
+296,Tomas Aguilera,Encuadrado,https://www.linkedin.com/in/tomasaguilera/,S21,0.0,1625000.0
+297,Richie Bonilla,Forage Mail,https://www.linkedin.com/in/richie-bonilla,S21,0.0,0.0
+298,Eni Jaupi,Forage Mail,https://www.linkedin.com/in/enijaupi/,S21,0.0,0.0
+299,Sanket Chauhan,Stardex,https://www.linkedin.com/in/sanketchauhan,S21,0.0,0.0
+300,Pranav Badami,Stardex,https://www.linkedin.com/in/pranavbadami/,S21,0.0,0.0
+301,Christal Wang,Shimmer,https://www.linkedin.com/in/wangchristal/,S21,0.0,3500000.0
+302,Vikram Sreedhar,Shimmer,https://www.linkedin.com/in/vikramsreedhar/,S21,0.0,3500000.0
+303,Andrew Luo,OneSchema,https://www.linkedin.com/in/andrew-luo-6495704a/,S21,0.0,6300000.0
+304,Emmett Miller,Multibase,https://www.linkedin.com/in/emmettmiller/,S21,0.0,27000000.0
+305,Wyatt Miller,Multibase,https://www.linkedin.com/in/wyattmiller14/,S21,0.0,27000000.0
+306,Leo Schottenstein,Multibase,https://www.linkedin.com/in/leo-schottenstein-0513/,S21,0.0,27000000.0
+307,Jack Bowen,CoLoop,https://www.linkedin.com/in/jack-bowen-ab6b7018a/,S21,0.0,5000000.0
+308,Adrien Wald,CoLoop,https://www.linkedin.com/in/adrien-wald-862495136,S21,0.0,5000000.0
+309,Theo Tortorici,Dot,https://www.linkedin.com/in/theo-tortorici/,S21,0.0,3000000.0
+310,Rick Radewagen,Dot,https://www.linkedin.com/in/radewagen/,S21,0.0,3000000.0
+311,Sven Rudolph,Dot,https://www.linkedin.com/in/sven-rudolph-0b7910a0/,S21,0.0,3000000.0
+312,Ali Nasser,ShipBlu,https://www.linkedin.com/in/alifnasser,S21,0.0,2400000.0
+313,Ahmed ElKawass,ShipBlu,https://www.linkedin.com/in/ahmad-kawass-56b65815/,S21,0.0,2400000.0
+314,Abdelrahman Hosny,ShipBlu,https://www.linkedin.com/in/abdelrahmanhosny/,S21,0.0,2400000.0
+315,Curtis Fonger,Whalesync,https://www.linkedin.com/in/cfonger/,S21,0.0,2300000.0
+316,Matthew Busel,Whalesync,https://www.linkedin.com/in/matthew-busel/,S21,0.0,2300000.0
+317,Maria Terzi,Malloc,https://www.linkedin.com/in/maria-terzi/,S21,0.0,1800000.0
+318,Liza Charalambous,Malloc,https://www.linkedin.com/in/lzcharalambous/,S21,0.0,1800000.0
+319,Vrinda Gupta,Sequin,https://www.linkedin.com/in/vrindag/,S21,0.0,5700000.0
+320,Mark Thomas,Sequin,https://www.linkedin.com/in/markmthomas/,S21,0.0,5700000.0
+321,Clément Salaün,Formance,https://www.linkedin.com/in/clementsalaun,S21,0.0,21000000.0
+322,James Martinez,Mergent,https://www.linkedin.com/in/jamescmartinez,S21,0.0,0.0
+323,Gabriele Musella,Coinrule,http://www.linkedin.com/in/gabrielemusella,S21,0.0,2900000.0
+324,Oleg Giberstein,Coinrule,https://www.linkedin.com/in/giberstein,S21,0.0,2900000.0
+325,Zdenek Hofler,Coinrule,https://www.linkedin.com/in/zdenekhofler/,S21,0.0,2900000.0
+326,Melissa Bime,Infiuss Health,https://www.linkedin.com/in/melissa-jane-bime-b833b5126/,S21,0.0,0.0
+327,Ridwan Olalere,LemFi,https://www.linkedin.com/in/darilldrems/,S21,0.0,85000000.0
+328,Rian Cochran,LemFi,https://www.linkedin.com/in/rian-p-cochran-a3a9404/,S21,0.0,85000000.0
+329,Menno Gravemaker,Momo Medical,https://www.linkedin.com/in/menno-gravemaker-70674b53/,S21,0.0,6500000.0
+330,Thomas Bakker,Momo Medical,https://www.linkedin.com/in/thomasbakker118,S21,0.0,6500000.0
+331,Yaw Bediako,Yemaachi Biotechnology,https://www.linkedin.com/in/yaw-bediako-ph-d-8082a152/,S21,0.0,3000000.0
+332,Yaw Attua-Afari,Yemaachi Biotechnology,https://www.linkedin.com/in/yaw-a-930b8312/,S21,0.0,3000000.0
+333,David Hutchful,Yemaachi Biotechnology,https://www.linkedin.com/in/dhutchful/,S21,0.0,3000000.0
+335,Guru Singh,Scispot,https://www.linkedin.com/in/iamguru/,S21,0.0,1300000.0
+336,Satya Singh,Scispot,https://www.linkedin.com/in/satyaravisingh/,S21,0.0,1300000.0
+337,Anderson Ferminiano,LootRush,http://www.linkedin.com/in/andferminiano,S21,0.0,12000000.0
+338,Lucas Castellani,Cartpanda,https://www.linkedin.com/in/lucascastellani/,S21,0.0,0.0
+339,Theodoric Chew,Intellect,https://linkedin.com/in/theodoricchew,S21,0.0,22200000.0
+340,Anurag Chutani,Intellect,https://www.linkedin.com/in/a7urag/,S21,0.0,22200000.0
+341,Liat Beng Neo,Arrow,https://www.linkedin.com/in/liatbeng/,S21,0.0,0.0
+342,Sudhan Raj,Arrow,https://www.linkedin.com/in/sudhan-raj/,S21,0.0,0.0
+343,Sebastian Roervig,Arrow,https://www.linkedin.com/in/sebastianroervig/,S21,0.0,0.0
+344,Ilia Semenov,Cloudthread,https://www.linkedin.com/in/iliavsemenov/,S21,0.0,3130000.0
+345,matthew smith,Truss,https://www.linkedin.com/in/matthew-smith250/,S21,0.0,0.0
+346,Nick Addison,Truss,https://www.linkedin.com/in/nick-addison-42a90012a/,S21,0.0,0.0
+347,Bjorn Lee,MindFi,https://www.linkedin.com/in/bjornlee/,S21,0.0,2000000.0
+348,Gangeshwar Krishnamurthy,MindFi,https://www.linkedin.com/in/gangeshwark,S21,0.0,2000000.0
+349,Leon CK Leong,MindFi,https://www.linkedin.com/in/leonck/,S21,0.0,2000000.0
+350,Anita Sadasivan,MindFi,https://www.linkedin.com/in/anitasadasivan/,S21,0.0,2000000.0
+351,Mack McConnell,Markix,https://www.linkedin.com/in/mackmcconnell/,S21,0.0,0.0
+352,Cihan Tas,Markix,https://www.linkedin.com/in/cihan-tas-01a0501ba/,S21,0.0,0.0
+353,Surya Oruganti,WarpBuild,https://www.linkedin.com/in/suryaoruganti/,S21,0.0,0.0
+354,Vincent Lam,Matidor.com,https://www.linkedin.com/in/lamvincent/,S21,0.0,1850000.0
+355,Sean Huang,Matidor.com,https://www.linkedin.com/in/sean-huang/,S21,0.0,1850000.0
+356,Felipe Rodríguez,Cero,https://cl.linkedin.com/in/luis-felipe-rodríguez-besa-31ba772a,S21,0.0,0.0
+357,Jorge Pérez,Cero,https://www.linkedin.com/NA,S21,0.0,0.0
+358,Mauricio Quezada,Cero,https://www.linkedin.com/in/mauricio-quezada-317100199/,S21,0.0,0.0
+359,Vijayaraj Gopinath,OneStopKitchen,https://linkedin.com/in/vijayarajgopinath,S21,0.0,1600000.0
+360,Viggnesh Kandasamy,OneStopKitchen,https://linkedin.com/in/viggnesh,S21,0.0,1600000.0
+361,Marcos Oliveira Jr,fluke,https://www.linkedin.com/in/marcos-ant%C3%B4nio-oliveira-jr-3a0526137/,S21,0.0,0.0
+362,Augusto Pinheiro,fluke,https://www.linkedin.com/in/augusto-pinheiro-173896114/,S21,0.0,0.0
+363,Yuki Watanabe Kuramoto,fluke,https://www.linkedin.com/in/yuki-watanabe-kuramoto-858856146/,S21,0.0,0.0
+364,Robert Salvador,DigiBuild,https://www.linkedin.com/in/robert-salvador-7a72aa91/,S21,0.0,5340000.0
+365,Ivan Franco,DigiBuild,https://www.linkedin.com/in/theivanfranco/,S21,0.0,5340000.0
+366,Mahyad G,SigmaOS,https://www.linkedin.com/in/mahyad-ghassemi/,S21,0.0,4000000.0
+367,Ali Attar,SigmaOS,https://www.linkedin.com/in/attarali,S21,0.0,4000000.0
+368,Saurav Mitra,SigmaOS,https://www.linkedin.com/in/thesauravmitra/,S21,0.0,4000000.0
+369,José Carlos Aguilar,Palenca,https://www.linkedin.com/in/pepejcar/,S21,0.0,2600000.0
+370,Pierre Delarroqua,Palenca,https://www.linkedin.com/in/delarroqua,S21,0.0,2600000.0
+371,Antoine Nguyen Hong Duc,Palenca,https://www.linkedin.com/in/antoinenguyenhd/,S21,0.0,2600000.0
+372,Sujay Maheshwari,Cloudanix,http://www.linkedin.com/in/sujaymaheshwari/,S21,0.0,0.0
+373,Purusottam Mupunu,Cloudanix,https://www.linkedin.com/pub/purusottam-mupunu/b/905/56,S21,0.0,0.0
+374,Eduardo Narvaez,TrackChain,https://www.linkedin.com/in/eduardoakil/,S21,0.0,0.0
+375,Hugo Alvarez,TrackChain,https://www.linkedin.com/in/hugo-alvarez-248867132/,S21,0.0,0.0
+376,Wojciech Danilo,Enso,http://linkedin.com/in/wojciechdanilo/,S21,0.0,16500000.0
+377,Sylwia Brodacka,Enso,https://www.linkedin.com/in/sylwia-brodacka/,S21,0.0,16500000.0
+378,Leonardo Devincenzi,Monet,https://www.linkedin.com/in/leonardo-devincenzi-5a57a8209/,S21,0.0,0.0
+379,Artem Golubev,testRigor,https://www.linkedin.com/in/agolubev/,S21,0.0,5100000.0
+380,Enzo Biancato,testRigor,https://www.linkedin.com/in/enzobiancato/,S21,0.0,5100000.0
+381,Ana Ramos,Glitzi,https://www.linkedin.com/in/ana-ramos-b2681a32/,S21,0.0,2800000.0
+382,Luis Enrique Vazquez,Glitzi,https://www.linkedin.com/in/luis-enrique-vazquez-escobar-35230464/,S21,0.0,2800000.0
+383,Maximilian Marquart,Planet A Foods,https://www.linkedin.com/in/dr-maximilian-marquart-24a802107/,S21,0.0,45400000.0
+384,Sara Marquart,Planet A Foods,https://www.linkedin.com/in/saramarquart/,S21,0.0,45400000.0
+385,Deepak Garg,Warpfy,https://www.linkedin.com/in/deepak-garg-03675911/,S21,0.0,125000.0
+386,Harris Cheng,Warpfy,https://www.linkedin.com/in/harrischeng/,S21,0.0,125000.0
+387,Ravi Bharihoke,Enerjazz,https://www.linkedin.com/in/ravi-b-hiring-for-operations-and-tech-9a92a412/,S21,0.0,0.0
+388,Pratik Ranjan Das,Enerjazz,https://www.linkedin.com/in/pratikrdas,S21,0.0,0.0
+389,Trent Harvey,Covie,https://www.linkedin.com/in/trentharvey/,S21,0.0,0.0
+390,William Dearie,Covie,https://www.linkedin.com/in/william-dearie-202403209/,S21,0.0,0.0
+391,Benjamin Ha,Muse,https://www.linkedin.com/in/benjaminha/,S21,0.0,0.0
+392,Jose Akle,Okani,https://www.linkedin.com/in/joseakle,S21,0.0,0.0
+393,Rogerio Correa,Pluggy,https://www.linkedin.com/in/rogério-corrêa-26789131,S21,0.0,7000000.0
+394,Victor Braga,Pluggy,https://www.linkedin.com/in/victor-urano-braga-75434521/,S21,0.0,7000000.0
+395,Bruno Loiola,Pluggy,https://www.linkedin.com/in/brunoloiola/,S21,0.0,7000000.0
+396,Federico Miras,Pluggy,https://www.linkedin.com/in/fmiras,S21,0.0,7000000.0
+397,Gabriel Pan Gantes,Pluggy,https://www.linkedin.com/in/gabrielpangantes,S21,0.0,7000000.0
+398,Michael Weiland,Govly,https://www.linkedin.com/in/mikeweiland/,S21,0.0,13100000.0
+399,Nick Weiland,Govly,www.linkedin.com/in/weilandia,S21,0.0,13100000.0
+400,Jon Wright,Govly,https://www.linkedin.com/in/jon-wright-a9227a2/,S21,0.0,13100000.0
+401,Carlos Tejeda,Pideaky,https://www.linkedin.com/in/carlos-tejeda-b8096a2a/,S21,0.0,130000.0
+402,Oscar Rydberg,Pideaky,https://www.linkedin.com/in/oscar-rydberg-ba170b15,S21,0.0,130000.0
+403,Rafael Tejeda Elizondo,Pideaky,https://www.linkedin.com/in/rafael-tejeda-elizondo-3853b5211/,S21,0.0,130000.0
+404,Armando Biondi,Breadcrumbs.io,https://www.linkedin.com/in/armandobiondi,S21,0.0,7500000.0
+405,Gary Amaral,Breadcrumbs.io,https://www.linkedin.com/in/garyamaral/,S21,0.0,7500000.0
+406,Massimo Chieruzzi,Breadcrumbs.io,https://www.linkedin.com/in/massimochieruzzi,S21,0.0,7500000.0
+407,Andres Quintanilla,Monto,https://www.linkedin.com/in/andres-quintanilla-440897125/,S21,0.0,9000000.0
+408,Karina Derbez,Monto,https://www.linkedin.com/in/karinaderbez,S21,0.0,9000000.0
+409,Alexander Li,Bree,https://www.linkedin.com/in/alexander-li-19900783/,S21,0.0,125000.0
+410,Adam Kang,Bree,https://www.linkedin.com/in/adamkang/,S21,0.0,125000.0
+411,Kevin Fu,Repool,https://www.linkedin.com/in/kevinfu93/,S21,0.0,3700000.0
+412,Grant Demaree,Onebrief,https://www.linkedin.com/in/gkdemaree/,S21,0.0,103000000.0
+413,Rafa Pereira,Onebrief,https://linkedin.com/in/rflprr,S21,0.0,103000000.0
+414,Jonathan Baker,Iona Mind,https://www.linkedin.com/in/jonathan-baker/,S21,0.0,2500000.0
+415,Philip Howson,Iona Mind,https://www.linkedin.com/in/philiphowson/,S21,0.0,2500000.0
+416,Shri Sukhani,Hyperbrowser,https://linkedin.com/in/shrisukhani,S21,0.0,0.0
+417,Akshay Shekhawat,Hyperbrowser,https://www.linkedin.com/in/akshay-shekhawat/,S21,0.0,0.0
+418,Aakash N S,Jovian,https://www.linkedin.com/in/aakashns,S21,0.0,1950000.0
+419,Siddhant Ujjain,Jovian,https://www.linkedin.com/in/sidujjain/,S21,0.0,1950000.0
+420,Alex Perelman,Sentiyen,https://www.linkedin.com/in/alexperelman/,S21,0.0,0.0
+421,Nathan Shinder,Sentiyen,https://www.linkedin.com/in/nathan-shinder-6387221/,S21,0.0,0.0
+422,Viet Long Tran,Dreamerly,https://www.linkedin.com/in/longvtran/,S21,0.0,500000.0
+423,Thanh Nguyen,Dreamerly,https://www.linkedin.com/in/thanh-n-43467a3a/,S21,0.0,500000.0
+424,Casey Harlin,Rinse,https://www.linkedin.com/in/caseyharlin/,S21,0.0,125000.0
+425,Nikhil Goel,SalaryBox,https://www.linkedin.com/in/nikhil-goel/,S21,0.0,4000000.0
+426,Peeyush Goyal,SalaryBox,https://www.linkedin.com/in/peeyushgoyal1991/,S21,0.0,4000000.0
+427,Florian Raetzer,Hilos,https://www.linkedin.com/in/florian-raetzer/,S21,0.0,0.0
+428,Alfonso Lizárraga,Hilos,https://www.linkedin.com/,S21,0.0,0.0
+429,Sunny Rekhi,Tarsal,https://www.linkedin.com/in/sunny-rekhi/,S21,0.0,6000000.0
+430,Rohan Marwaha,Aqua,https://www.linkedin.com/in/rohanmarwahanj/,S21,0.0,130000.0
+431,Dev Patel,Aqua,https://www.linkedin.com/in/devpatel9/,S21,0.0,130000.0
+432,Brian Low,Kaya,https://www.linkedin.com/in/brianlowzh/,S21,0.0,0.0
+433,Etai Mizrahi,Secoda,https://www.linkedin.com/in/etai-mizrahi-07656aa1/,S21,0.0,16000000.0
+434,Andrew McEwen,Secoda,https://www.linkedin.com/in/armcewen,S21,0.0,16000000.0
+435,Christopher Clark,Locale,https://www.linkedin.com/in/christopher-clark-a78620103/,S21,0.0,0.0
+436,Jonathan Friedland,Locale,https://www.linkedin.com/in/jonathan-friedland-46b897126/,S21,0.0,0.0
+437,Kaveh Nemati,Locale,https://www.linkedin.com/in/kaveh-nemati-1b6205100/,S21,0.0,0.0
+438,Conor Cullinane,Pirouette Pharma,https://www.linkedin.com/in/conorrcullinane/,S21,0.0,11030000.0
+439,Matthew Kane,Pirouette Pharma,https://www.linkedin.com/in/matthew-kane-321423139/,S21,0.0,11030000.0
+440,Elijah Kapas,Pirouette Pharma,https://www.linkedin.com/in/eli-kapas-0b176366/,S21,0.0,11030000.0
+441,Matt Donahue,Kodex,https://www.linkedin.com/in/matt-donahue-9bb60188/,S21,0.0,0.0
+442,Danny Mendoza,Kodex,https://www.linkedin.com/in/jdmendoza1/,S21,0.0,0.0
+443,Rick Firnando,Verihubs,https://www.linkedin.com/in/rickfirnando/,S21,0.0,2800000.0
+444,Amar Gautam,HyperTrader,https://linkedin.com/in/amargautam,S21,0.0,125000.0
+445,Kunal Kumar,HyperTrader,https://www.linkedin.com/in/engineer-kunal-kumar/,S21,0.0,125000.0
+446,Alex Nikityuk,Maroo,https://www.linkedin.com/in/alexnikityuk/,S21,0.0,4000000.0
+447,Stacy Pavlyshyna,Awesomic,https://www.linkedin.com/in/stacy-pavlyshyna,S21,0.0,2925000.0
+448,Roman Sevast,Awesomic,https://www.linkedin.com/in/roman-sevast/,S21,0.0,2925000.0
+449,Piero Linares,Fitia,https://www.linkedin.com/in/piero-linares-1a9397121/,S21,0.0,0.0
+450,Ulises Olave,Fitia,https://pe.linkedin.com/in/ulises-olave-mendoza-3bb448100,S21,0.0,0.0
+451,Esteban Penaloza,trii,https://www.linkedin.com/in/m-esteban-peñaloza-guzmán-08496411b/,S21,0.0,0.0
+452,Carlos Guayara,trii,https://www.linkedin.com/in/cguayara/,S21,0.0,0.0
+453,Luis Patt,trii,https://www.linkedin.com/in/luis-eduardo-patt-23463034/,S21,0.0,0.0
+454,Phil Wittig,Kindamagical,https://www.linkedin.com/in/pdwittig/,S21,0.0,0.0
+455,Rachita Navara,SafeBeat,https://www.linkedin.com/in/rachita-navara-md-3b49551b8/,S21,0.0,280000.0
+456,Kunj Patel,SafeBeat,https://www.linkedin.com/in/kunj-patel-md-msc-1b10156,S21,0.0,280000.0
+457,Landon Fielding,Brite,https://www.linkedin.com/in/landon-fielding-970808b4,S21,0.0,0.0
+458,Jake Parkinson,Brite,https://www.linkedin.com/in/jakeparkinson/,S21,0.0,0.0
+459,Colton Shields,Brite,https://www.linkedin.com/in/coltonshields/,S21,0.0,0.0
+460,Abhilash Narahari,Ivy Homes,https://www.linkedin.com/in/abhilash-narahari-a33284a9/,S21,0.0,7000000.0
+461,Pritam Thakur,Ivy Homes,https://www.linkedin.com/in/pritamthakur/,S21,0.0,7000000.0
+462,jose menendez,Konta.com,https://www.linkedin.com/in/jose-antonio-menendez-80a872102/,S21,0.0,2790000.0
+463,Pablo Icaza,Konta.com,https://www.linkedin.com/in/pablo-icaza/,S21,0.0,2790000.0
+464,Hassaan Raza,Tavus,http://linkedin.com/in/hassaanraza/,S21,0.0,24100000.0
+465,Quinn Favret,Tavus,https://www.linkedin.com/in/quinn-favret/,S21,0.0,24100000.0
+466,Daniel James,Zen,https://www.linkedin.com/in/daniel-j-1b52a2111/,S21,0.0,0.0
+467,Chris Stanley,Patterns,https://www.linkedin.com/in/chris-stanley-29b20519/,S21,0.0,2500000.0
+468,Victor E. Fimbres,Forage,https://www.linkedin.com/in/victorefimbres/,S21,0.0,30700000.0
+469,Jeroen Rutten,Tablevibe,https://www.linkedin.com/in/jeroen-rutten-60499921/,S21,0.0,1500000.0
+470,Guido Caldara,Tablevibe,https://www.linkedin.com/in/guidocaldara/,S21,0.0,1500000.0
+471,Mathieu Sneep,Tablevibe,http://linkedin.com/in/mathieusneep,S21,0.0,1500000.0
+472,Mauricio Morales,DailyBot,https://www.linkedin.com/in/maomorales/,S21,0.0,0.0
+473,Sergio Florez,DailyBot,https://www.linkedin.com/in/xergioalex/,S21,0.0,0.0
+474,Ariel Vaisman,RendaloMaq,https://www.linkedin.com/in/ariel-vaisman/,S21,0.0,4200000.0
+475,Juan Pablo Mir,RendaloMaq,https://cl.linkedin.com/in/juan-pablo-mir-39a948a8,S21,0.0,4200000.0
+476,Anh-Tho CHUONG,Lago,https://www.linkedin.com/in/anhthochuong/,S21,0.0,22000000.0
+477,Raffi SARKISSIAN,Lago,https://www.linkedin.com/in/sarkissianraffi,S21,0.0,22000000.0
+478,Daniel Liechtenstein,Hypercore,https://www.linkedin.com/in/daniel-liechtenstein-ba338370/,S21,0.0,500000.0
+479,Eitan Frailich,Hypercore,https://www.linkedin.com/in/eitan-frailich-81b69390/,S21,0.0,500000.0
+480,Tomer Moshe,Hypercore,https://www.linkedin.com/in/tomer-moshe-033a2b69,S21,0.0,500000.0
+481,David Yahalomi,Hypercore,https://www.linkedin.com/in/david-yahalomi-441b3863/,S21,0.0,500000.0
+482,Perseus Mlambo,Union54,https://www.linkedin.com/in/perseus,S21,0.0,15000000.0
+483,Alessandra Martini,Union54,https://za.linkedin.com/in/alessandra-martini-5bb15991,S21,0.0,15000000.0
+484,Sarujan Ranjan,StudyStream,https://www.linkedin.com/in/sarujanr/,S21,0.0,9160000.0
+485,Erfan Soliman,StudyStream,https://uk.linkedin.com/in/erfansoliman,S21,0.0,9160000.0
+486,Yasir Shirazi,InstaKin,https://www.linkedin.com/in/shirazi/,S21,0.0,0.0
+487,Zain Khan,InstaKin,https://www.linkedin.com/in/zainmk,S21,0.0,0.0
+488,Wade Norris,SnapCalorie,https://www.linkedin.com/in/wadenorris/,S21,0.0,2000000.0
+489,Scott Baron,SnapCalorie,https://www.linkedin.com/in/scott-baron-7b09b011/,S21,0.0,2000000.0
+490,Mohit Prateek,Anakin,http://linkedin.com/in/mohitprateek,S21,0.0,2000000.0
+491,Rashmi Bala,Anakin,https://www.linkedin.com/in/kumari-rashmi-bala/,S21,0.0,2000000.0
+492,William Clem,Bite Ninja,https://www.linkedin.com/in/willclem/,S21,0.0,15400000.0
+493,Aimee DeGolyer,REPROSENT,https://www.linkedin.com/in/aimee-degolyer/,S21,0.0,100000.0
+494,Michael Sample,REPROSENT,https://www.linkedin.com/in/mike-sample-1547521/,S21,0.0,100000.0
+495,Varun Govil,Epinoma,https://www.linkedin.com/in/varun-govil/,S21,0.0,0.0
+496,Ishan Goyal,Epinoma,https://www.linkedin.com/in/ishan-goyal/,S21,0.0,0.0
+497,Zhijian Li,Epinoma,https://www.linkedin.com/in/zhl223/,S21,0.0,0.0
+498,Omar Thanawalla,ShopMyGPT.com,https://www.linkedin.com/in/omarthanawalla/,S21,0.0,77500000.0
+499,Adam MacEachern,Sleek,http://www.linkedin.com/in/adam-maceachern-120536109,S21,0.0,1700000.0
+500,Daniel Baum,Sleek,http://www.linkedin.com/in/daniel-baum,S21,0.0,1700000.0
+501,Palmer McCutcheon,Sleek,https://www.linkedin.com/in/palmm,S21,0.0,1700000.0
+502,Ben Stein,Keeper,https://www.linkedin.com/in/benfstein/,S21,0.0,6000000.0
+503,Kenny Song,Keeper,https://www.linkedin.com/in/kennysong1/,S21,0.0,6000000.0
+504,Pulkit Agarwal,Strive Math,https://www.linkedin.com/in/agarwalpulkit/,S21,0.0,1400000.0
+505,Channy Hong,Vansec,https://www.linkedin.com/in/channyhong/,S21,0.0,0.0
+506,Ike Jin Park,Vansec,https://www.linkedin.com/in/ikejinpark/,S21,0.0,0.0
+507,Fahim Ferdous,Cabal,https://linkedin.com/in/fahimferdous,S21,0.0,0.0
+508,Christian Schiller,MobileBoost,https://www.linkedin.com/in/chschiller/,S21,0.0,500000.0
+509,Christian Hartung,MobileBoost,https://www.linkedin.com/in/christian-hartung-17887840/,S21,0.0,500000.0
+510,Sameer Sadana,AppX,https://www.linkedin.com/in/sameer-s-73a13a13a,S21,0.0,1300000.0
+511,Anuj Gupta,AppX,https://www.linkedin.com/in/anuj-gupta-9264b9b8/,S21,0.0,1300000.0
+512,Nikunj Malpani,Neodocs,https://www.linkedin.com/in/nikunjmalpani/,S21,0.0,2000000.0
+513,Pratik Lodha,Neodocs,https://www.linkedin.com/in/pratiklodha/,S21,0.0,2000000.0
+514,Anurag Meena,Neodocs,https://www.linkedin.com/in/anurag-meena/,S21,0.0,2000000.0
+515,Manas Kumar Verma,AlgoUniversity,https://www.linkedin.com/in/thenextmkv/,S21,0.0,130000.0
+516,Swapnil Daga,AlgoUniversity,https://www.linkedin.com/in/swapnil-daga-b42762130/,S21,0.0,130000.0
+517,Aditya Vemuganti,Swipe,https://www.linkedin.com/in/aditya-v-b0838622/,S21,0.0,2000000.0
+518,Sri Teja Allaparthi,Swipe,https://www.linkedin.com/in/sriteja95,S21,0.0,2000000.0
+519,Arnaud Porterie,Echoes HQ,https://linkedin.com/in/aporterie,S21,0.0,125000.0
+520,Sourabh Deorah,Advantage Club,https://in.linkedin.com/in/sourabh-deorah-a4912b1a,S21,0.0,9000000.0
+521,Smiti Bhatt Deorah,Advantage Club,https://in.linkedin.com/in/smitibhattdeorah,S21,0.0,9000000.0
+522,Nishant Jhaveri,Nino Foods,https://www.linkedin.com/in/nishantjhaveri23/,S21,0.0,1600000.0
+523,Pranav Mehra,Nino Foods,https://www.linkedin.com/in/pranav-mehra/,S21,0.0,1600000.0
+524,Samay Jain,Rivia.AI,https://www.linkedin.com/in/samaystops4no1/,S21,0.0,3250000.0
+525,Katherine French,BLUUMBIO,https://www.linkedin.com/in/katherine-french-a8452b1b4/,S21,0.0,0.0
+526,Robert DiFazio,Parallel Bio,https://www.linkedin.com/in/rdifazio/,S21,0.0,4300000.0
+527,Juliana Hilliard,Parallel Bio,https://www.linkedin.com/in/juliana-hilliard-774717100/,S21,0.0,4300000.0
+528,Murilo Narciso,Zazos,https://www.linkedin.com/in/mknarciso/,S21,0.0,0.0
+529,Mario Bustamante,Instacrops,https://www.linkedin.com/in/mario-andr%C3%A9s-bustamante-bernucci-36a79030/,S21,0.0,8830000.0
+530,Anada Lakra,BoldVoice,https://www.linkedin.com/in/anadalakra/,S21,0.0,5260000.0
+531,Ilya Usorov,BoldVoice,https://www.linkedin.com/in/ilyausorov/,S21,0.0,5260000.0
+532,Kara Holinski,Confido,https://www.linkedin.com/in/kara-holinski-77b673b6/,S21,0.0,3600000.0
+533,Justin Hunter,Confido,https://www.linkedin.com/in/justin-hunter/,S21,0.0,3600000.0
+534,Apoorva Sharma,SalaryBook,http://linkedin.com/in/as2406,S21,0.0,0.0
+535,Ankita Sharma,SalaryBook,https://www.linkedin.com/in/ankita-sharma-a5028a160/,S21,0.0,0.0
+536,Poorva Dixit,SalaryBook,https://www.linkedin.com/in/poorva-dixit-53305627/,S21,0.0,0.0
+537,Orestis Vardoulis,Zeit Medical,https://www.linkedin.com/in/orestisvardoulis/,S21,0.0,2130000.0
+538,Urs Naber,Zeit Medical,https://www.linkedin.com/in/urs-naber-2393b62a/,S21,0.0,2130000.0
+539,Tejas Bala,Atmana,https://www.linkedin.com/in/tejaspm/,S21,0.0,0.0
+540,VIJAY ANAND BHAGAVATULA,ODWEN,https://www.linkedin.com/in/vijay-anand-bhagavatula-09b4863/,S21,0.0,0.0
+541,Deevee Kashi,Deed,https://www.linkedin.com/in/deeveekashi,S21,0.0,12000000.0
+542,Aske Ertmann,Deed,https://www.linkedin.com/in/aske-ertmann-816a07101/,S21,0.0,12000000.0
+543,Steve Liu,Deed,https://www.linkedin.com/in/stevenliu98/,S21,0.0,12000000.0
+544,Jayant Panwar,PropReturns,https://www.linkedin.com/in/jayant-panwar/,S21,0.0,1330000.0
+545,Somil Mathur,PropReturns,https://www.linkedin.com/in/somilmathur,S21,0.0,1330000.0
+546,Kenish Shah,PropReturns,https://www.linkedin.com/in/kenishshah/,S21,0.0,1330000.0
+547,Khushboo Shrivastava,Coulomb AI,https://www.linkedin.com/in/khushboo-shrivastava-18575aa7/,S21,0.0,150000.0
+548,Santanu Mondal,Coulomb AI,https://www.linkedin.com/in/santanumondal/,S21,0.0,150000.0
+549,Apurv Gupta,Mailmodo,https://www.linkedin.com/in/apurvgpt/,S21,0.0,2000000.0
+550,Aquibur Rahman,Mailmodo,https://www.linkedin.com/in/aquibur/,S21,0.0,2000000.0
+551,Sajal Khanna,Akudo,https://www.linkedin.com/in/sajal-khanna-52aa9b126,S21,0.0,4200000.0
+552,Lavika Aggarwal,Akudo,https://www.linkedin.com/in/lavika-aggarwal-463a4b132/,S21,0.0,4200000.0
+553,Jagveer Gandhi,Akudo,https://www.linkedin.com/in/jagveer-gandhi-1344b016/,S21,0.0,4200000.0
+554,Akash Agrawal,Koshex,https://www.linkedin.com/in/akashagrawal1291/,S21,0.0,2230000.0
+555,Komal Kumar Gupta,Koshex,https://www.linkedin.com/in/komal-kumar-g-9a3198113/,S21,0.0,2230000.0
+556,Bhagaban Behera,RenderNet,https://www.linkedin.com/in/bhagaban/,S21,0.0,5500000.0
+557,Nakul Kelkar,RenderNet,https://www.linkedin.com/in/nakulkelkar/,S21,0.0,5500000.0
+558,Sriharsha Setty,RenderNet,https://www.linkedin.com/in/sriharshasetty/,S21,0.0,5500000.0
+559,Ahmad Faraaz,Kalam Labs,https://www.linkedin.com/feed/,S21,0.0,450000.0
+560,Sashakt Tripathi,Kalam Labs,https://www.linkedin.com/in/sashakt-tripathi,S21,0.0,450000.0
+561,Harshit Awasthi,Kalam Labs,https://www.linkedin.com/in/harshit016/,S21,0.0,450000.0
+562,Avijit Sharma,FrontPage,https://www.linkedin.com/in/avijitsharma/,S21,0.0,0.0
+563,Cathy Han,Levro,https://www.linkedin.com/in/cathyhan/,S21,0.0,120000.0
+564,Abeer Agrawal,Levro,https://www.linkedin.com/in/abeera/,S21,0.0,120000.0
+565,Anu Parvatiyar,Ananya Health,https://www.linkedin.com/in/anuparvatiyar/,S21,0.0,2675000.0
+566,Daniel Kang,Flowbo,https://www.linkedin.com/in/itsdankang/,S21,0.0,0.0
+567,Norman Yu,Flowbo,https://www.linkedin.com/in/normanyu1/,S21,0.0,0.0
+568,Victor Gardrinier,SolarMente,https://www.linkedin.com/in/victor-gardrinier/,S21,0.0,57000000.0
+569,Wouter Draijer,SolarMente,http://www.linkedin.com/in/solarmanwouterdraijer,S21,0.0,57000000.0
+570,Marco Lobba,Catena Biosciences,https://www.linkedin.com/in/marco-lobba/,S21,0.0,8050000.0
+571,Matthew Francis,Catena Biosciences,https://www.linkedin.com/in/matthew-francis-b5018a146?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BheGjvsiEQVaZjFM4Oe07YA%3D%3D,S21,0.0,8050000.0
+572,Pei-fu Hsieh,Karbon Card,https://www.linkedin.com/in/pei-fu-hsieh-a214b24/,S21,0.0,32000000.0
+573,Jack Chen,Karbon Card,https://www.linkedin.com/in/jianwei-chen-082b80109/,S21,0.0,32000000.0
+574,Sunil Kumar,Karbon Card,https://in.linkedin.com/in/sunilkumar14,S21,0.0,32000000.0
+575,Amit Jangir,Karbon Card,https://www.linkedin.com/in/amit-jangir-5966b9101/,S21,0.0,32000000.0
+576,Bo Li,Karbon Card,https://www.linkedin.com/in/boli1285/,S21,0.0,32000000.0
+577,Zach Garman,DolarApp,https://www.linkedin.com/in/zachgarman,S21,0.0,5000000.0
+578,Fernando Terres,DolarApp,https://www.linkedin.com/in/fterres/,S21,0.0,5000000.0
+579,Alvaro Correa,DolarApp,https://uk.linkedin.com/in/álvaro-correa-gallardo-082b4a90,S21,0.0,5000000.0
+580,Kiiru Muhoya,Fingo Africa,https://www.linkedin.com/in/kiiru-muhoya-251360131,S21,0.0,4200000.0
+581,Ian Njuguna,Fingo Africa,https://www.linkedin.com/in/ian-n/,S21,0.0,4200000.0
+582,Gitari Tirima,Fingo Africa,https://www.linkedin.com/in/gitari-t/,S21,0.0,4200000.0
+583,James da Costa,Fingo Africa,https://www.linkedin.com/in/jamesdacosta,S21,0.0,4200000.0
+584,Carlo Badini,FirstQuadrant,https://www.linkedin.com/in/carlobadini/,S21,0.0,0.0
+585,Anand Chowdhary,FirstQuadrant,https://linkedin.com/in/anandchowdhary,S21,0.0,0.0
+586,Yuxin Zhu,Replo,https://www.linkedin.com/in/yuxinzhu/,S21,0.0,4200000.0
+587,Noah Gilmore,Replo,https://www.linkedin.com/in/noahgilmore/,S21,0.0,4200000.0
+588,Quentin Rousseau,Rootly,https://www.linkedin.com/in/quentinrousseau/,S21,0.0,15200000.0
+589,JJ Tang,Rootly,https://www.linkedin.com/in/jjrichardtang/,S21,0.0,15200000.0
+590,Yahya Syed,Potion,https://www.linkedin.com/in/yahya-syed/,S21,0.0,0.0
+591,Hejab Malik,Potion,https://www.linkedin.com/in/hejab-malik-873135b8/,S21,0.0,0.0
+592,Alex Stec,Potion,https://www.linkedin.com/in/alex-stec/,S21,0.0,0.0
+593,Bruno Bannach,Jestor,https://www.linkedin.com/in/bruno-lehmann-bannach-07909556/,S21,0.0,0.0
+594,Ricky Yean,Flow Club,https://www.linkedin.com/in/rickyyean/,S21,0.0,5000000.0
+595,David Tran,Flow Club,https://linkedin.com/in/davetran,S21,0.0,5000000.0
+596,Anthony Valente,Concord Materials,https://www.linkedin.com/in/anthony-valente-wmc,S21,0.0,0.0
+597,Feras Jalbout,Baraka,http://www.linkedin.com/in/feras-jalbout-252b0942,S21,0.0,25000000.0
+598,Kunal Taneja,Baraka,https://www.linkedin.com/in/kunal-taneja-yc/,S21,0.0,25000000.0
+599,Dragos Bulugean,Archbee,https://www.linkedin.com/in/dragos-bulugean/,S21,0.0,3000000.0
+600,Yarden Shaked,Varos,https://www.linkedin.com/in/yarden-shaked-b2011082/,S21,0.0,4000000.0
+601,Lior Chen,Varos,https://www.linkedin.com/in/lior-chen-2a939127/,S21,0.0,4000000.0
+602,Gil Shaked,Varos,https://www.linkedin.com/in/gshaked/,S21,0.0,4000000.0
+603,Marc Laurent,Carbonfact,https://www.linkedin.com/in/mrclrnt/,S21,0.0,15000000.0
+604,Romain Champourlier,Carbonfact,https://linkedin.com/rchampourlier?_l=en_US,S21,0.0,15000000.0
+605,Martin Daniel,Carbonfact,https://www.linkedin.com/in/martindaniel4/,S21,0.0,15000000.0
+606,Talal Ahmad Gondal,TAG,https://www.linkedin.com/in/talalgondal/,S21,0.0,0.0
+607,Ahsan K. Khan,TAG,https://www.linkedin.com/in/ahsan-k-k/,S21,0.0,0.0
+608,Alexander Lukianchuk,TAG,http://linkedin.com/in/alexanderland/,S21,0.0,0.0
+609,Bruno Vieira Costa,Abstra,https://www.linkedin.com/in/brunovcosta/,S21,0.0,0.0
+610,Tony Park,Stipop,https://www.linkedin.com/in/tonypark-stipop/,S21,0.0,1300000.0
+611,Daniel Cho,Stipop,https://www.linkedin.com/in/danielcho6/,S21,0.0,1300000.0
+612,Martina Möring,Customily,http://uy.linkedin.com/in/martinamoring,S21,0.0,0.0
+613,Alejandro Lozdziejski,Customily,https://www.linkedin.com/in/alelozd/,S21,0.0,0.0
+614,Christian Mischler,Deskimo,https://www.linkedin.com/in/christianmischler,S21,0.0,3500000.0
+615,Raphael Cohen,Deskimo,https://www.linkedin.com/in/raphaelc/,S21,0.0,3500000.0
+616,Camille Ang,Hive Health,https://www.linkedin.com/in/camille-ang-19224647/,S21,0.0,6500000.0
+617,Jiawen Tang,Hive Health,https://www.linkedin.com/in/jiawentang/,S21,0.0,6500000.0
+618,Vicente Zavarce,Yummy,https://www.linkedin.com/in/vzavarce/,S21,0.0,69000000.0
+619,Dillan DiNardo,Mindstate Design Labs,https://www.linkedin.com/in/dillandinardo/,S21,0.0,11500000.0
+620,Tom Ray,Mindstate Design Labs,https://www.linkedin.com/in/tom-ray-a44a59204/,S21,0.0,11500000.0
+621,Caelan Urquhart,Pipekit,https://www.linkedin.com/in/caelan-urquhart/,S21,0.0,0.0
+622,J.P. Zivalich,Pipekit,https://www.linkedin.com/in/jpzivalich/,S21,0.0,0.0
+623,Brian Anglin,Superwall,https://www.linkedin.com/in/anglinb/,S21,0.0,0.0
+624,Jake Mor,Superwall,https://www.linkedin.com/in/jake-mor-3b397392/,S21,0.0,0.0
+625,James Dorris,Odys Aviation,https://www.linkedin.com/in/jdorris3/,S21,0.0,13700000.0
+626,Axel Radermacher,Odys Aviation,https://www.linkedin.com/in/axel-radermacher/,S21,0.0,13700000.0
+627,Yash Patel,Legion Health,https://www.linkedin.com/in/yashmpatel1/,S21,0.0,8300000.0
+628,Arthur MacWaters,Legion Health,https://www.linkedin.com/in/arthur-macwaters/,S21,0.0,8300000.0
+629,Daniel Wilson,Legion Health,https://www.linkedin.com/in/danielgwilson,S21,0.0,8300000.0
+630,Alex Federation,Talus Bio,https://www.linkedin.com/in/afederation/,S21,0.0,19700000.0
+631,Lindsay Pino,Talus Bio,https://www.linkedin.com/in/lindsaykpino/,S21,0.0,19700000.0
+632,Hassan Syyid,hotglue,https://www.linkedin.com/in/hassan-syyid-7031a870/,S21,0.0,5500000.0
+633,David Molot,hotglue,https://linkedin.com/in/davidmolot,S21,0.0,5500000.0
+634,Hassy Veldstra,Artillery,https://uk.linkedin.com/in/hveldstra,S21,0.0,0.0
+635,Sharique Samsudheen,marketfeed,https://www.linkedin.com/in/shariquesamsudheen/,S21,0.0,150000.0
+636,Sooraj Elamana,marketfeed,https://www.linkedin.com/in/sooraje/,S21,0.0,150000.0
+637,Oriana Papin-Zoghbi,AOA Dx,https://www.linkedin.com/in/orianazh/,S21,0.0,24000000.0
+638,Alex Fisher,AOA Dx,https://www.linkedin.com/in/alexanderjfisher/,S21,0.0,24000000.0
+639,Anna Jeter,AOA Dx,https://www.linkedin.com/in/anna-milik-jeter-88036329/,S21,0.0,24000000.0
+640,Eduardo Williams,Contalink,https://www.linkedin.com/in/eduardowilliams/,S21,0.0,2600000.0
+641,Carlos Salinas,Contalink,https://www.linkedin.com/in/carlos-salinas-a83a9493/,S21,0.0,2600000.0
+642,Matthew Lenhard,Positional,https://www.linkedin.com/pub/matthew-lenhard/37/bb0/ba/en,S21,0.0,0.0
+643,Kadie Okwudili,Agapé,https://www.linkedin.com/in/khadeshaokwudili,S21,0.0,0.0
+644,Ron Rogge,Agapé,https://scholar.google.com/citations?user=FsHLlf4AAAAJ&hl=en&oi=ao,S21,0.0,0.0
+645,Vedant Pradeep,Reframe (Glucobit),https://www.linkedin.com/in/vedantpradeep,S21,0.0,17630000.0
+646,Ziyi Gao,Reframe (Glucobit),https://www.linkedin.com/in/ziyigao67/,S21,0.0,17630000.0
+647,Danilo Stern-Sapad,Blixo,https://www.linkedin.com/in/danilosapad/,S21,0.0,0.0
+648,Justin Fiaschetti,Inversion Space,https://www.linkedin.com/in/justin-fiaschetti-097b10166/,S21,0.0,54000000.0
+649,Austin Briggs,Inversion Space,https://www.linkedin.com/in/austinbriggs7/,S21,0.0,54000000.0
+650,Rune Hauge,Mentorcam,https://www.linkedin.com/in/runelohrhauge/,S21,0.0,5570000.0
+651,Laura Crabtree,Epsilon3,https://www.linkedin.com/in/lauracrabtree/,S21,0.0,18930000.0
+652,Max Mednik,Epsilon3,https://www.linkedin.com/in/maxmednik,S21,0.0,18930000.0
+653,Lawrence Lin Murata,Slope,https://www.linkedin.com/in/lawrencelm,S21,0.0,252000000.0
+654,Alice Deng,Slope,https://www.linkedin.com/in/alicedeng/,S21,0.0,252000000.0
+655,Katerina Chatzi,Promakhos Therapeutics,https://www.linkedin.com/in/katerina-chatzi-phd-366625179/,S21,0.0,2380000.0
+656,Jasper Edgar Neggers,Promakhos Therapeutics,https://www.linkedin.com/in/jasperneggers,S21,0.0,2380000.0
+657,Gabriel Bayomi Kalejaiye,Openlayer,https://www.linkedin.com/in/gbayomi/,S21,0.0,9800000.0
+658,Vikas Nair,Openlayer,https://www.linkedin.com/in/vikasnair/,S21,0.0,9800000.0
+659,Rishab Ramanathan,Openlayer,https://www.linkedin.com/in/rishramanathan,S21,0.0,9800000.0
+660,Jean-Edern Lorillon,PaletteHQ,https://www.linkedin.com/in/jeanedernlorillon/,S21,0.0,6150000.0
+661,Derek Low,Cococart,https://www.linkedin.com/in/dereklmy/,S21,0.0,4330000.0
+662,Enrique Perezalonso,Palla,https://www.linkedin.com/in/perezalonso/,S21,0.0,0.0
+663,Andrew Mason,Palla,https://www.linkedin.com/in/andrew-s-mason/,S21,0.0,0.0
+664,Greg Piccolo,Palla,https://www.linkedin.com/in/gregorypiccolo/,S21,0.0,0.0
+665,Mark Lee,MarqVision,https://www.linkedin.com/in/insup/,S21,0.0,36000000.0
+666,Victor Cardenas,Slash,https://www.linkedin.com/in/victor-d-cardenas/,S21,0.0,19000000.0
+667,Kevin Bai,Slash,https://www.linkedin.com/in/kevinbai0,S21,0.0,19000000.0
+668,Jagath Vytheeswaran,Vogent,http://www.linkedin.com/in/jagathv,S21,0.0,0.0
+669,Vignesh Varadarajan,Vogent,http://linkedin.com/in/vignesh-varadarajan-22469937/,S21,0.0,0.0
+670,Jonathan Kau,Satsuma,http://www.linkedin.com/in/jonathankau,S21,0.0,4700000.0
+671,Dan Li,Satsuma,https://www.linkedin.com/in/dan-li-463aa81b/,S21,0.0,4700000.0
+672,Karin Underwood,Verano Health,https://www.linkedin.com/in/karin-underwood-b380ab32/,S21,2800000000.0,100000000.0
+673,Bharat Kilaru,Verano Health,http://www.linkedin.com/in/bharatkilaru/,S21,2800000000.0,100000000.0
+674,Jaakko Rauhala,Kapacity.io,https://www.linkedin.com/in/jaakko-rauhala/,S21,0.0,0.0
+675,Rami El Geneidy,Kapacity.io,https://www.linkedin.com/in/ramielgeneidy/,S21,0.0,0.0
+676,Sonja Salo,Kapacity.io,https://www.linkedin.com/in/sonja-salo/,S21,0.0,0.0
+677,Cam Korzecke,Nasdisc,https://www.linkedin.com/in/cam-korzecke/,S21,0.0,0.0
+678,Simeon Goolsby,Nasdisc,https://www.linkedin.com/in/simeon-goolsby-15859210a/,S21,0.0,0.0
+679,Christian White,Nasdisc,https://www.linkedin.com/in/christian-white-2630967a/,S21,0.0,0.0
+680,Owen Rapaport,Aer,https://www.linkedin.com/in/owenrapaport,S21,0.0,2800000.0
+681,Aditya Kajla,Warrant,https://www.linkedin.com/in/akajla,S21,0.0,0.0
+682,Karan Kajla,Warrant,https://linkedin.com/in/kkajla/,S21,0.0,0.0
+683,Jacobo Vidal Abeigón,Arengu,https://www.linkedin.com/in/jacobovidal/,S21,0.0,500000.0
+684,Pablo Castro Valiño,Arengu,https://www.linkedin.com/in/pablocastrovalino/,S21,0.0,500000.0
+685,Sergio Regueira,Arengu,https://www.linkedin.com/in/sergioregueira/,S21,0.0,500000.0
+686,Roman Rothaermel,Mable,https://www.linkedin.com/in/rrothaermel/,S21,0.0,2000000.0
+687,Inna Thalmann,Mable,https://www.linkedin.com/in/ithalmann/,S21,0.0,2000000.0
+688,Anta Pattabiraman,inai,https://www.linkedin.com/in/anantharaman-pattabiraman-87532a4/,S21,0.0,4000000.0
+689,Karthik Narayanan,inai,https://www.linkedin.com/in/karthik-narayanan-1b92241/,S21,0.0,4000000.0
+690,Angela Ferrante,Laudable,https://www.linkedin.com/in/angela-ferrante/,S21,0.0,2950000.0
+691,Ruben Guerrero,Sproutfi,https://linkedin.com/in/ruben-g-08019a2,S21,0.0,6400000.0
+692,Tyler Richie,Sproutfi,https://www.linkedin.com/in/tyler-richie-1096b58/,S21,0.0,6400000.0
+693,Zain Azeem,Keyri,https://www.linkedin.com/in/zain-azeem/,S21,0.0,0.0
+694,Grant La Count,Keyri,https://www.linkedin.com/in/grant-la-count-8abb6b40/,S21,0.0,0.0
+695,Saif Malik,Keyri,https://www.linkedin.com/in/saif-malik-929b961a,S21,0.0,0.0
+696,Mikee Villareal,MadEats,https://www.linkedin.com/in/mikeevillareal,S21,0.0,1700000.0
+697,Andie Cruz,MadEats,https://www.linkedin.com/in/andrea-cruz-a46155148,S21,0.0,1700000.0
+698,Keisha Lao,MadEats,http://linkedin.com/in/keisha-lao-8713681b0,S21,0.0,1700000.0
+699,Justin Rotman,Goodkind,https://www.linkedin.com/in/jrotman/,S21,0.0,0.0
+700,Michael Warshafsky,Goodkind,https://www.linkedin.com/in/michael-warshafsky-b8946033/,S21,0.0,0.0
+701,Vladimir Korshin,Level,https://www.linkedin.com/in/vladimirkorshin/,S21,0.0,0.0
+702,Molly Hogan,Level,https://www.linkedin.com/in/mollyhogan/,S21,0.0,0.0
+703,Asa Schachar,Level,https://linkedin.com/in/asaschachar,S21,0.0,0.0
+704,Eric Migicovsky,Beeper,https://linkedin.com/in/ericmigi,S21,125000000.0,16000000.0
+705,Brad Murray,Beeper,https://www.linkedin.com/in/bradtgmurray,S21,125000000.0,16000000.0
+706,Ben Botvinick,Hyper,https://www.linkedin.com/in/botv,S21,0.0,0.0
+707,Christopher Wu,Cache,https://www.linkedin.com/in/christopher-wu-b00a5719/,S21,0.0,8500000.0
+708,Jimmy Young,Cache,https://www.linkedin.com/in/jimmyyoungsydney/,S21,0.0,8500000.0
+709,Robert Gaal,Quest,https://www.linkedin.com/in/robertgaal,S21,0.0,0.0
+710,Emiel van Liere,Quest,https://www.linkedin.com/in/emielvanliere/,S21,0.0,0.0
+711,Albert Chuang,OneShop,https://www.linkedin.com/in/yonajune/,S21,0.0,0.0
+712,Aaron Evans,OneShop,https://www.linkedin.com/in/aaronptb/,S21,0.0,0.0
+713,Maddy Nguyen,Talentdrop,https://www.linkedin.com/in/madeleinen/,S21,0.0,130000.0
+714,Janelle Tiulentino,Talentdrop,https://www.linkedin.com/in/janelletiulentino/,S21,0.0,130000.0
+715,Pablo Rojas,Protego,https://www.linkedin.com/in/pablo-rojas-contreras-0a3525140/,S21,0.0,0.0
+716,Brandon Waselnuk,Squire.ai,http://ca.linkedin.com/in/brandonwaselnuk/,S21,750000000.0,153200000.0
+717,Karl Clement,Squire.ai,https://www.linkedin.com/in/karlclement/,S21,750000000.0,153200000.0
+718,Saumil Patel,Squire.ai,https://www.linkedin.com/in/saumilptl/,S21,750000000.0,153200000.0
+719,Raffaele Colella,Mindmesh,https://www.linkedin.com/in/raffaelecolella/,S21,0.0,0.0
+720,Ulysse Mizrahi,Mindmesh,https://www.linkedin.com/in/ulysse-mizrahi-3357a978/,S21,0.0,0.0
+721,Sherwood Callaway,Opkit,https://www.linkedin.com/in/sherwoodcallaway/,S21,0.0,1130000.0
+722,Justin Ko,Opkit,https://www.linkedin.com/in/justinmko/,S21,0.0,1130000.0
+723,Taishi Nojima,Canopi,https://www.linkedin.com/in/taishi-nojima/,S21,0.0,0.0
+724,Tomas Alvarez Belon,Canopi,https://www.linkedin.com/in/tomas-alvarez-belon/,S21,0.0,0.0
+726,Michael Nino Evensen,Moving Parts,https://www.linkedin.com/in/michaelevensen/,S21,0.0,0.0
+727,Vahur Hansen,Membo,https://linkedin.com/in/vahur-hansen-5372a498,S21,0.0,0.0
+728,Paula Kink,Membo,https://www.linkedin.com/in/paulakink/,S21,0.0,0.0
+729,Alison Greenberg,Ruth Health,https://www.linkedin.com/in/greenbergalison/,S21,0.0,3100000.0
+730,Audrey Wu,Ruth Health,https://www.linkedin.com/in/audreyellenwu/,S21,0.0,3100000.0
+731,Ben Share,Dime,https://www.linkedin.com/in/benshare/,S21,0.0,500000.0
+732,Aaron Barbieri-Aghib,Dime,https://www.linkedin.com/in/aaron-barbieri-aghib-85b760103/,S21,0.0,500000.0
+733,Owen Colegrove,Algofi,https://linkedin.com/in/owencolegrove,S21,0.0,2800000.0
+734,John Clarke,Algofi,https://www.linkedin.com/in/jaclarke1/,S21,0.0,2800000.0
+735,Salvador Rivero,Levo,https://www.linkedin.com/in/salvador-rivero-3031182b/,S21,0.0,0.0
+736,Max Mergenthaler,Levo,https://www.linkedin.com/in/mergenthaler/,S21,0.0,0.0
+737,Bruno Vegreville,Hera,https://www.linkedin.com/in/brunovegreville/,S21,0.0,1700000.0
+738,Louise Bayssat,Hera,https://www.linkedin.com/in/louise-bayssat-53488a127/,S21,0.0,1700000.0
+739,Blaze Cerovcec,Mixr,https://linkedin.com/in/blaze-cerovcec-201089161,S21,0.0,0.0
+740,Eunice Wong,Milky Way AI,https://linkedin.com/in/eunicewes,S21,0.0,0.0
+741,Sagar Setu,Milky Way AI,https://www.linkedin.com/in/sagarsetu/,S21,0.0,0.0
+742,Santiago Ribadeneira,FastFarma,https://www.linkedin.com/in/sribadeneira/,S21,0.0,2100000.0
+743,Marcelo Albuja,FastFarma,https://www.linkedin.com/in/marceloalbuja/,S21,0.0,2100000.0
+744,Juan Carlos Holguin,FastFarma,https://www.linkedin.com/in/holguinjc/,S21,0.0,2100000.0
+745,Nina Lu,Comet Health,https://www.linkedin.com/in/ninajlu,S21,0.0,0.0
+746,Katy Honda,Comet Health,https://www.linkedin.com/in/katy-honda/,S21,0.0,0.0
+747,Brennan McEachran,Hypercontext,https://www.linkedin.com/in/brennanmceachran/,S21,0.0,130000.0
+748,Graham McCarthy,Hypercontext,https://www.linkedin.com/in/grahammccarthy,S21,0.0,130000.0
+749,Skyler Aspegren,Apollo,https://www.linkedin.com/in/skyler-aspegren/,S21,0.0,261300000.0
+750,Josh Wright,Apollo,https://www.linkedin.com/in/joshlwright/,S21,0.0,261300000.0
+751,CG Chen,Ruta Health,https://www.linkedin.com/in/cgchen1/,S21,0.0,0.0
+752,Geordie Graham,Ruta Health,https://www.linkedin.com/in/geordieg/,S21,0.0,0.0
+753,Derek Ruohao Zhang,Ruta Health,https://www.linkedin.com/in/derek-r-zhang,S21,0.0,0.0
+754,Alex Zvaniga,Ruta Health,https://www.linkedin.com/in/alexzvaniga/,S21,0.0,0.0
+755,Jay Goel,Scratch Data,https://www.linkedin.com/in/jay-goel-67588220/,S21,0.0,0.0
+756,Len Boyette,Scratch Data,https://www.linkedin.com/in/lenb/,S21,0.0,0.0
+757,Kahlil Lalji,Ivella,https://www.linkedin.com/in/bykahlil/,S21,0.0,3975000.0
+758,Vishal Dubey,Ivella,https://www.linkedin.com/in/vishaldubey01/,S21,0.0,3975000.0
+759,Eric Wang,Ivella,https://www.linkedin.com/in/ericww2/,S21,0.0,3975000.0
+760,Anahí Sosa,Perfekto,https://www.linkedin.com/in/anahisosa/,S21,0.0,1100000.0
+761,Jan Heinvirta,Perfekto,https://www.linkedin.com/in/janheinvirta/,S21,0.0,1100000.0
+762,Olcay Yilmazcoban,SenpAI.GG,https://www.linkedin.com/in/olcay-y%C4%B1lmaz%C3%A7oban-51303161/,S21,0.0,3200000.0
+763,Berk Ozer,SenpAI.GG,https://www.linkedin.com/in/ozerberk/,S21,0.0,3200000.0
+764,Anne-Sophie Mertgen,Micro Meat,https://www.linkedin.com/in/anne-sophie-mertgen/,S21,0.0,375000.0
+765,Vincent Pribble,Micro Meat,https://www.linkedin.com/in/vincentpribble/,S21,0.0,375000.0
+766,Andrew Zhou,Commery,https://www.linkedin.com/in/andrewjzhou/,S21,0.0,0.0
+767,Lyon Aung,Commery,https://www.linkedin.com/in/lyonaung/,S21,0.0,0.0
+768,Eric He,Commery,https://www.linkedin.com/in/ehe3/,S21,0.0,0.0
+769,Stefan Heule,Nexus,https://www.linkedin.com/in/stefan-heule-b46ab991/,S21,0.0,0.0
+770,Chen-Chen Huo,Nexus,https://www.linkedin.com/in/chenchenhuo,S21,0.0,0.0
+771,Konstantin Weitz,Nexus,https://www.linkedin.com/in/konstantin-weitz-75979443/,S21,0.0,0.0
+772,Vikas Shanbhogue,Lariat Data,https://www.linkedin.com/in/vikas-shanbhogue-11315b4b/,S21,0.0,0.0
+773,Aaditya Talwai,Lariat Data,https://www.linkedin.com/in/talwai,S21,0.0,0.0
+774,Paul Nakata,Abbot,https://www.linkedin.com/in/paulnakata/,S21,0.0,0.0
+775,Phil Haack,Abbot,https://www.linkedin.com/in/haacked/,S21,0.0,0.0
+776,Peter Balmforth,V-Flow Medical,https://www.linkedin.com/in/peterbalmforth?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVXGI61CWQ1uAnVMiTMv9DQ%3D%3D,S21,0.0,5000000.0
+777,Rodney Brenneman,V-Flow Medical,https://www.linkedin.com/in/rodney-brenneman-2652688/,S21,0.0,5000000.0
+778,paul sobotka,V-Flow Medical,Paul Alan Sobotka,S21,0.0,5000000.0
+779,Darren Spencer,V-Flow Medical,http://linkedin.com/in/darren-spencer-5922717,S21,0.0,5000000.0
+780,Bhairav Mehta,Buzzle,https://linkedin.com/in/bhairav-mehta,S21,0.0,0.0
+781,Adithya Ramanathan,Buzzle,https://www.linkedin.com/in/adithyaramanathan/,S21,0.0,0.0
+782,Michael Staunton,Buzzle,http://www.linkedin.com/in/michaelbstaunton/,S21,0.0,0.0
+783,Jeff Wilson,Jupe,https://linkedin.com/in/jeffwilsonphd,S21,0.0,9500000.0
+784,Antonio Gonzalez,Jupe,https://www.linkedin.com/in/jantoniogonzalez/,S21,0.0,9500000.0
+785,Roshan Farhan,Gobillion,https://www.linkedin.com/in/roshanfarhan/,S21,0.0,3030000.0
+786,Kulapradip Bharali,Gobillion,https://www.linkedin.com/in/kulapradipbharali/,S21,0.0,3030000.0
+787,Gabriel Luque,Wabi,https://linkedin.com/in/gluquem,S21,0.0,0.0
+788,Javier Méndez,Wabi,https://www.linkedin.com/in/javierm25,S21,0.0,0.0
+789,Taylor Culbertson,Hedgehog,https://www.linkedin.com/in/taylorculbertson/,S21,0.0,0.0
+790,Colton Dillion,Hedgehog,https://linkedin.com/in/cadillion,S21,0.0,0.0
+791,Jason Dillion,Hedgehog,https://www.linkedin.com/in/jason-dillion/,S21,0.0,0.0
+792,Jibril Gudal,Lobby,https://linkedin.com/in/jibril-gudal-b5a92417b,S21,0.0,0.0
+793,Hootan Mahallati,Hyperseed,https://www.linkedin.com/in/hootanmahallati/,S21,0.0,0.0
+794,Georg Untersalmberger,Hyperseed,https://www.linkedin.com/in/untersalmberger/,S21,0.0,0.0
+795,Arsh Shah Dilbagi,Zage,https://www.linkedin.com/in/dilbagi,S21,0.0,0.0
+796,Cole Bransford,Zage,https://www.linkedin.com/in/cole-bransford-360b2013b/,S21,0.0,0.0
+797,Ryan Ozminkowski,Zage,https://linkedin.com/in/ryan-ozminkowski-85a3309a,S21,0.0,0.0

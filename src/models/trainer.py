@@ -7,9 +7,17 @@ class ModelTrainer:
         self.model = model.to(config["device"])
         self.config = config
         self.criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight.to(config["device"]))
-        self.optimizer = torch.optim.AdamW(model.parameters(), lr=config["lr"], weight_decay=config["weight_decay"])
+        self.optimizer = torch.optim.AdamW(
+            model.parameters(),
+            lr=config["lr"],
+            weight_decay=config["weight_decay"],
+        )
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-            self.optimizer, mode="min", factor=0.5, patience=5, verbose=True
+            self.optimizer,
+            mode="min",
+            factor=0.5,
+            patience=5,
+            verbose=True,
         )
         self.best_val_loss = float("inf")
         self.patience_counter = 0

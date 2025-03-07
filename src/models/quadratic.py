@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from src.models.model_utils import initialize_weight_matrix
+from src.utils.model_utils import initialize_weight_matrix
 
 
 class QuadraticModel(nn.Module):
@@ -41,7 +41,10 @@ class QuadMLP(nn.Module):
             nn.LayerNorm(hidden_dim),
             nn.GELU(),
             nn.Dropout(0.2),
-            nn.Linear(hidden_dim, hidden_dim // 2),
+            nn.Linear(
+                hidden_dim,
+                hidden_dim // 2,
+            ),
             nn.LayerNorm(hidden_dim // 2),
             nn.GELU(),
             nn.Dropout(0.1),
@@ -52,7 +55,11 @@ class QuadMLP(nn.Module):
 
     def forward(self, x):
         W_sym = 0.5 * (self.W + self.W.t())
-        quad_scores = torch.sum(x * (x @ W_sym), dim=1, keepdim=True)
+        quad_scores = torch.sum(
+            x * (x @ W_sym),
+            dim=1,
+            keepdim=True,
+        )
         nonlinear_scores = self.nonlinear(x)
         return (quad_scores + nonlinear_scores + self.b).squeeze()
 

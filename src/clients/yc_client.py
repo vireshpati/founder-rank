@@ -39,10 +39,11 @@ class YCClient:
         base_url = "https://www.ycombinator.com/companies"
         params = []
 
-        if batch_code != "top_company":
+        if batch_code == "top_companies":
             params.append(f"batch={batch_code}")
         else:
-            params.append("top_company=true")
+            params.append(f"batch={batch_code}")
+            
 
         url = f"{base_url}{'?' + '&'.join(params) if params else ''}"
         self._initialize_driver()
@@ -74,8 +75,8 @@ class YCClient:
             time.sleep(1)
             soup = BeautifulSoup(self.driver.page_source, "html.parser")
 
-            container = soup.find(
-                "div", id=lambda i: i and i.startswith("ycdc_new/pages/Companies/ShowPage-react-component")
+            container = soup.find("div", 
+                                  id=lambda i: i and i.startswith("ycdc_new/pages/Companies/ShowPage-react-component"),
             )
             if not container:
                 founders_data.append({"Name": None, "Company": company_name, "LinkedIn": None, "Batch": batch_code})

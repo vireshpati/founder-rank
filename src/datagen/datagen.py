@@ -1,5 +1,8 @@
 import numpy as np
-
+import os
+import pandas as pd
+from src.processing.transforms import one_hot_encode_column
+from src.config.config import cfg
 
 class DataGenerator:
     def __init__(self, matrix, seed=42):
@@ -27,13 +30,6 @@ class DataGenerator:
             exit_val = 0
         return exit_val, funding_amt
 
-    def one_hot_encode_column(self, values, dimension):
-        if dimension == 3:
-            indices = values - 1
-        else:
-            indices = values
-        indices = np.clip(indices, 0, dimension - 1)
-        return np.eye(dimension, dtype=int)[indices]
 
     def generate_subpopulation(self, num_samples, pop_cfg, W_star):
         X_list, e_list, f_list = [], [], []
@@ -41,7 +37,7 @@ class DataGenerator:
             x_parts = []
             for cat in self.MATRIX:
                 val = self.sample_ordinal_for_category(cat, pop_cfg["sampling_probs"])
-                oh = self.one_hot_encode_column(val, self.MATRIX[cat]["DIMENSION"])
+                oh = one_hot_encode_column(val, self.MATRIX[cat]["DIMENSION"])
                 x_parts.append(oh)
             x = np.concatenate(x_parts)
 
@@ -94,3 +90,27 @@ class DataGenerator:
         labels = np.array(labels[: len(exit_final)])
 
         return X_final, exit_final, fund_final, labels, W_star
+    
+    def save_synthetic_dataset(self, X, exit_values, funding_amounts, matrix, output_path="../data/synth/encoded_founders_composites.csv", success_funding_threshold=None):
+
+        if success_funding_threshold is None:
+            success_funding_threshold = cfg.SYNTH["SUCCESS_FUNDING_THRESHOLD"]
+        
+        feature_names = []
+        for cat in matrix:
+            dim = matrix[cat]["DIMENSION"]
+            for i in range(dim):
+                if dim == 3:
+                    feature_names.append(f"{cat}_{i + 1}")
+                else:
+                    feature_names.append(f"{cat}_{i}")
+        
+        df = pd.DataFrame(X, columns=feature_names)
+        df["exit_value"] = exit_values
+        df["funding_amount"] = funding_amounts
+        df["success"] = ((df["exit_value"] > 0) | (df["funding_amount"] > success_funding_threshold)).astype(int)
+        
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
+        df.to_csv(output_path, index=False)
+        return df

@@ -3,7 +3,7 @@ import os
 import json
 import re
 from dotenv import load_dotenv
-from src.utils.matrix_helpers import get_tier
+from src.utils.matrix_utils import get_tier
 
 load_dotenv()
 
@@ -16,25 +16,28 @@ class PerplexityClient:
         self.client = OpenAI(api_key=self.api_key, base_url="https://api.perplexity.ai")
 
     def _make_perplexity_request(self, messages, fallback, entity_name):
-
         try:
             response = self.client.chat.completions.create(
                 model="sonar-pro",
                 messages=messages,
             )
-
+            
+  
             json_match = re.search(r"\{.*?\}", response.choices[0].message.content, re.DOTALL)
+            
             if json_match:
-                return json.loads(json_match.group())
+                result = json.loads(json_match.group())
+                return result
             else:
-                print(f"Could not extract JSON for {entity_name}")
+                print(f"Could not extract JSON for {entity_name}. Full response: {response.choices[0].message.content}")
                 return fallback
 
         except Exception as e:
             print(f"Error evaluating {entity_name}: {e}")
+            print(f"Returning fallback data: {fallback}")
             return fallback
 
-    def search_eval_person(self, person_data, matrix):
+    def eval_person(self, person_data, matrix):
         # Profile
         name = person_data.get("Name", "Unknown")
         titles = (
@@ -77,24 +80,28 @@ class PerplexityClient:
         fallback = {"exited_founder": 0, "previous_founder": 1, "startup_experience": 1}
         return self._make_perplexity_request(messages, fallback, name)
 
-    def search_eval_company(self, company_name):
+    def eval_company(self, company_name):
         messages = [
             {
                 "role": "system",
                 "content": (
-                    "You are a venture research assistant. Provide factual information about company exits and funding. "
-                    "If exit or funding value is unknown but the company exited or raised, make a reasonable estimate based on available data. "
-                    "Return your response in JSON format with these keys:\n"
-                    "- 'exit_value_usd': number (exit value in USD, 0 if no exit)\n"
-                    "- 'total_funding_usd': number (total venture funding raised in USD, 0 if unknown)"
-                ),
+                    "You are a venture research assistant tasked with providing information about company exits and funding.\n"
+                    "Exits: Identify and report the value if the company has had an exit (IPO, acquisition, direct listing, SPAC)\n"
+                    "Funding: Report the total venture funding raised in USD.\n"
+                    "Return 0 for exit and funding if you cannot find any information."
+                    "Output Format: Return your response in JSON format with keys exit_value_usd and total_funding_usd.\n"
+
+                )
             },
             {
                 "role": "user",
-                "content": f"For {company_name}: What was its exit value (if acquired/IPO)? How much total venture funding did it raise? If exit value is unknown but it did exit, provide your best estimate.",
-            },
+                "content": (
+                    f"1. How much did {company_name} ipo|acquired|spac for?\n"
+                    f"2. How much did {company_name} raise in venture capital?\n\n"
+                    "Provide values for exit_value_usd and total_funding_usd as mentioned."
+                )
+            }
         ]
-
         fallback = {"exit_value_usd": 0, "total_funding_usd": 0}
 
         return self._make_perplexity_request(messages, fallback, company_name)
