@@ -35,10 +35,25 @@ class DataGenerator:
         for _ in range(num_samples):
             x_parts = []
             for cat in self.MATRIX:
-                val = self.sample_ordinal_for_category(cat, pop_cfg["sampling_probs"])
-                oh = one_hot_encode_column(val, self.MATRIX[cat]["DIMENSION"])
+                d = self.MATRIX[cat]["DIMENSION"]
+                
+                p = pop_cfg["sampling_probs"][cat].copy()
+                
+                if len(p) != d:
+                    raise ValueError(f"Probability vector length ({len(p)}) doesn't match dimension ({d}) for category {cat}")
+                
+                p = p + np.random.normal(0, 0.05, size=d)
+                p = np.clip(p, 0.01, 0.99)
+                p = p / p.sum()  
+                
+                val = np.random.choice(range(1, d + 1), p=p) 
+                oh = np.zeros(d)
+                oh[val - 1] = 1 
                 x_parts.append(oh)
+                
             x = np.concatenate(x_parts)
+            
+            # Sample exit and funding values
             e_val, f_val = self.sample_exit_and_funding(
                 pop_cfg["p_funding"],
                 pop_cfg["mu_funding"],
@@ -47,9 +62,11 @@ class DataGenerator:
                 pop_cfg["mu_exit"],
                 pop_cfg["sigma_exit"],
             )
+            
             X_list.append(x)
             e_list.append(e_val)
             f_list.append(f_val)
+            
         return np.array(X_list), np.array(e_list), np.array(f_list)
 
     def generate_dataset(self, total_samples, populations):

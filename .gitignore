@@ -3,3 +3,5 @@ venv/
 .env
 .DS_Store
 pyproject.toml
+data/proxycurl/
+data/linkedin_profiles

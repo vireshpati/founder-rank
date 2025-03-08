@@ -1,133 +1,133 @@
-Unnamed: 0,Name,Company,LinkedIn,Batch,exit_value_usd,total_funding_usd
-0,Nathan Blecharczyk,Airbnb,https://www.linkedin.com/in/blecharczyk/,top_company,101600000000.0,6400000000.0
-1,Brian Chesky,Airbnb,https://www.linkedin.com/in/brianchesky/,top_company,101600000000.0,6400000000.0
-2,Joe Gebbia,Airbnb,https://www.linkedin.com/in/jgebbia/,top_company,101600000000.0,6400000000.0
-3,Spenser Skates,Amplitude,https://www.linkedin.com/in/spenserskates,top_company,4000000000.0,336000000.0
-4,Curtis Liu,Amplitude,https://www.linkedin.com/in/jerry-klingenberger-15027791,top_company,4000000000.0,336000000.0
-5,Brian Armstrong,Coinbase,https://www.linkedin.com/in/barmstrong/,top_company,85700000000.0,540070000.0
-6,Andy Fang,DoorDash,https://www.linkedin.com/in/fangsterr,top_company,60000000000.0,2100000000.0
-7,Stanley Tang,DoorDash,https://www.linkedin.com/in/stanleytang,top_company,60000000000.0,2100000000.0
-8,Tony Xu,DoorDash,https://www.linkedin.com/in/xutony,top_company,60000000000.0,2100000000.0
-9,Arash Ferdowsi,Dropbox,https://www.linkedin.com/in/arashferdowsi/,top_company,756000000.0,1000000000.0
-10,Drew Houston,Dropbox,https://www.linkedin.com/in/drewhouston/,top_company,756000000.0,1000000000.0
-11,Barry Canton,Ginkgo Bioworks,https://www.linkedin.com/in/barry-canton-6826424/,top_company,17800000000.0,797800000.0
-12,Austin Che,Ginkgo Bioworks,https://www.linkedin.com/in/austinche/,top_company,17800000000.0,797800000.0
-13,Jason Kelly,Ginkgo Bioworks,https://www.linkedin.com/in/jrkelly2/,top_company,17800000000.0,797800000.0
-14,Tom Knight,Ginkgo Bioworks,https://www.linkedin.com/in/tom-knight-2236324/,top_company,17800000000.0,797800000.0
-15,Reshma Shetty,Ginkgo Bioworks,https://www.linkedin.com/in/rpshetty/,top_company,17800000000.0,797800000.0
-16,Sid Sijbrandij,GitLab,http://nl.linkedin.com/in/sijbrandij,top_company,10900000000.0,412000000.0
-17,Dmytro Zaporozhets,GitLab,https://www.linkedin.com/in/dzaporozhets,top_company,10900000000.0,412000000.0
-18,Apoorva Mehta,Instacart,https://www.linkedin.com/in/apoorvamehta/,top_company,9900000000.0,2400000000.0
-19,Brandon Leonardo,Instacart,https://www.linkedin.com/in/leonardo/,top_company,9900000000.0,2400000000.0
-20,Max Mullen,Instacart,https://www.linkedin.com/in/maxmullen/,top_company,9900000000.0,2400000000.0
-21,Mikhail Kokorich,Momentus,https://linkedin.com/in/kokorich,top_company,700000000.0,172500000.0
-22,Matthew De Silva,Notable Labs,https://www.linkedin.com/in/matthewdesilva/,top_company,0.0,68490000.0
-23,Pete Quinzio,Notable Labs,https://www.linkedin.com/in/peter-quinzio-26083a35,top_company,0.0,68490000.0
-24,Alex Solomon,PagerDuty,https://www.linkedin.com/in/alexsolo,top_company,1800000000.0,173700000.0
-25,Uri Lopatin,Pardes Biosciences,https://linkedin.com/in/urilopatin,top_company,134000000.0,326000000.0
-26,Rajat Suri,Presto,https://www.linkedin.com/in/rajatsuri,top_company,1000000000.0,500000000.0
-27,Chad Rigetti,Rigetti Computing,https://www.linkedin.com/in/chad-rigetti-9891562,top_company,1500000000.0,379000000.0
-28,Jared Rodman,Weave,https://www.linkedin.com/in/jared-rodman-2188a23b/,top_company,120000000.0,156000000.0
-29,Clint Berry,Weave,https://www.linkedin.com/in/clintonberry,top_company,120000000.0,156000000.0
-30,Brandon Rodman,Weave,https://www.linkedin.com/in/brandonrodman,top_company,120000000.0,156000000.0
-31,Caroline Cochran,Oklo,https://www.linkedin.com/in/caorilne,top_company,850000000.0,306000000.0
-32,Jacob DeWitte,Oklo,http://linkedin.com/in/jacob-dewitte-90062132,top_company,850000000.0,306000000.0
-33,David Gausebeck,Matterport,https://www.linkedin.com/in/david-gausebeck-ab23015,top_company,1600000000.0,114000000.0
-34,Calvin French-Owen,Segment,https://www.linkedin.com/in/calvinfo/,top_company,3200000000.0,109000000.0
-35,Ilya Volodarsky,Segment,https://www.linkedin.com/in/ilyavolodarsky/,top_company,3200000000.0,109000000.0
-36,Nicolas Dessaigne,Algolia,https://www.linkedin.com/in/nicolasdessaigne/,top_company,0.0,315000000.0
-37,Julien Lemoine,Algolia,https://linkedin.com/in/julienlemoine,top_company,0.0,315000000.0
-38,Haroon Mokhtarzada,Truebill,https://www.linkedin.com/in/haroonmokhtarzada/,top_company,1275000000.0,85000000.0
-39,Yahya Mokhtarzada,Truebill,https://www.linkedin.com/in/yahyamokhtarzada,top_company,1275000000.0,85000000.0
-40,Idris Mokhtarzada,Truebill,https://www.linkedin.com/in/idrismokhtarzada,top_company,1275000000.0,85000000.0
-41,Justin Kan,Twitch,https://www.linkedin.com/in/justinkan,top_company,970000000.0,43050000.0
-42,Michael Seibel,Twitch,https://linkedin.com/in/mwseibel,top_company,970000000.0,43050000.0
-43,Emmett Shear,Twitch,https://www.linkedin.com/in/emmettshear,top_company,970000000.0,43050000.0
-44,Kyle Vogt,Twitch,https://www.linkedin.com/in/kylevogt/,top_company,970000000.0,43050000.0
-45,Ralph Gootee,PlanGrid,https://www.linkedin.com/in/ralphleon/,top_company,875000000.0,66000000.0
-46,Ryan Sutton-Gee,PlanGrid,https://www.linkedin.com/in/rsuttong,top_company,875000000.0,66000000.0
-47,Tracy Young,PlanGrid,https://www.linkedin.com/in/tracy-young-0a17441,top_company,875000000.0,66000000.0
-51,Daniel Kan,Cruise,https://www.linkedin.com/in/danielkan,top_company,1000000000.0,15100000000.0
-54,Robert Vis,Bird,http://linkedin/in/robertvis,top_company,2300000000.0,540000000.0
-56,Pedro Franceschi,Brex,https://www.linkedin.com/in/pfranceschi,top_company,0.0,0.0
-57,Henrique Dubugras,Brex,https://br.linkedin.com/in/henriquedubugras,top_company,0.0,0.0
-58,Adam Hansmann,The Athletic,https://www.linkedin.com/in/adamhansmann,top_company,550000000.0,139500000.0
-59,Alex Mather,The Athletic,https://www.linkedin.com/in/alexemather,top_company,550000000.0,139500000.0
-60,Zach Sims,Codecademy,https://www.linkedin.com/in/zacharysims,top_company,525000000.0,82520000.0
-61,Daniel Yanisse,Checkr,https://www.linkedin.com/in/yanisse,top_company,0.0,679000000.0
-62,Jonathan Perichon,Checkr,https://www.linkedin.com/in/jperichon/,top_company,0.0,679000000.0
-63,Brian Noguchi,Lever,https://linkedin.com/in/briannoguchi,top_company,0.0,123000000.0
-64,Nate Smith,Lever,https://www.linkedin.com/in/nateps/,top_company,0.0,123000000.0
-65,Sarah Nahm,Lever,https://www.linkedin.com/in/sarahnahm,top_company,0.0,123000000.0
-66,Wei Deng,Clipboard Health,https://www.linkedin.com/in/dengwei,top_company,0.0,90000000.0
-67,Matin Movassate,Heap,https://www.linkedin.com/in/matin-movassate-29494723,top_company,0.0,205000000.0
-68,Drew Durbin,Sendwave,https://www.linkedin.com/in/drew-durbin-52517614/,top_company,500000000.0,145430000.0
-69,Lincoln Quirk,Sendwave,https://www.linkedin.com/in/lincolnquirk,top_company,500000000.0,145430000.0
-70,Alex Bouaziz,Deel,https://www.linkedin.com/in/alexbouaziz/,top_company,0.0,680000000.0
-71,Shuo Wang,Deel,https://www.linkedin.com/in/shuo-wang-848a8956/,top_company,0.0,680000000.0
-72,Dan Carroll,Clever,https://www.linkedin.com/in/danielcarroll/,top_company,0.0,13300000.0
-73,Rafael Garcia,Clever,https://www.linkedin.com/in/rafgarcia/,top_company,0.0,13300000.0
-74,Ahmed Beshry,Caper,https://ca.linkedin.com/in/ahmedbeshry,top_company,350000000.0,10000000.0
-75,Lindon Gao,Caper,https://www.linkedin.com/pub/lindon-gao/24/b31/1a1,top_company,350000000.0,10000000.0
-77,Brad Siegler,EquipmentShare,https://linkedin.com/in/bradsiegler,top_company,0.0,3940000000.0
-78,Jeff Lowe,EquipmentShare,https://www.linkedin.com/in/lowejeffrey,top_company,0.0,3940000000.0
-79,Jabbok Schlacks,EquipmentShare,https://www.linkedin.com/in/jabbok-schlacks-319a378a,top_company,0.0,3940000000.0
-80,William Schlacks,EquipmentShare,https://www.linkedin.com/in/william-schlacks-49796016,top_company,0.0,3940000000.0
-81,Steve Huffman,Reddit,https://www.linkedin.com/in/shuffman56/,top_company,6400000000.0,1300000000.0
-82,Victor Ho,Fivestars,https://www.linkedin.com/in/victor-ho-47257211/,top_company,317000000.0,147920000.0
-83,Matt Doka,Fivestars,https://www.linkedin.com/in/mattdoka/,top_company,317000000.0,147920000.0
-86,Mike Sherrill,Machine Zone,https://www.linkedin.com/in/mikesherrill,top_company,500000000.0,593290000.0
-87,Marcelo Cortes,Faire,https://www.linkedin.com/in/marcelo-cortes-b34317,top_company,0.0,1400000000.0
-88,Daniele Perito,Faire,https://www.linkedin.com/in/danieleperito,top_company,0.0,1400000000.0
-89,Max Rhodes,Faire,https://www.linkedin.com/in/max-rhodes,top_company,0.0,1400000000.0
-90,Taylor Brown,Fivetran,https://www.linkedin.com/in/taylorwcbrown,top_company,0.0,853020000.0
-91,George Fraser,Fivetran,https://www.linkedin.com/in/george-fraser-a0219230,top_company,0.0,853020000.0
-92,Pete Koomen,Optimizely,https://www.linkedin.com/in/petekoomen/,top_company,600000000.0,264660000.0
-93,Ryan Petersen,Flexport,https://www.linkedin.com/in/rpetersen,top_company,0.0,2400000000.0
-94,Richard Aberman,WePay,https://www.linkedin.com/in/richaberman/,top_company,400000000.0,74170000.0
-95,Bill Clerico,WePay,https://www.linkedin.com/in/billclerico,top_company,400000000.0,74170000.0
-96,David Rusenko,Weebly,https://www.linkedin.com/in/drusenko,top_company,365000000.0,76670000.0
-97,Chris Fanini,Weebly,https://www.linkedin.com/in/chrisfanini/,top_company,365000000.0,76670000.0
-98,Dan Veltri,Weebly,https://www.linkedin.com/in/harish-p-agarwal,top_company,365000000.0,76670000.0
-99,Matt Feury,Flock Safety,https://www.linkedin.com/in/matt-feury-a105a339/,top_company,0.0,380600000.0
-100,Garrett Langley,Flock Safety,https://www.linkedin.com/in/glangley/,top_company,0.0,380600000.0
-101,Pierre Betouin,Sqreen,https://www.linkedin.com/in/pbetouin/,top_company,0.0,16720000.0
-102,Jean-Baptiste Aviat,Sqreen,https://www.linkedin.com/in/jbaviat,top_company,0.0,16720000.0
-103,Edvard Engesaeth,NURX,https://www.linkedin.com/profile/view?id=254149970&trk=nav_responsive_tab_profile_pic,top_company,0.0,115920000.0
-104,Andrew Barnes,Go1,http://www.linkedin.com/in/ajbarnes,top_company,0.0,400000000.0
-105,Chris Eigeland,Go1,https://au.linkedin.com/in/chriseigeland,top_company,0.0,400000000.0
-106,Chris Hood,Go1,http://au.linkedin.com/in/chrish00d,top_company,0.0,400000000.0
-107,Vu Tran,Go1,http://www.linkedin.com/profile/view?id=145590347,top_company,0.0,400000000.0
-108,Alex Polvi,CoreOS,https://www.linkedin.com/in/polvi/,top_company,250000000.0,48020000.0
-109,Igino Cafiero,Bear Flag Robotics,https://www.linkedin.com/in/igino-cafiero-43b213b0,top_company,250000000.0,11520000.0
-110,Aubrey Donnellan,Bear Flag Robotics,https://www.linkedin.com/in/aubrey-donnellan-0b676b7/,top_company,250000000.0,11520000.0
-111,Eddy Lu,GOAT Group,https://www.linkedin.com/in/eddylu/,top_company,1100000000.0,491620000.0
-112,Daishin Sugano,GOAT Group,https://www.linkedin.com/in/sensugano,top_company,1100000000.0,491620000.0
-114,James Lindenbaum,Heroku,https://www.linkedin.com/in/jameslindenbaum,top_company,212000000.0,13020000.0
-115,Adam Wiggins,Heroku,https://www.linkedin.com/in/adam-wiggins-a7623845,top_company,212000000.0,13020000.0
-116,Ishan Bansal,Groww,https://in.linkedin.com/in/ishan-bansal-8678b216,top_company,0.0,399890000.0
-117,Harsh Jain,Groww,https://in.linkedin.com/in/harshjainiitd,top_company,0.0,399890000.0
-118,Lalit Keshre,Groww,https://www.linkedin.com/in/lalitkeshre,top_company,0.0,399890000.0
-119,Neeraj Singh,Groww,https://www.linkedin.com/in/neeraj-singh-a910819,top_company,0.0,399890000.0
-120,Mike Xu,GrubMarket,http://www.linkedin.com/pub/mike-minyi-xu/1/837/510/,top_company,0.0,516960000.0
-121,Neal O'Mara,HelloSign,https://www.linkedin.com/in/nealomara/,top_company,230000000.0,16020000.0
-122,Edward Kim,Gusto,https://www.linkedin.com/in/edawerd/,top_company,0.0,921000000.0
-123,Tomer London,Gusto,https://www.linkedin.com/in/tomerlondon/,top_company,0.0,921000000.0
-124,Josh Reeves,Gusto,https://www.linkedin.com/in/joshuareeves/,top_company,0.0,921000000.0
-125,Betsie Larkin,Honeylove,https://www.linkedin.com/in/betsie-larkin-611a49ba,top_company,0.0,13120000.0
-126,Carly Leahy,Modern Fertility,https://www.linkedin.com/in/carlyleahy,top_company,225000000.0,22000000.0
-127,Afton Vechery,Modern Fertility,https://www.linkedin.com/in/aftonv/,top_company,225000000.0,22000000.0
-129,Alain Meier,Cognito,https://www.linkedin.com/in/alainmeier/,top_company,0.0,2000000.0
-130,Christopher Morton,Cognito,https://linkedin.com/in/mortonch,top_company,0.0,2000000.0
-131,Conor Murray,OpenInvest,https://www.linkedin.com/pub/conor-murray/93/300/b06,top_company,0.0,24150000.0
-132,Phillip Wei,OpenInvest,http://www.linkedin.com/in/phillipwei,top_company,0.0,24150000.0
-133,Vidit Aatrey,Meesho,https://www.linkedin.com/in/vidit-aatrey-a3639120,top_company,0.0,1360000000.0
-134,Sanjeev Barnwal,Meesho,https://www.linkedin.com/in/sanjeev-barnwal-4099341b,top_company,0.0,1360000000.0
-135,Tim Trefren,Mixpanel,https://linkedin.com/in/timtrefren,top_company,0.0,284520000.0
-136,Suhail Doshi,Mixpanel,https://www.linkedin.com/in/suhaildoshi/,top_company,0.0,284520000.0
-137,Shola Akinlade,Paystack,http://ng.linkedin.com/in/shollsman/en,top_company,200000000.0,11700000.0
-138,Ezra Olubi,Paystack,https://ng.linkedin.com/in/cfezra,top_company,200000000.0,11700000.0
-139,Paul Huelskamp,Moxion Power Co.,https://www.linkedin.com/in/paulhuelskamp,top_company,0.0,110000000.0
+Unnamed: 0,Name,Company,LinkedIn,Batch,exit_value_usd,total_funding_usd,cutoff_date
+0,Nathan Blecharczyk,Airbnb,https://www.linkedin.com/in/blecharczyk/,top_company,101600000000.0,6400000000.0,2009
+1,Brian Chesky,Airbnb,https://www.linkedin.com/in/brianchesky/,top_company,101600000000.0,6400000000.0,2009
+2,Joe Gebbia,Airbnb,https://www.linkedin.com/in/jgebbia/,top_company,101600000000.0,6400000000.0,2009
+3,Spenser Skates,Amplitude,https://www.linkedin.com/in/spenserskates,top_company,4000000000.0,336000000.0,2012
+4,Curtis Liu,Amplitude,https://www.linkedin.com/in/jerry-klingenberger-15027791,top_company,4000000000.0,336000000.0,2012
+5,Brian Armstrong,Coinbase,https://www.linkedin.com/in/barmstrong/,top_company,85700000000.0,540070000.0,2012
+6,Andy Fang,DoorDash,https://www.linkedin.com/in/fangsterr,top_company,60000000000.0,2100000000.0,2013
+7,Stanley Tang,DoorDash,https://www.linkedin.com/in/stanleytang,top_company,60000000000.0,2100000000.0,2013
+8,Tony Xu,DoorDash,https://www.linkedin.com/in/xutony,top_company,60000000000.0,2100000000.0,2013
+9,Arash Ferdowsi,Dropbox,https://www.linkedin.com/in/arashferdowsi/,top_company,756000000.0,1000000000.0,2007
+10,Drew Houston,Dropbox,https://www.linkedin.com/in/drewhouston/,top_company,756000000.0,1000000000.0,2007
+11,Barry Canton,Ginkgo Bioworks,https://www.linkedin.com/in/barry-canton-6826424/,top_company,17800000000.0,797800000.0,2014
+12,Austin Che,Ginkgo Bioworks,https://www.linkedin.com/in/austinche/,top_company,17800000000.0,797800000.0,2014
+13,Jason Kelly,Ginkgo Bioworks,https://www.linkedin.com/in/jrkelly2/,top_company,17800000000.0,797800000.0,2014
+14,Tom Knight,Ginkgo Bioworks,https://www.linkedin.com/in/tom-knight-2236324/,top_company,17800000000.0,797800000.0,2014
+15,Reshma Shetty,Ginkgo Bioworks,https://www.linkedin.com/in/rpshetty/,top_company,17800000000.0,797800000.0,2014
+16,Sid Sijbrandij,GitLab,http://nl.linkedin.com/in/sijbrandij,top_company,10900000000.0,412000000.0,2015
+17,Dmytro Zaporozhets,GitLab,https://www.linkedin.com/in/dzaporozhets,top_company,10900000000.0,412000000.0,2015
+18,Apoorva Mehta,Instacart,https://www.linkedin.com/in/apoorvamehta/,top_company,9900000000.0,2400000000.0,2012
+19,Brandon Leonardo,Instacart,https://www.linkedin.com/in/leonardo/,top_company,9900000000.0,2400000000.0,2012
+20,Max Mullen,Instacart,https://www.linkedin.com/in/maxmullen/,top_company,9900000000.0,2400000000.0,2012
+21,Mikhail Kokorich,Momentus,https://linkedin.com/in/kokorich,top_company,700000000.0,172500000.0,2018
+22,Matthew De Silva,Notable Labs,https://www.linkedin.com/in/matthewdesilva/,top_company,0.0,68490000.0,2015
+23,Pete Quinzio,Notable Labs,https://www.linkedin.com/in/peter-quinzio-26083a35,top_company,0.0,68490000.0,2015
+24,Alex Solomon,PagerDuty,https://www.linkedin.com/in/alexsolo,top_company,1800000000.0,173700000.0,2010
+25,Uri Lopatin,Pardes Biosciences,https://linkedin.com/in/urilopatin,top_company,134000000.0,326000000.0,2020
+26,Rajat Suri,Presto,https://www.linkedin.com/in/rajatsuri,top_company,1000000000.0,500000000.0,2010
+27,Chad Rigetti,Rigetti Computing,https://www.linkedin.com/in/chad-rigetti-9891562,top_company,1500000000.0,379000000.0,2014
+28,Jared Rodman,Weave,https://www.linkedin.com/in/jared-rodman-2188a23b/,top_company,120000000.0,156000000.0,2014
+29,Clint Berry,Weave,https://www.linkedin.com/in/clintonberry,top_company,120000000.0,156000000.0,2014
+30,Brandon Rodman,Weave,https://www.linkedin.com/in/brandonrodman,top_company,120000000.0,156000000.0,2014
+31,Caroline Cochran,Oklo,https://www.linkedin.com/in/caorilne,top_company,850000000.0,306000000.0,2014
+32,Jacob DeWitte,Oklo,http://linkedin.com/in/jacob-dewitte-90062132,top_company,850000000.0,306000000.0,2014
+33,David Gausebeck,Matterport,https://www.linkedin.com/in/david-gausebeck-ab23015,top_company,1600000000.0,114000000.0,2012
+34,Calvin French-Owen,Segment,https://www.linkedin.com/in/calvinfo/,top_company,3200000000.0,109000000.0,2011
+35,Ilya Volodarsky,Segment,https://www.linkedin.com/in/ilyavolodarsky/,top_company,3200000000.0,109000000.0,2011
+36,Nicolas Dessaigne,Algolia,https://www.linkedin.com/in/nicolasdessaigne/,top_company,0.0,315000000.0,2014
+37,Julien Lemoine,Algolia,https://linkedin.com/in/julienlemoine,top_company,0.0,315000000.0,2014
+38,Haroon Mokhtarzada,Truebill,https://www.linkedin.com/in/haroonmokhtarzada/,top_company,1275000000.0,85000000.0,2016
+39,Yahya Mokhtarzada,Truebill,https://www.linkedin.com/in/yahyamokhtarzada,top_company,1275000000.0,85000000.0,2016
+40,Idris Mokhtarzada,Truebill,https://www.linkedin.com/in/idrismokhtarzada,top_company,1275000000.0,85000000.0,2016
+41,Justin Kan,Twitch,https://www.linkedin.com/in/justinkan,top_company,970000000.0,43050000.0,2007
+42,Michael Seibel,Twitch,https://linkedin.com/in/mwseibel,top_company,970000000.0,43050000.0,2007
+43,Emmett Shear,Twitch,https://www.linkedin.com/in/emmettshear,top_company,970000000.0,43050000.0,2007
+44,Kyle Vogt,Twitch,https://www.linkedin.com/in/kylevogt/,top_company,970000000.0,43050000.0,2007
+45,Ralph Gootee,PlanGrid,https://www.linkedin.com/in/ralphleon/,top_company,875000000.0,66000000.0,2012
+46,Ryan Sutton-Gee,PlanGrid,https://www.linkedin.com/in/rsuttong,top_company,875000000.0,66000000.0,2012
+47,Tracy Young,PlanGrid,https://www.linkedin.com/in/tracy-young-0a17441,top_company,875000000.0,66000000.0,2012
+51,Daniel Kan,Cruise,https://www.linkedin.com/in/danielkan,top_company,1000000000.0,15100000000.0,2014
+54,Robert Vis,Bird,http://linkedin/in/robertvis,top_company,2300000000.0,540000000.0,2016
+56,Pedro Franceschi,Brex,https://www.linkedin.com/in/pfranceschi,top_company,0.0,1200000000.0,2017
+57,Henrique Dubugras,Brex,https://br.linkedin.com/in/henriquedubugras,top_company,0.0,1200000000.0,2017
+58,Adam Hansmann,The Athletic,https://www.linkedin.com/in/adamhansmann,top_company,550000000.0,139500000.0,2016
+59,Alex Mather,The Athletic,https://www.linkedin.com/in/alexemather,top_company,550000000.0,139500000.0,2016
+60,Zach Sims,Codecademy,https://www.linkedin.com/in/zacharysims,top_company,525000000.0,82520000.0,2011
+61,Daniel Yanisse,Checkr,https://www.linkedin.com/in/yanisse,top_company,0.0,679000000.0,2014
+62,Jonathan Perichon,Checkr,https://www.linkedin.com/in/jperichon/,top_company,0.0,679000000.0,2014
+63,Brian Noguchi,Lever,https://linkedin.com/in/briannoguchi,top_company,0.0,123000000.0,2012
+64,Nate Smith,Lever,https://www.linkedin.com/in/nateps/,top_company,0.0,123000000.0,2012
+65,Sarah Nahm,Lever,https://www.linkedin.com/in/sarahnahm,top_company,0.0,123000000.0,2012
+66,Wei Deng,Clipboard Health,https://www.linkedin.com/in/dengwei,top_company,0.0,90000000.0,2017
+67,Matin Movassate,Heap,https://www.linkedin.com/in/matin-movassate-29494723,top_company,0.0,205000000.0,2013
+68,Drew Durbin,Sendwave,https://www.linkedin.com/in/drew-durbin-52517614/,top_company,500000000.0,145430000.0,2012
+69,Lincoln Quirk,Sendwave,https://www.linkedin.com/in/lincolnquirk,top_company,500000000.0,145430000.0,2012
+70,Alex Bouaziz,Deel,https://www.linkedin.com/in/alexbouaziz/,top_company,0.0,680000000.0,2019
+71,Shuo Wang,Deel,https://www.linkedin.com/in/shuo-wang-848a8956/,top_company,0.0,680000000.0,2019
+72,Dan Carroll,Clever,https://www.linkedin.com/in/danielcarroll/,top_company,0.0,13300000.0,2012
+73,Rafael Garcia,Clever,https://www.linkedin.com/in/rafgarcia/,top_company,0.0,13300000.0,2012
+74,Ahmed Beshry,Caper,https://ca.linkedin.com/in/ahmedbeshry,top_company,350000000.0,10000000.0,2016
+75,Lindon Gao,Caper,https://www.linkedin.com/pub/lindon-gao/24/b31/1a1,top_company,350000000.0,10000000.0,2016
+77,Brad Siegler,EquipmentShare,https://linkedin.com/in/bradsiegler,top_company,0.0,3940000000.0,2015
+78,Jeff Lowe,EquipmentShare,https://www.linkedin.com/in/lowejeffrey,top_company,0.0,3940000000.0,2015
+79,Jabbok Schlacks,EquipmentShare,https://www.linkedin.com/in/jabbok-schlacks-319a378a,top_company,0.0,3940000000.0,2015
+80,William Schlacks,EquipmentShare,https://www.linkedin.com/in/william-schlacks-49796016,top_company,0.0,3940000000.0,2015
+81,Steve Huffman,Reddit,https://www.linkedin.com/in/shuffman56/,top_company,6400000000.0,1300000000.0,2005
+82,Victor Ho,Fivestars,https://www.linkedin.com/in/victor-ho-47257211/,top_company,317000000.0,147920000.0,2011
+83,Matt Doka,Fivestars,https://www.linkedin.com/in/mattdoka/,top_company,317000000.0,147920000.0,2011
+86,Mike Sherrill,Machine Zone,https://www.linkedin.com/in/mikesherrill,top_company,500000000.0,593290000.0,2008
+87,Marcelo Cortes,Faire,https://www.linkedin.com/in/marcelo-cortes-b34317,top_company,0.0,1400000000.0,2017
+88,Daniele Perito,Faire,https://www.linkedin.com/in/danieleperito,top_company,0.0,1400000000.0,2017
+89,Max Rhodes,Faire,https://www.linkedin.com/in/max-rhodes,top_company,0.0,1400000000.0,2017
+90,Taylor Brown,Fivetran,https://www.linkedin.com/in/taylorwcbrown,top_company,0.0,853020000.0,2013
+91,George Fraser,Fivetran,https://www.linkedin.com/in/george-fraser-a0219230,top_company,0.0,853020000.0,2013
+92,Pete Koomen,Optimizely,https://www.linkedin.com/in/petekoomen/,top_company,600000000.0,264660000.0,2010
+93,Ryan Petersen,Flexport,https://www.linkedin.com/in/rpetersen,top_company,0.0,2400000000.0,2014
+94,Richard Aberman,WePay,https://www.linkedin.com/in/richaberman/,top_company,400000000.0,74170000.0,2009
+95,Bill Clerico,WePay,https://www.linkedin.com/in/billclerico,top_company,400000000.0,74170000.0,2009
+96,David Rusenko,Weebly,https://www.linkedin.com/in/drusenko,top_company,365000000.0,76670000.0,2007
+97,Chris Fanini,Weebly,https://www.linkedin.com/in/chrisfanini/,top_company,365000000.0,76670000.0,2007
+98,Dan Veltri,Weebly,https://www.linkedin.com/in/harish-p-agarwal,top_company,365000000.0,76670000.0,2007
+99,Matt Feury,Flock Safety,https://www.linkedin.com/in/matt-feury-a105a339/,top_company,0.0,380600000.0,2017
+100,Garrett Langley,Flock Safety,https://www.linkedin.com/in/glangley/,top_company,0.0,380600000.0,2017
+101,Pierre Betouin,Sqreen,https://www.linkedin.com/in/pbetouin/,top_company,0.0,16720000.0,2018
+102,Jean-Baptiste Aviat,Sqreen,https://www.linkedin.com/in/jbaviat,top_company,0.0,16720000.0,2018
+103,Edvard Engesaeth,NURX,https://www.linkedin.com/profile/view?id=254149970&trk=nav_responsive_tab_profile_pic,top_company,0.0,115920000.0,2016
+104,Andrew Barnes,Go1,http://www.linkedin.com/in/ajbarnes,top_company,0.0,400000000.0,2015
+105,Chris Eigeland,Go1,https://au.linkedin.com/in/chriseigeland,top_company,0.0,400000000.0,2015
+106,Chris Hood,Go1,http://au.linkedin.com/in/chrish00d,top_company,0.0,400000000.0,2015
+107,Vu Tran,Go1,http://www.linkedin.com/profile/view?id=145590347,top_company,0.0,400000000.0,2015
+108,Alex Polvi,CoreOS,https://www.linkedin.com/in/polvi/,top_company,250000000.0,48020000.0,2013
+109,Igino Cafiero,Bear Flag Robotics,https://www.linkedin.com/in/igino-cafiero-43b213b0,top_company,250000000.0,11520000.0,2018
+110,Aubrey Donnellan,Bear Flag Robotics,https://www.linkedin.com/in/aubrey-donnellan-0b676b7/,top_company,250000000.0,11520000.0,2018
+111,Eddy Lu,GOAT Group,https://www.linkedin.com/in/eddylu/,top_company,1100000000.0,491620000.0,2011
+112,Daishin Sugano,GOAT Group,https://www.linkedin.com/in/sensugano,top_company,1100000000.0,491620000.0,2011
+114,James Lindenbaum,Heroku,https://www.linkedin.com/in/jameslindenbaum,top_company,212000000.0,13020000.0,2008
+115,Adam Wiggins,Heroku,https://www.linkedin.com/in/adam-wiggins-a7623845,top_company,212000000.0,13020000.0,2008
+116,Ishan Bansal,Groww,https://in.linkedin.com/in/ishan-bansal-8678b216,top_company,0.0,399890000.0,2018
+117,Harsh Jain,Groww,https://in.linkedin.com/in/harshjainiitd,top_company,0.0,399890000.0,2018
+118,Lalit Keshre,Groww,https://www.linkedin.com/in/lalitkeshre,top_company,0.0,399890000.0,2018
+119,Neeraj Singh,Groww,https://www.linkedin.com/in/neeraj-singh-a910819,top_company,0.0,399890000.0,2018
+120,Mike Xu,GrubMarket,http://www.linkedin.com/pub/mike-minyi-xu/1/837/510/,top_company,0.0,516960000.0,2015
+121,Neal O'Mara,HelloSign,https://www.linkedin.com/in/nealomara/,top_company,230000000.0,16020000.0,2011
+122,Edward Kim,Gusto,https://www.linkedin.com/in/edawerd/,top_company,0.0,921000000.0,2012
+123,Tomer London,Gusto,https://www.linkedin.com/in/tomerlondon/,top_company,0.0,921000000.0,2012
+124,Josh Reeves,Gusto,https://www.linkedin.com/in/joshuareeves/,top_company,0.0,921000000.0,2012
+125,Betsie Larkin,Honeylove,https://www.linkedin.com/in/betsie-larkin-611a49ba,top_company,0.0,13120000.0,2018
+126,Carly Leahy,Modern Fertility,https://www.linkedin.com/in/carlyleahy,top_company,225000000.0,22000000.0,2017
+127,Afton Vechery,Modern Fertility,https://www.linkedin.com/in/aftonv/,top_company,225000000.0,22000000.0,2017
+129,Alain Meier,Cognito,https://www.linkedin.com/in/alainmeier/,top_company,0.0,2000000.0,2014
+130,Christopher Morton,Cognito,https://linkedin.com/in/mortonch,top_company,0.0,2000000.0,2014
+131,Conor Murray,OpenInvest,https://www.linkedin.com/pub/conor-murray/93/300/b06,top_company,0.0,24150000.0,2015
+132,Phillip Wei,OpenInvest,http://www.linkedin.com/in/phillipwei,top_company,0.0,24150000.0,2015
+133,Vidit Aatrey,Meesho,https://www.linkedin.com/in/vidit-aatrey-a3639120,top_company,0.0,1360000000.0,2016
+134,Sanjeev Barnwal,Meesho,https://www.linkedin.com/in/sanjeev-barnwal-4099341b,top_company,0.0,1360000000.0,2016
+135,Tim Trefren,Mixpanel,https://linkedin.com/in/timtrefren,top_company,0.0,284520000.0,2009
+136,Suhail Doshi,Mixpanel,https://www.linkedin.com/in/suhaildoshi/,top_company,0.0,284520000.0,2009
+137,Shola Akinlade,Paystack,http://ng.linkedin.com/in/shollsman/en,top_company,200000000.0,11700000.0,2016
+138,Ezra Olubi,Paystack,https://ng.linkedin.com/in/cfezra,top_company,200000000.0,11700000.0,2021
+139,Paul Huelskamp,Moxion Power Co.,https://www.linkedin.com/in/paulhuelskamp,top_company,0.0,110000000.0,
 140,Alexander Meek,Moxion Power Co.,https://www.linkedin.com/in/alexandermeek/,top_company,0.0,110000000.0
 141,Daniel Kivatinos,DrChrono,https://www.linkedin.com/in/kivatinos/,top_company,180000000.0,26800000.0
 142,Michael Nusimow,DrChrono,https://linkedin.com/in/mnusimow,top_company,180000000.0,26800000.0
