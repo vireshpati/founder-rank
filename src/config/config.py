@@ -176,7 +176,7 @@ class Config:
     SYNTH = {
         "POPULATIONS": {
             "successful": {
-                "fraction": 0.20,
+                "fraction": 0.40,
                 "sampling_probs": {
                     "UNDERGRAD": np.array(
                         [
@@ -246,7 +246,7 @@ class Config:
                 "sigma_exit": 1.1,
             },
             "midtier": {
-                "fraction": 0.4,
+                "fraction": 0.3,
                 "sampling_probs": {
                     "UNDERGRAD": np.array(
                         [
@@ -315,7 +315,7 @@ class Config:
                 "sigma_exit": 1.0,
             },
             "control": {
-                "fraction": 0.40,
+                "fraction": 0.30,
                 "sampling_probs": {
                     "UNDERGRAD": np.array(
                         [

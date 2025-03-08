@@ -42,9 +42,11 @@ class DataGenerator:
                 if len(p) != d:
                     raise ValueError(f"Probability vector length ({len(p)}) doesn't match dimension ({d}) for category {cat}")
                 
-                p = p + np.random.normal(0, 0.05, size=d)
-                p = np.clip(p, 0.01, 0.99)
+                p = p + np.random.normal(0, 0.1, size=d)
+                p = np.clip(p, 0.05, 0.95)
                 p = p / p.sum()  
+            
+
                 
                 val = np.random.choice(range(1, d + 1), p=p) 
                 oh = np.zeros(d)
@@ -62,6 +64,12 @@ class DataGenerator:
                 pop_cfg["mu_exit"],
                 pop_cfg["sigma_exit"],
             )
+            
+            # Add noise to funding/exit values
+            if np.random.rand() < pop_cfg["p_funding"]:
+                noise = np.random.normal(0, 0.2)
+                e_val = np.random.lognormal(e_val + noise, pop_cfg["sigma_exit"])
+                f_val = np.random.lognormal(f_val + noise, pop_cfg["sigma_funding"])
             
             X_list.append(x)
             e_list.append(e_val)
