@@ -54,6 +54,8 @@ class QuadMLP(nn.Module):
         super().__init__()
         self.input_dim = input_dim
         W_init = torch.FloatTensor(initialize_weight_matrix(input_dim))
+        # Enforce initial symmetry
+        W_init = 0.5 * (W_init + W_init.T)
         self.W = nn.Parameter(W_init)
         self.b = nn.Parameter(torch.zeros(1))
         
@@ -70,12 +72,13 @@ class QuadMLP(nn.Module):
         )
 
     def forward(self, x):
-        quad = torch.sum(x.unsqueeze(1) @ self.W @ x.unsqueeze(-1), dim=(1,2))
+        W_sym = 0.5 * (self.W + self.W.t())
+        quad = torch.sum(x * (x @ W_sym), dim=1)
         mlp = self.mlp(x).squeeze()
         return quad + mlp + self.b
 
     def get_W(self):
-        return self.W
+        return 0.5 * (self.W + self.W.t())
 
     def backward_hook(self, grad):
         # Scale down diagonal gradients
