@@ -1,11 +1,11 @@
 import numpy as np
 import os
 import pandas as pd
-from src.processing.transforms import one_hot_encode_column
+from src.data.transforms import one_hot_encode_column
 from src.config.config import cfg
 
 class DataGenerator:
-    def __init__(self, matrix, seed=42):
+    def __init__(self, matrix=cfg.MATRIX, seed=42):
         self.MATRIX = matrix
         if seed is not None:
             np.random.seed(seed)

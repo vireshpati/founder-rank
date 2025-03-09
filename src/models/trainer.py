@@ -4,7 +4,7 @@ import numpy as np
 from scipy import stats
 from typing import Dict, Any
 from sklearn.metrics import roc_auc_score, classification_report
-
+from src.models.quadratic import QuadMLP, QuadraticModel
 
 class ModelTrainer:
     def __init__(self, model, config: Dict[str, Any], pos_weight=None):
@@ -92,8 +92,8 @@ class ModelTrainer:
             'preds': preds
         }
         
-        if metrics['auc'] > self.best_score:
-            self.best_score = metrics['auc']
+        if metrics['ndcg'] > self.best_score:
+            self.best_score = metrics['ndcg']
             self.best_probs = probs
             self.best_preds = preds
             self.best_model_state = self.model.state_dict()
@@ -129,14 +129,117 @@ class ModelTrainer:
             train_loss = self.train_epoch(train_loader)
             val_metrics = self.evaluate(X_val, y_val)
             
-            # Track best model based on AUC (consistent with evaluate method)
-            if val_metrics['auc'] > self.best_score:
-                self.best_score = val_metrics['auc']
-                self.best_model_state = self.model.state_dict()
-                
+            # Track metrics history
+            self.train_loss_history.append(train_loss)
+            self.val_loss_history.append(val_metrics['loss'])
+            self.test_loss_history.append(val_metrics['loss'])
+            self.train_auc_history.append(val_metrics['auc'])
+            self.val_auc_history.append(val_metrics['auc'])
+            self.test_auc_history.append(val_metrics['auc'])
+            self.train_ndcg_history.append(val_metrics['ndcg'])
+            self.val_ndcg_history.append(val_metrics['ndcg'])
+            self.test_ndcg_history.append(val_metrics['ndcg'])
+            self.train_precision_history.append(val_metrics['precision_at_k'])
+            self.val_precision_history.append(val_metrics['precision_at_k'])
+            self.test_precision_history.append(val_metrics['precision_at_k'])
+            self.train_accuracy_history.append(val_metrics['accuracy'])
+            self.val_accuracy_history.append(val_metrics['accuracy'])
+            self.test_accuracy_history.append(val_metrics['accuracy'])
+            
             if epoch % self.config.get("log_every", 5) == 0:
                 print(f"Epoch {epoch}: Train Loss = {train_loss:.4f}")
                 for metric, value in val_metrics.items():
                     if isinstance(value, (float, int)):  # Only print numeric metrics
                         print(f"Val {metric} = {value:.4f}")
                 print("---")
+
+    def train_with_test_tracking(self, train_loader, X_val, y_val, X_test=None, y_test=None):
+   
+        print(f"{'Epoch':>5} {'Train Loss':>10} {'Val Loss':>10} {'Test Loss':>10} {'Train Acc':>9} {'Val Acc':>9} "
+              f"{'Test Acc':>9} {'Val AUC':>8} {'Test AUC':>8} {'Val NDCG':>8} {'Test NDCG':>8} {'P@K':>8}")
+        print("-" * 120)
+        
+        # Save initial weights
+        W_init = self.model.get_W().detach().cpu().numpy()
+        
+        best_val_auc = float('-inf')
+        self.best_model_state = None
+        
+        for epoch in range(self.config["epochs"]):
+            train_loss = self.train_epoch(train_loader)
+            
+            with torch.no_grad():
+                train_metrics = self.evaluate(train_loader.dataset.tensors[0], train_loader.dataset.tensors[1])
+                val_metrics = self.evaluate(X_val, y_val)
+                
+                if X_test is not None and y_test is not None:
+                    test_metrics = self.evaluate(X_test, y_test)
+                else:
+                    test_metrics = {key: 0.0 for key in val_metrics.keys()}
+            
+            # Track metrics history
+            self.train_loss_history.append(train_loss)
+            self.val_loss_history.append(val_metrics['loss'])
+            self.test_loss_history.append(test_metrics['loss'])
+            
+            self.train_accuracy_history.append(train_metrics['accuracy'])
+            self.val_accuracy_history.append(val_metrics['accuracy'])
+            self.test_accuracy_history.append(test_metrics['accuracy'])
+            
+            self.train_auc_history.append(train_metrics['auc'])
+            self.val_auc_history.append(val_metrics['auc'])
+            self.test_auc_history.append(test_metrics['auc'])
+            
+            self.train_ndcg_history.append(train_metrics['ndcg'])
+            self.val_ndcg_history.append(val_metrics['ndcg'])
+            self.test_ndcg_history.append(test_metrics['ndcg'])
+            
+            self.train_precision_history.append(train_metrics['precision_at_k'])
+            self.val_precision_history.append(val_metrics['precision_at_k'])
+            self.test_precision_history.append(test_metrics['precision_at_k'])
+            
+            if epoch % self.config.get("log_every", 1) == 0:
+                print(f"{epoch:5d} {train_loss:10.4f} {val_metrics['loss']:10.4f} {test_metrics['loss']:10.4f} "
+                    f"{train_metrics['accuracy']:9.4f} {val_metrics['accuracy']:9.4f} {test_metrics['accuracy']:9.4f} "
+                    f"{val_metrics['auc']:8.4f} {test_metrics['auc']:8.4f} "
+                    f"{val_metrics['ndcg']:8.4f} {test_metrics['ndcg']:8.4f} "
+                    f"{val_metrics['precision_at_k']:8.4f}")
+            
+            if val_metrics['auc'] > best_val_auc:
+                best_val_auc = val_metrics['auc']
+                self.best_model_state = self.model.state_dict()
+        
+        if self.best_model_state is not None:
+            self.model.load_state_dict(self.best_model_state)
+        
+        return W_init
+
+    def predict(self, X_train, X_val, X_test=None):
+        with torch.no_grad():
+            train_probs = torch.sigmoid(self.model(X_train)).cpu().numpy()
+            val_probs = torch.sigmoid(self.model(X_val)).cpu().numpy()
+            
+            train_preds = (train_probs > 0.5).astype(int)
+            val_preds = (val_probs > 0.5).astype(int)
+            
+            results = {
+                'train': (train_probs, train_preds),
+                'val': (val_probs, val_preds)
+            }
+            
+            if X_test is not None:
+                test_probs = torch.sigmoid(self.model(X_test)).cpu().numpy()
+                test_preds = (test_probs > 0.5).astype(int)
+                results['test'] = (test_probs, test_preds)
+            
+            return results
+
+def create_model_and_trainer(input_dim, hyp, pos_weight, mlp=True):
+    if mlp:
+        model = QuadMLP(input_dim)
+    else:
+        model = QuadraticModel(input_dim)
+  
+    model = model.to(hyp['device'])
+    trainer = ModelTrainer(model, hyp, pos_weight)
+    return model, trainer
