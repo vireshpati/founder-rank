@@ -72,7 +72,7 @@ models/                         # Trained model files
 ```
 ## Development
 
-For development and analysis, Jupyter notebooks are available in the `notebooks/` directory:
+Notebooks are available in `notebooks/` :
 
 - `founder-rank.ipynb`: Main ranking workflow
 - `data.ipynb`: Data generation and YC EDA
