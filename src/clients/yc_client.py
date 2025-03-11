@@ -9,6 +9,7 @@ import json
 
 
 class YCClient:
+    """Client for scraping Y Combinator companies and founders."""
     def __init__(self, headless=True):
         self.options = webdriver.ChromeOptions()
         if headless:
@@ -21,11 +22,13 @@ class YCClient:
         self.driver = None
 
     def _initialize_driver(self):
+        """Initialize the Chrome WebDriver."""
         if self.driver is None:
             self.driver = webdriver.Chrome(service=self.service, options=self.options)
         return self.driver
 
     def _render_page(self, pause_time=2):
+        """Scroll to the bottom of the page."""
         last_height = self.driver.execute_script("return document.body.scrollHeight")
         while True:
             self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -36,6 +39,7 @@ class YCClient:
             last_height = new_height
 
     def _load_batch_page(self, batch_code):
+        """Load the batch page for the given batch code."""
         base_url = "https://www.ycombinator.com/companies"
         params = []
 
@@ -43,7 +47,6 @@ class YCClient:
             params.append(f"batch={batch_code}")
         else:
             params.append(f"batch={batch_code}")
-            
 
         url = f"{base_url}{'?' + '&'.join(params) if params else ''}"
         self._initialize_driver()
@@ -52,11 +55,11 @@ class YCClient:
         self._render_page(pause_time=2)
 
     def get_company_urls_for_batch(self, batch_code):
+        """Get company URLs for the specified batch code."""
         self._load_batch_page(batch_code)
         soup = BeautifulSoup(self.driver.page_source, "html.parser")
 
         company_list = []
-        # The company cards are <a class="_company_i9oky_355">
         cards = soup.find_all("a", class_="_company_i9oky_355")
         for card in cards:
             href = card.get("href", "")
@@ -68,6 +71,7 @@ class YCClient:
         return company_list
 
     def scrape_founders_from_company(self, company_name, company_url, batch_code):
+        """Scrape founders' data from the company's page."""
         founders_data = []
         try:
             self._initialize_driver()
@@ -82,17 +86,14 @@ class YCClient:
                 founders_data.append({"Name": None, "Company": company_name, "LinkedIn": None, "Batch": batch_code})
                 return founders_data
 
-            # Pull out the JSON
             raw_json = container.get("data-page", "")
             if not raw_json:
                 founders_data.append({"Name": None, "Company": company_name, "LinkedIn": None, "Batch": batch_code})
                 return founders_data
 
             parsed = json.loads(raw_json)
-            # props->company->founders
             founders = parsed["props"]["company"].get("founders", [])
 
-            # Build records
             for f in founders:
                 founders_data.append(
                     {
@@ -103,7 +104,6 @@ class YCClient:
                     }
                 )
 
-            # fallback
             if not founders_data:
                 founders_data.append({"Name": None, "Company": company_name, "LinkedIn": None, "Batch": batch_code})
 
@@ -114,6 +114,7 @@ class YCClient:
         return founders_data
 
     def scrape_batch(self, batch_code, sleep_time=0.5):
+        """Scrape all companies in the specified batch."""
         self._initialize_driver()
 
         all_records = []
@@ -131,6 +132,7 @@ class YCClient:
         return df
 
     def scrape_batches(self, batch_codes, output_dir=None):
+        """Scrape multiple batches and save to CSV if specified."""
         self._initialize_driver()
 
         all_data = pd.DataFrame()
@@ -146,6 +148,7 @@ class YCClient:
         return all_data
 
     def close(self):
+        """Close the WebDriver."""
         if self.driver:
             self.driver.quit()
             self.driver = None

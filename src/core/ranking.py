@@ -37,6 +37,7 @@ def rank_profiles(df, feature_matrix, model_dict):
 
 
 def load_model(ckpt='model_state_dict', model_path='../models/founder_rank.pkl'):
+    """Load the model and return the model, weight matrices, and feature names."""
     try:
         with open(model_path, 'rb') as f:
             checkpoint = pickle.load(f)

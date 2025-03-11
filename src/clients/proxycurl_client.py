@@ -6,6 +6,8 @@ load_dotenv()
 
 
 class ProxycurlClient:
+    """Client for interacting with the Proxycurl API."""
+    
     def __init__(self, api_key=None):
         self.api_key = api_key or os.getenv("PROXYCURL_API_KEY")
         if not self.api_key:
@@ -14,6 +16,7 @@ class ProxycurlClient:
         self.headers = {"Authorization": f"Bearer {self.api_key}"}
 
     def person_search(self, params, use_cache="if-present", N=1):
+        """Search for a person using the provided parameters."""
         params["page_size"] = N
         params["use_cache"] = use_cache
 
@@ -36,7 +39,7 @@ class ProxycurlClient:
             return None
     
     def fetch_linkedin_profile(self, url, use_cache="if-present"):
-    
+        """Fetch LinkedIn profile data for the given URL."""
         params = {
             'linkedin_profile_url': url,
             'use_cache': use_cache,

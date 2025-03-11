@@ -8,6 +8,7 @@ import torch
 
 
 def plot_model_performance(trainer, W_init):
+    """Plot model performance metrics over epochs."""
     plt.style.use('seaborn-v0_8-dark')
     
     metrics = [
@@ -44,7 +45,6 @@ def plot_model_performance(trainer, W_init):
     
     epochs = range(len(trainer.metrics_history['train']['loss']))
     
-    # Plot performance metrics
     for title, data_series, ylabel in metrics:
         plt.figure(figsize=(12, 6))
         for data, label, color in data_series:
@@ -60,7 +60,6 @@ def plot_model_performance(trainer, W_init):
         plt.tight_layout()
         plt.show()
     
-    # Plot weight matrices
     W_final = trainer.model.get_W().detach().cpu().numpy()
     W_diff = W_final - W_init
     
@@ -82,9 +81,9 @@ def plot_model_performance(trainer, W_init):
         plt.show()
 
 def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
+    """Plot ranked feature importance based on weights."""
     plt.style.use('seaborn-v0_8-dark')
     
-    # Get diagonal importance (individual feature effects)
     diag_importance = np.diag(W)  
     diag_ranks = pd.DataFrame({
         'Feature': feature_names,
@@ -92,10 +91,8 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
         'Type': 'Individual'
     })
     
-    # Get interaction importance (sum of off-diagonal elements, preserving sign)
     interaction_importance = []
-    for i, feat in enumerate(feature_names):
-        # Sum off-diagonal elements for each feature, preserving sign
+    for i, _ in enumerate(feature_names):
         importance = np.sum(W[i, :]) + np.sum(W[:, i]) - 2*W[i,i]
         interaction_importance.append(importance)
     
@@ -105,16 +102,13 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
         'Type': 'Interaction'
     })
     
-    # Combine and normalize while preserving sign
     all_ranks = pd.concat([diag_ranks, interaction_ranks])
     all_ranks['Importance'] = all_ranks.groupby('Type')['Importance'].transform(
         lambda x: x / np.max(np.abs(x)) 
     )
     
-    # Plot
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
+    _, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
     
-    # Individual importance
     individual = all_ranks[all_ranks['Type'] == 'Individual'].sort_values('Importance')
     colors = ['#e74c3c' if x < 0 else '#2ecc71' for x in individual['Importance']]
     ax1.barh(range(len(individual)), individual['Importance'], color=colors, alpha=0.7)
@@ -125,7 +119,6 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
     ax1.grid(True, alpha=0.3)
     ax1.axvline(x=0, color='black', linestyle='-', alpha=0.3)
     
-    # Interaction importance  
     interaction = all_ranks[all_ranks['Type'] == 'Interaction'].sort_values('Importance')
     colors = ['#e74c3c' if x < 0 else '#3498db' for x in interaction['Importance']]
     ax2.barh(range(len(interaction)), interaction['Importance'], color=colors, alpha=0.7)
@@ -140,6 +133,7 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
     plt.show()
 
 def plot_feature_importance(W, feature_names, figsize=(12, 10)):
+    """Visualize feature interaction importance as a heatmap."""
     plt.style.use('seaborn-v0_8-dark')
     
     mask = np.zeros_like(W, dtype=bool)
@@ -176,14 +170,13 @@ def plot_feature_importance(W, feature_names, figsize=(12, 10)):
     plt.show()
 
 def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cuda'):
-    """Plot sample predictions with feature importance visualization"""
+    """Plot sample predictions with feature importance visualization."""
     model.eval()
     with torch.no_grad():
         X_tensor = torch.FloatTensor(X).to(device)
         logits = model(X_tensor).cpu().numpy().flatten()
-        probs = 1 / (1 + np.exp(-logits))  # Manual sigmoid to ensure proper calculation
+        probs = 1 / (1 + np.exp(-logits))  
     
-    # Select a mix of correct and incorrect predictions
     pred_y = probs >= 0.5
     correct_idx = np.where(pred_y == y)[0]
     incorrect_idx = np.where(pred_y != y)[0]
@@ -202,7 +195,6 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
     else:
         selected_incorrect = []
     
-    # Fill remaining slots if needed
     remaining = n_samples - (n_correct + n_incorrect)
     if remaining > 0:
         remaining_pool = np.setdiff1d(np.arange(len(X)), np.concatenate([selected_correct, selected_incorrect]))
@@ -216,7 +208,6 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
     
     X_original = scaler.inverse_transform(X)
     
-    # Process categories and create mapping dictionaries
     categories = list(matrix.keys())
     category_values = np.zeros((len(X), len(categories)))
     start_idx = 0
@@ -227,7 +218,6 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
         one_hot_section = X_original[:, start_idx:start_idx + dim]
         category_values[:, i] = np.argmax(one_hot_section, axis=1)
         
-        # Create mapping for this category
         if "VALUES" in matrix[cat]:
             value_mappings[cat] = matrix[cat]["VALUES"]
         else:
@@ -235,22 +225,19 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
         
         start_idx += dim
     
-    # Create visualization
-    fig = plt.figure(figsize=(20, n_samples * 1.2 + 0.5))
+    _ = plt.figure(figsize=(20, n_samples * 1.2 + 0.5))
     gs = gridspec.GridSpec(n_samples + 1, 2, width_ratios=[4, 1], height_ratios=[*[1]*n_samples, 0.2])
     
     colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
     custom_cmap = mcolors.ListedColormap(colors)
     
     for i, idx in enumerate(selected_idx):
-        # Feature barcode
         ax1 = plt.subplot(gs[i, 0])
         im = ax1.imshow(category_values[idx].reshape(1, -1),
                        cmap=custom_cmap,
                        aspect='auto',
                        interpolation='nearest')
         
-        # Add category labels
         if i == len(selected_idx) - 1:
             ax1.set_xticks(range(len(categories)))
             ax1.set_xticklabels(categories, rotation=45, ha='right', fontsize=10)
@@ -258,18 +245,15 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
             ax1.set_xticks([])
         ax1.set_yticks([])
         
-        # Add grid lines
         for x in range(len(categories)-1):
             ax1.axvline(x + 0.5, color='white', linewidth=2)
         
-        # Add value labels directly on the barcode
         for j, cat in enumerate(categories):
             val_idx = int(category_values[idx, j])
             val = value_mappings[cat][val_idx]
             ax1.text(j, 0, str(val), ha='center', va='center', 
                     color='white', fontsize=9, fontweight='bold')
         
-        # Prediction visualization
         ax2 = plt.subplot(gs[i, 1])
         correct = pred_y[idx] == y[idx]
         color = '#2ecc71' if correct else '#e74c3c'
@@ -282,16 +266,13 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
         if i == len(selected_idx) - 1:
             ax2.set_xlabel('Prediction Probability', fontsize=10)
         
-        # Add prediction labels
         label_color = 'darkgreen' if correct else 'darkred'
         ax2.text(1.05, 0, f'Pred: {int(pred_y[idx])}', va='center', fontsize=10, color=label_color)
         ax2.text(1.25, 0, f'True: {int(y[idx])}', va='center', fontsize=10)
         
-        # Add confidence percentage
         conf_text = f'{probs[idx]*100:.1f}%'
         ax2.text(probs[idx]/2, 0, conf_text, ha='center', va='center', color='white', fontsize=9)
     
-    # Add legend for category values
     ax_legend = plt.subplot(gs[-1, :])
     ax_legend.axis('off')
     legend_text = ""
@@ -304,8 +285,7 @@ def plot_sample_predictions(model, X, y, matrix, scaler, n_samples=5, device='cu
     plt.show()
     
 def display_final_metrics(trainer):
-    """Display final metrics in a tabular format with numerical values"""
-    # Get the final metrics
+    """Display final metrics in a tabular format with numerical values."""
     final_metrics = {
         'Train': {
             'NDCG': trainer.metrics_history['train']['ndcg'][-1],
@@ -327,10 +307,8 @@ def display_final_metrics(trainer):
         }
     }
     
-    # Create a DataFrame for better display
     metrics_df = pd.DataFrame(final_metrics)
     
-    # Create a bar chart for visual comparison
     plt.figure(figsize=(12, 6))
     metrics_df.plot(kind='bar', rot=0, figsize=(12, 6))
     plt.title('Final Model Performance Metrics', fontsize=14, pad=15)
@@ -338,7 +316,6 @@ def display_final_metrics(trainer):
     plt.grid(axis='y', linestyle='--', alpha=0.3)
     plt.legend(title='Dataset')
     
-    # Add value labels on top of bars
     for container in plt.gca().containers:
         plt.gca().bar_label(container, fmt='%.3f', fontsize=9)
     
@@ -346,40 +323,34 @@ def display_final_metrics(trainer):
     plt.show()
 
 def plot_top_feature_interactions(W, feature_names, top_k=10, exclude_same_category=True):
-    """Plot top positive and negative feature interactions, excluding same-category combinations."""
+    """Plot top positive and negative feature interactions."""
     plt.style.use('seaborn-v0_8-dark')
     
-    # Create pairs of features and their interaction strengths
     n = len(feature_names)
     interactions = []
     
     for i in range(n):
         for j in range(i+1, n):
-            # Extract category names from feature names (assuming format "CATEGORY_X")
             cat1 = feature_names[i].split('_')[0]
             cat2 = feature_names[j].split('_')[0]
             
-            # Skip if features are from same category and we want to exclude those
             if exclude_same_category and cat1 == cat2:
                 continue
                 
-            interaction_strength = W[i,j] + W[j,i]  # Symmetric interaction strength
+            interaction_strength = W[i,j] + W[j,i] 
             interactions.append({
                 'pair': f"{feature_names[i]} × {feature_names[j]}",
                 'strength': interaction_strength,
                 'abs_strength': abs(interaction_strength)
             })
     
-    # Sort by absolute strength and get top_k positive and negative
     interactions.sort(key=lambda x: x['strength'])
     neg_interactions = interactions[:top_k]
     interactions.sort(key=lambda x: x['strength'], reverse=True)
     pos_interactions = interactions[:top_k]
     
-    # Combine and plot
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
+    _, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
     
-    # Positive interactions
     strengths = [x['strength'] for x in pos_interactions]
     pairs = [x['pair'] for x in pos_interactions]
     ax1.barh(range(len(strengths)), strengths, color='#2ecc71', alpha=0.7)
@@ -389,7 +360,6 @@ def plot_top_feature_interactions(W, feature_names, top_k=10, exclude_same_categ
     ax1.set_xlabel('Interaction Strength', fontsize=12)
     ax1.grid(True, alpha=0.3)
     
-    # Negative interactions
     strengths = [x['strength'] for x in neg_interactions]
     pairs = [x['pair'] for x in neg_interactions]
     ax2.barh(range(len(strengths)), strengths, color='#e74c3c', alpha=0.7)

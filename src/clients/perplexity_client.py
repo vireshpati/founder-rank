@@ -9,6 +9,7 @@ load_dotenv()
 
 
 class PerplexityClient:
+    """Client for querying Perplexity API."""
     def __init__(self, api_key=None):
         self.api_key = api_key or os.getenv("PERPLEXITY_API_KEY")
         if not self.api_key:
@@ -16,6 +17,7 @@ class PerplexityClient:
         self.client = OpenAI(api_key=self.api_key, base_url="https://api.perplexity.ai")
 
     def _make_perplexity_request(self, messages, fallback, entity_name):
+        """Make a request to the Perplexity API and return the parsed result."""
         try:
             response = self.client.chat.completions.create(
                 model="sonar-pro",
@@ -28,15 +30,9 @@ class PerplexityClient:
             if json_match:
                 result = json.loads(json_match.group())
                 
-                # Validate and round values for person evaluations
                 if all(k in result for k in ['exited_founder', 'previous_founder', 'startup_experience']):
-                    # Exit founder: round to nearest value between 0-3
                     result['exited_founder'] = max(0, min(3, round(float(result['exited_founder']))))
-                    
-                    # Previous founder: round to nearest value between 1-3
                     result['previous_founder'] = max(1, min(3, round(float(result['previous_founder']))))
-                    
-                    # Startup experience: round to nearest value between 1-3
                     result['startup_experience'] = max(1, min(3, round(float(result['startup_experience']))))
                     
                 return result
@@ -50,7 +46,7 @@ class PerplexityClient:
             return fallback
 
     def eval_person(self, person_data, matrix):
-        # Profile
+        """Evaluate a person's founder and startup experience based on provided data."""
         name = person_data.get("Name", "Unknown")
         titles = (
             ", ".join([t for t in person_data.get("Previous Titles", []) if t])
@@ -93,6 +89,7 @@ class PerplexityClient:
         return self._make_perplexity_request(messages, fallback, name)
 
     def eval_company(self, company_name):
+        """Evaluate a company's exit value and total funding based on its name."""
         messages = [
             {
                 "role": "system",

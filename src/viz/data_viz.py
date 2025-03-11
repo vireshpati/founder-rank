@@ -14,7 +14,7 @@ def get_category_slice(category_name):
         if cat == category_name:
             return slice(start, start + d)
         start += d
-    return slice(0, 0)  # fallback
+    return slice(0, 0)  
 
 def plot_category_distribution_overall_and_by_pop(X, pop_labels, category_name):
     """
@@ -23,10 +23,9 @@ def plot_category_distribution_overall_and_by_pop(X, pop_labels, category_name):
     cat_slice = get_category_slice(category_name)
     d = cfg.MATRIX[category_name]["DIMENSION"]
 
-    cat_indices = X[:, cat_slice].argmax(axis=1)  # 0..(d-1)
+    cat_indices = X[:, cat_slice].argmax(axis=1) 
     counts = np.bincount(cat_indices, minlength=d)
 
-    # Overall distribution
     plt.figure(figsize=(8, 5))
     bars = plt.bar(range(d), counts, color="cornflowerblue", edgecolor="black")
     plt.title(f"Overall Distribution of {category_name} (tiers=0..{d-1})", fontsize=14)
@@ -47,7 +46,6 @@ def plot_category_distribution_overall_and_by_pop(X, pop_labels, category_name):
     plt.tight_layout()
     plt.show()
 
-    # Distribution by population
     unique_pops = np.unique(pop_labels)
     plt.figure(figsize=(10, 6))
     width = 0.8 / len(unique_pops)
@@ -98,11 +96,9 @@ def plot_hist_overall_and_by_pop(values, pop_labels, title, bins=50, log_scale=T
     unique_pops = np.unique(pop_labels)
     colors = plt.cm.tab10(np.linspace(0, 1, len(unique_pops)))
     
-    # Handle zeros and negatives for log scale
     min_nonzero = np.min(values[values > 0]) if np.any(values > 0) else 1
     plot_vals = values.copy()
     
-    # Replace zeros/negatives with small value for log scale
     if log_scale:
         plot_vals[plot_vals <= 0] = min_nonzero * 0.1
         plot_vals = np.log10(plot_vals)
@@ -114,12 +110,10 @@ def plot_hist_overall_and_by_pop(values, pop_labels, title, bins=50, log_scale=T
         sub_vals_raw = values[mask]
         sub_vals_log = plot_vals[mask]
         
-        # Only compute KDE for non-zero/finite values
         nonzero_mask = np.isfinite(sub_vals_log) & (sub_vals_log > np.log10(min_nonzero * 0.1))
         if np.sum(nonzero_mask) > 1:
             sub_vals_nonzero = sub_vals_log[nonzero_mask]
             
-            # Add small noise to prevent singular matrix
             sub_vals_nonzero = sub_vals_nonzero + np.random.normal(0, 1e-6, size=len(sub_vals_nonzero))
             
             kde = stats.gaussian_kde(sub_vals_nonzero)
@@ -129,7 +123,6 @@ def plot_hist_overall_and_by_pop(values, pop_labels, title, bins=50, log_scale=T
             label_str = f"{pop_name} (mean={np.nanmean(sub_vals_raw):.2f})"
             plt.plot(x_eval, density, label=label_str, color=colors[i], linewidth=2)
             
-            # Add point mass at zero if there are zeros
             if np.sum(~nonzero_mask) > 0:
                 zero_prop = np.mean(~nonzero_mask)
                 plt.vlines(np.log10(min_nonzero * 0.1), 0, zero_prop * np.max(density), 
@@ -261,7 +254,6 @@ def visualize_successful_cases(exit_vals, fund_vals, funding_threshold=None):
     num_both_success = np.sum(both_success_mask)
     num_unsuccessful = np.sum(unsuccessful_mask)
 
-    # Plot
     categories = [f"Funding > ${funding_threshold}", "Exit > 0", "Both", "Unsuccessful"]
     counts = [num_funding_success, num_exit_success, num_both_success, num_unsuccessful]
 
@@ -299,14 +291,13 @@ def load_batch_data(batch_codes, data_dir=None):
     
     return pd.concat(dfs, ignore_index=True)
 
-def analyze_batch_data(df, batch_codes, matrix=None):
+def analyze_batch_data(df, matrix=None):
     """
     EDA on the combined batch data.
     """
     if matrix is None:
         matrix = cfg.MATRIX
     
-    # Basic statistics
     print("\nBasic Statistics:")
     print(f"Total samples: {len(df)}")
     print("\nSamples per batch:")
@@ -314,10 +305,8 @@ def analyze_batch_data(df, batch_codes, matrix=None):
     print("\nSuccess rate by batch:")
     print(df.groupby('batch')['success'].mean())
     
-    # Feature distributions
     feature_cols = [col for col in df.columns if any(cat in col for cat in matrix.keys())]
     
-    # Plot distributions for each category
     for cat in matrix:
         cat_cols = [col for col in feature_cols if cat in col]
         if cat_cols:
@@ -328,7 +317,6 @@ def analyze_batch_data(df, batch_codes, matrix=None):
             plt.tight_layout()
             plt.show()
     
-    # Success analysis
     plt.figure(figsize=(10, 6))
     df.groupby(['batch', 'success']).size().unstack().plot(kind='bar', stacked=True)
     plt.title("Success Distribution by Batch")
@@ -338,7 +326,6 @@ def analyze_batch_data(df, batch_codes, matrix=None):
     plt.tight_layout()
     plt.show()
     
-    # Funding and exit analysis
     if 'funding_amount' in df.columns:
         plot_hist_overall_and_by_pop(
             df['funding_amount'].values,
@@ -357,7 +344,6 @@ def analyze_batch_data(df, batch_codes, matrix=None):
             log_scale=True
         )
     
-    # Feature importance for success
     feature_correlations = df[feature_cols].corrwith(df['success']).sort_values(ascending=False)
     
     plt.figure(figsize=(12, 6))
@@ -367,7 +353,6 @@ def analyze_batch_data(df, batch_codes, matrix=None):
     plt.tight_layout()
     plt.show()
     
-    # Correlation heatmap
     plot_correlation_heatmap(
         df[feature_cols].values,
         df['success'].values,

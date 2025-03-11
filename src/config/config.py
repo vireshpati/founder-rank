@@ -2,6 +2,8 @@ import numpy as np
 
 
 class Config:
+    """Configuration class for scoring parameters."""
+    
     MATRIX = {
         # Undergrad scoring
         "UNDERGRAD": {
@@ -193,7 +195,7 @@ class Config:
                     "STARTUP": np.array([0.05, 0.30, 0.65]),
                 },
                 "p_funding": 0.55,
-                "mu_funding": 15.0, # LogNormal(15, 1.5)
+                "mu_funding": 15.0, # e^15 = $3,269017.37
                 "sigma_funding": 1.5,
                 "p_exit": 0.18,
                 "mu_exit": 16.5,
@@ -239,7 +241,7 @@ class Config:
             }
         }
     }
-    SUCCESS_FUNDING_THRESHOLD = 15000000  # series B
+    SUCCESS_FUNDING_THRESHOLD = 15000000  # ~series B
      
     FOUNDER_SEARCH_PARAMS = {
         "country": 'US',
