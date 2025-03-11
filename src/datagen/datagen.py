@@ -18,11 +18,11 @@ class DataGenerator:
         else:
             return np.random.choice([0, 1, 2, 3], p=p)
 
-    def sample_exit_and_funding(self, p_fund, mu_fund, sig_fund, p_exit, mu_exit, sig_exit):
+    def sample_exit_and_funding(self, p_fund, mu_fund, sig_fund, p_exit, mu_exit, sig_exit, max_value=1e10):
         if np.random.rand() < p_fund:
-            funding_amt = np.random.lognormal(mu_fund, sig_fund)
+            funding_amt = min(np.random.lognormal(mu_fund, sig_fund), max_value)
             if np.random.rand() < p_exit:
-                exit_val = np.random.lognormal(mu_exit, sig_exit)
+                exit_val = min(np.random.lognormal(mu_exit, sig_exit), max_value)
             else:
                 exit_val = 0
         else:
@@ -53,21 +53,26 @@ class DataGenerator:
             
             x = np.array(x_ordinals)
             
-            # Sample exit and funding values
-            e_val, f_val = self.sample_exit_and_funding(
-                pop_cfg["p_funding"],
-                pop_cfg["mu_funding"],
-                pop_cfg["sigma_funding"],
-                pop_cfg["p_exit"],
-                pop_cfg["mu_exit"],
-                pop_cfg["sigma_exit"],
-            )
-            
-            # Add noise to funding/exit values
-            if np.random.rand() < pop_cfg["p_funding"]:
-                noise = np.random.normal(0, 0.2)
-                e_val = np.random.lognormal(e_val + noise, pop_cfg["sigma_exit"])
-                f_val = np.random.lognormal(f_val + noise, pop_cfg["sigma_funding"])
+            try:
+                e_val, f_val = self.sample_exit_and_funding(
+                    pop_cfg["p_funding"],
+                    pop_cfg["mu_funding"],
+                    min(pop_cfg["sigma_funding"], 0.8),  
+                    pop_cfg["p_exit"],
+                    pop_cfg["mu_exit"],
+                    min(pop_cfg["sigma_exit"], 0.8),     
+                    max_value=1e10  
+                )
+
+                if np.random.rand() < pop_cfg["p_funding"] and (e_val > 0 or f_val > 0):
+                    noise_factor = np.exp(np.random.normal(0, 0.1))  # Reduced noise variance
+                    if e_val > 0:
+                        e_val = min(e_val * noise_factor, 1e10)
+                    if f_val > 0:
+                        f_val = min(f_val * noise_factor, 1e10)
+            except (OverflowError, ValueError):
+                e_val = np.random.uniform(0, 1e9) if np.random.rand() < pop_cfg["p_exit"] * pop_cfg["p_funding"] else 0
+                f_val = np.random.uniform(0, 1e9) if np.random.rand() < pop_cfg["p_funding"] else 0
             
             X_list.append(x)
             e_list.append(e_val)
@@ -111,7 +116,7 @@ class DataGenerator:
                                success_funding_threshold=None):
 
         if success_funding_threshold is None:
-            success_funding_threshold = cfg.SYNTH["SUCCESS_FUNDING_THRESHOLD"]
+            success_funding_threshold = cfg.SUCCESS_FUNDING_THRESHOLD
         
         feature_names = []
         for cat in matrix:

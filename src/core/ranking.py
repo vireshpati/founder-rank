@@ -36,7 +36,7 @@ def rank_profiles(df, feature_matrix, model_dict):
     return ranked_df
 
 
-def load_model(ckpt='model_state_dict', model_path='../models/founder_rank.pkl'):
+def load_model(model_path='models/founder_rank.pkl'):
     """Load the model and return the model, weight matrices, and feature names."""
     try:
         with open(model_path, 'rb') as f:
@@ -45,7 +45,7 @@ def load_model(ckpt='model_state_dict', model_path='../models/founder_rank.pkl')
         input_dim = len(checkpoint['feature_names'])
         model = QuadMLP(input_dim)
         
-        model.load_state_dict(checkpoint[ckpt])
+        model.load_state_dict(checkpoint['model_state_dict'])
         model.eval()
         
         return {
