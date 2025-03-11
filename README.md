@@ -1,7 +1,5 @@
 # Founder Rank
 
-Founder Rank is a tool that uses AI to rank founders based on their potential to build successful startups.
-
 ## Setup
 
 1. Create a `.env` file with required API keys:
