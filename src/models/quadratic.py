@@ -29,11 +29,11 @@ class QuadraticModel(nn.Module):
 
 
 class QuadMLP(nn.Module):
-    def __init__(self, input_dim):
+    def __init__(self, input_dim, dropout=0.3):
         super().__init__()
         self.input_dim = input_dim
         W_init = torch.FloatTensor(initialize_weight_matrix(input_dim))
-        # Enforce  symmetry
+        # Enforce symmetry
         W_init = 0.5 * (W_init + W_init.T)
         self.W = nn.Parameter(W_init)
         self.b = nn.Parameter(torch.zeros(1))
@@ -42,11 +42,11 @@ class QuadMLP(nn.Module):
             nn.Linear(input_dim, 64),
             nn.LayerNorm(64),
             nn.GELU(),
-            nn.Dropout(0.2),
+            nn.Dropout(dropout),
             nn.Linear(64, 32),
-            nn.LayerNorm(32), 
+            nn.LayerNorm(32),
             nn.GELU(),
-            nn.Dropout(0.1),
+            nn.Dropout(dropout * 0.5),
             nn.Linear(32, 1)
         )
 

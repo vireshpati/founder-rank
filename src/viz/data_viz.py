@@ -19,11 +19,6 @@ def get_category_slice(category_name):
 def plot_category_distribution_overall_and_by_pop(X, pop_labels, category_name):
     """
     Plot distribution of a categorical feature overall and by population.
-    
-    Args:
-        X: Feature matrix
-        pop_labels: Population labels for each sample
-        category_name: Name of the category to plot
     """
     cat_slice = get_category_slice(category_name)
     d = cfg.MATRIX[category_name]["DIMENSION"]
@@ -97,14 +92,7 @@ def plot_category_distribution_overall_and_by_pop(X, pop_labels, category_name):
 
 def plot_hist_overall_and_by_pop(values, pop_labels, title, bins=50, log_scale=True):
     """
-    Plot density histograms for values by population.
-    
-    Args:
-        values: Array of values to plot
-        pop_labels: Population labels
-        title: Plot title
-        bins: Number of histogram bins
-        log_scale: Whether to use log scale
+    Plot density histograms for values by population
     """
     plt.figure(figsize=(10, 6))
     unique_pops = np.unique(pop_labels)
@@ -158,14 +146,6 @@ def plot_hist_overall_and_by_pop(values, pop_labels, title, bins=50, log_scale=T
 def plot_scatter_overall_and_by_pop(xvals, yvals, pop_labels, x_title, y_title, log_y=False):
     """
     Create scatter plots with trend lines by population.
-    
-    Args:
-        xvals: X-axis values
-        yvals: Y-axis values
-        pop_labels: Population labels
-        x_title: X-axis title
-        y_title: Y-axis title
-        log_y: Whether to use log scale for y-axis
     """
     plt.figure(figsize=(10, 7))
     unique_pops = np.unique(pop_labels)
@@ -214,13 +194,6 @@ def plot_scatter_overall_and_by_pop(xvals, yvals, pop_labels, x_title, y_title, 
 def plot_correlation_heatmap(X, y, exit_vals, fund_vals, feature_names=None):
     """
     Create correlation heatmaps for features and targets.
-    
-    Args:
-        X: Feature matrix
-        y: Target values (success)
-        exit_vals: Exit values
-        fund_vals: Funding values
-        feature_names: Optional feature names
     """
     if feature_names is None:
         feature_names = []
@@ -275,11 +248,6 @@ def plot_correlation_heatmap(X, y, exit_vals, fund_vals, feature_names=None):
 def visualize_successful_cases(exit_vals, fund_vals, funding_threshold=None):
     """
     Visualize successful vs unsuccessful cases.
-    
-    Args:
-        exit_vals: Exit values
-        fund_vals: Funding values
-        funding_threshold: Threshold for funding success
     """
     funding_threshold = cfg.SUCCESS_FUNDING_THRESHOLD  
         
@@ -309,14 +277,7 @@ def visualize_successful_cases(exit_vals, fund_vals, funding_threshold=None):
 def load_batch_data(batch_codes, data_dir=None):
     """
     Load and combine data from specified YC batches.
-    
-    Args:
-        batch_codes: List of batch codes to load (e.g., ['S21', 'W21'])
-        data_dir: Path to the directory containing encoded data (default: '../data/encoded')
-        
-    Returns:
-        DataFrame containing combined batch data
-    """
+   """ 
     if data_dir is None:
         data_dir = Path("../data/encoded")
     elif isinstance(data_dir, str):
@@ -340,12 +301,7 @@ def load_batch_data(batch_codes, data_dir=None):
 
 def analyze_batch_data(df, batch_codes, matrix=None):
     """
-    Perform EDA on the combined batch data.
-    
-    Args:
-        df: DataFrame containing batch data
-        batch_codes: List of batch codes included in the data
-        matrix: Optional matrix configuration (defaults to cfg.MATRIX)
+    EDA on the combined batch data.
     """
     if matrix is None:
         matrix = cfg.MATRIX

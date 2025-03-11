@@ -5,3 +5,4 @@ venv/
 pyproject.toml
 data/proxycurl/
 data/linkedin_profiles
+out/

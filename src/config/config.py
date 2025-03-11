@@ -11,18 +11,18 @@ class Config:
                     "Carnegie Mellon University",
                     "Brigham Young University",
                     "Georgia Institute of Technology",
-                    "Purdue",
+                    "Purdue University",
                     "Tsinghua University",
                     "IIT Delhi",
                     "Hebrew University",
                     "University of Virginia",
                     "University of Washington",
-                    "Dartmouth",
+                    "Dartmouth College",
                     "Penn State University",
                     "UC San Diego",
                     "University of Maryland",
                     "University of Colorado",
-                    "Georgetown",
+                    "Georgetown University",
                     "Reichman",
                     "Univeristy of British Columbia",
                     "NSU",
@@ -34,29 +34,29 @@ class Config:
                     "University of Oxford",
                 },
                 3: {  # Tier 3
-                    "Stanford",
+                    "Stanford University",
                     "Massachusetts Institute of Technology",
                     "University of California, Berkeley",
                     "University of Pennsylvania",
-                    "Harvard",
-                    "Cornell",
+                    "Harvard University",
+                    "Cornell University",
                     "Tel Aviv University",
-                    "UMich",
+                    "University of Michigan",
                     "University of Texas",
                     "University of Illinois",
-                    "Columbia",
-                    "Yale",
+                    "Columbia University",
+                    "Yale University",
                     "UCLA",
-                    "Princeton",
-                    "USC",
+                    "Princeton University",
+                    "University of Southern California",
                     "Technion - Israel Institute of Technology",
-                    "Duke",
+                    "Duke University",
                     "Northwestern",
                     "IIT Bombay",
-                    "NYU",
+                    "New York University",
                     "University of Waterloo",
-                    "Brown",
-                    "McGill",
+                    "Brown University",
+                    "McGill University",
                     "University of Wisconsin",
                     "University of Toronto",
                 },
@@ -71,19 +71,19 @@ class Config:
                 1: set(),  # Tier 1 (other)
                 2: set(),  # Tier 2
                 3: {  # Tier 3
-                    "Stanford",
+                    "Stanford University",
                     "Massachusetts Institute of Technology",
                     "University of California, Berkeley",
                     "University of Pennsylvania",
-                    "Harvard",
-                    "Columbia",
+                    "Harvard University",
+                    "Columbia University",
                     "Northwestern",
                     "New York University",
                     "University of Cambridge",
                     "University of Oxford",
                 },
             },
-            "WEIGHT": 2,
+            "WEIGHT": 2,  
             "DIMENSION": 4,
         },
         # Company quality scoring
@@ -102,7 +102,7 @@ class Config:
                     "Anthropic",
                 },  # Tier 3
             },
-            "WEIGHT": 4,
+            "WEIGHT": 4,  
             "DIMENSION": 3,
         },
         # Seniority scoring
@@ -123,21 +123,25 @@ class Config:
                     "Principal",
                 },  # Tier 3
             },
-            "WEIGHT": 3,
+            "WEIGHT": 3,  
             "DIMENSION": 3,
         },
         # Expertise scoring
         "EXPERTISE": {
             "TIERS": {
                 1: set(),  # Tier 1 (other)
-                2: set(),  # Tier 2
+                2: {
+                    "Research",
+                    "Researcher"
+                    },  # Tier 2
                 3: {
                     "Engineering",
                     "Product",
                     "Engineer",
+                    "Quantitative",
                 },  # Tier 3
             },
-            "WEIGHT": 3,
+            "WEIGHT": 3, 
             "DIMENSION": 3,
         },
         # Previous exit scoring
@@ -148,7 +152,7 @@ class Config:
                 2: "$25-100M",
                 3: "$100M+",
             },  # Tier 0  # Tier 1  # Tier 2  # Tier 3
-            "WEIGHT": 5,
+            "WEIGHT": 5,  
             "DIMENSION": 4,
         },
         # Previous founder experience scoring
@@ -158,7 +162,7 @@ class Config:
                 2: "Yes - unsuccessful",
                 3: "Yes - successful",
             },  # Tier 1  # Tier 2  # Tier 3
-            "WEIGHT": 1,
+            "WEIGHT": 1, 
             "DIMENSION": 3,
         },
         # Startup experience scoring
@@ -168,224 +172,85 @@ class Config:
                 2: "Early at startup",  # Tier 2
                 3: "Early at successful startup",  # Tier 3
             },
-            "WEIGHT": 1,
+            "WEIGHT" : 1,  
             "DIMENSION": 3,
         },
     }
 
     SYNTH = {
+        # Tier 0/1 --> Tier 3
         "POPULATIONS": {
-            "successful": {
+            "successful": {  
                 "fraction": 0.40,
                 "sampling_probs": {
-                    "UNDERGRAD": np.array(
-                        [
-                            0.02,
-                            0.28,
-                            0.70,
-                        ]
-                    ),
-                    "GRADUATE": np.array(
-                        [
-                            0.10,
-                            0.15,
-                            0.25,
-                            0.50,
-                        ]
-                    ),
-                    "EXIT": np.array(
-                        [
-                            0.30,
-                            0.25,
-                            0.20,
-                            0.25,
-                        ]
-                    ),
-                    "FOUNDER": np.array(
-                        [
-                            0.20,
-                            0.30,
-                            0.50,
-                        ]
-                    ),
-                    "STARTUP": np.array(
-                        [
-                            0.05,
-                            0.25,
-                            0.70,
-                        ]
-                    ),
-                    "COMPANY": np.array(
-                        [
-                            0.10,
-                            0.20,
-                            0.70,
-                        ]
-                    ),
-                    "SENIORITY": np.array(
-                        [
-                            0.10,
-                            0.40,
-                            0.50,
-                        ]
-                    ),
-                    "EXPERTISE": np.array(
-                        [
-                            0.05,
-                            0.05,
-                            0.90,
-                        ]
-                    ),
+                    "UNDERGRAD": np.array([0.60, 0.25, 0.15]),
+                    "GRADUATE": np.array([0.30, 0.45, 0.15, 0.10]),
+                    "COMPANY": np.array([0.15, 0.40, 0.45]),
+                    "SENIORITY": np.array([0.15, 0.35, 0.50]),
+                    "EXPERTISE": np.array([0.05, 0.20, 0.75]),
+                    "EXIT": np.array([0.65, 0.15, 0.10, 0.10]),
+                    "FOUNDER": np.array([0.15, 0.25, 0.60]),
+                    "STARTUP": np.array([0.05, 0.30, 0.65]),
                 },
-                # funding ~ e^{mu_funding}
-                "p_funding": 0.95,
-                "mu_funding": 17.0,
-                "sigma_funding": 0.8,
-                "p_exit": 0.6,
-                "mu_exit": 18.5,
-                "sigma_exit": 1.1,
+                "p_funding": 0.55,
+                "mu_funding": 15.0, # LogNormal(15, 1.5)
+                "sigma_funding": 1.5,
+                "p_exit": 0.18,
+                "mu_exit": 16.5,
+                "sigma_exit": 1.8,
             },
             "midtier": {
-                "fraction": 0.3,
-                "sampling_probs": {
-                    "UNDERGRAD": np.array(
-                        [
-                            0.45,
-                            0.40,
-                            0.15,
-                        ]
-                    ),
-                    "GRADUATE": np.array(
-                        [
-                            0.60,
-                            0.25,
-                            0.10,
-                            0.05,
-                        ]
-                    ),
-                    "EXIT": np.array(
-                        [
-                            0.90,
-                            0.07,
-                            0.02,
-                            0.01,
-                        ]
-                    ),
-                    "FOUNDER": np.array(
-                        [
-                            0.65,
-                            0.25,
-                            0.10,
-                        ]
-                    ),
-                    "STARTUP": np.array(
-                        [
-                            0.30,
-                            0.30,
-                            0.40,
-                        ]
-                    ),
-                    "COMPANY": np.array(
-                        [
-                            0.60,
-                            0.30,
-                            0.10,
-                        ]
-                    ),
-                    "SENIORITY": np.array(
-                        [
-                            0.50,
-                            0.40,
-                            0.10,
-                        ]
-                    ),
-                    "EXPERTISE": np.array(
-                        [
-                            0.15,
-                            0.35,
-                            0.50,
-                        ]
-                    ),
-                },
-                "p_funding": 0.40,
-                "mu_funding": 15.5,
-                "sigma_funding": 0.9,
-                "p_exit": 0.08,
-                "mu_exit": 17,
-                "sigma_exit": 1.0,
-            },
-            "control": {
                 "fraction": 0.30,
                 "sampling_probs": {
-                    "UNDERGRAD": np.array(
-                        [
-                            0.65,
-                            0.30,
-                            0.05,
-                        ]
-                    ),
-                    "GRADUATE": np.array(
-                        [
-                            0.85,
-                            0.10,
-                            0.03,
-                            0.02,
-                        ]
-                    ),
-                    "EXIT": np.array(
-                        [
-                            0.98,
-                            0.01,
-                            0.005,
-                            0.005,
-                        ]
-                    ),
-                    "FOUNDER": np.array(
-                        [
-                            0.85,
-                            0.10,
-                            0.05,
-                        ]
-                    ),
-                    "STARTUP": np.array(
-                        [
-                            0.80,
-                            0.15,
-                            0.05,
-                        ]
-                    ),
-                    "COMPANY": np.array(
-                        [
-                            0.85,
-                            0.10,
-                            0.05,
-                        ]
-                    ),
-                    "SENIORITY": np.array(
-                        [
-                            0.85,
-                            0.10,
-                            0.05,
-                        ]
-                    ),
-                    "EXPERTISE": np.array(
-                        [
-                            0.50,
-                            0.25,
-                            0.25,
-                        ]
-                    ),
+                    "UNDERGRAD": np.array([0.70, 0.20, 0.10]),
+                    "GRADUATE": np.array([0.40, 0.35, 0.20, 0.05]),
+                    "COMPANY": np.array([0.30, 0.40, 0.30]),
+                    "SENIORITY": np.array([0.35, 0.40, 0.25]),
+                    "EXPERTISE": np.array([0.20, 0.30, 0.50]),
+                    "EXIT": np.array([0.80, 0.15, 0.03, 0.02]),
+                    "FOUNDER": np.array([0.40, 0.35, 0.25]),
+                    "STARTUP": np.array([0.15, 0.40, 0.45]),
                 },
-                "p_funding": 0.10,
-                "mu_funding": 13.5,
-                "sigma_funding": 0.7,
-                "p_exit": 0.01,
-                "mu_exit": 15.5,
-                "sigma_exit": 1.0,
+                "p_funding": 0.35,
+                "mu_funding": 14.0,
+                "sigma_funding": 1.0,
+                "p_exit": 0.07,
+                "mu_exit": 15.0,
+                "sigma_exit": 1.2,
             },
-        },
+            "control": {  
+                "fraction": 0.30,
+                "sampling_probs": {
+                    "UNDERGRAD": np.array([0.85, 0.10, 0.05]),
+                    "GRADUATE": np.array([0.70, 0.20, 0.08, 0.02]),
+                    "COMPANY": np.array([0.65, 0.25, 0.10]),
+                    "SENIORITY": np.array([0.60, 0.30, 0.10]),
+                    "EXPERTISE": np.array([0.45, 0.35, 0.20]),
+                    "EXIT": np.array([0.92, 0.05, 0.02, 0.01]),
+                    "FOUNDER": np.array([0.85, 0.10, 0.05]),
+                    "STARTUP": np.array([0.50, 0.40, 0.10]),
+                },
+                "p_funding": 0.10, 
+                "mu_funding": 13.0,
+                "sigma_funding": 0.8,
+                "p_exit": 0.01,
+                "mu_exit": 14.0,
+                "sigma_exit": 1.0,
+            }
+        }
     }
-    SUCCESS_FUNDING_THRESHOLD = 15000000 # series B
-
+    SUCCESS_FUNDING_THRESHOLD = 15000000  # series B
+     
+    FOUNDER_SEARCH_PARAMS = {
+        "country": 'US',
+        "education_school_name": 'Georgia Institute of Technology',  
+        "current_role_title": 'Founder OR Co-Founder OR "Founding Engineer" OR CEO OR CTO OR Stealth',
+        "enrich_profiles": "enrich",
+        "page_size": 1,
+        "use_cache": "if-present",
+    }
+    
+    UNDERGRAD_KEYWORDS = ["bs","ba","bachelor","bachelor's", "bse","bsba","computer science", "mathematics"]
+    GRAD_KEYWORDS = ['master', 'mba', 'ms', 'phd', 'jd', 'mfa', 'mfe', "master's"]
 
 cfg = Config()

@@ -12,37 +12,37 @@ def plot_model_performance(trainer, W_init):
     
     metrics = [
         ('Training Loss', [
-            (trainer.train_loss_history, 'Train', '#2ecc71'),
-            (trainer.val_loss_history, 'Val', '#3498db'),
-            (trainer.test_loss_history, 'Test', '#e74c3c')
+            (trainer.metrics_history['train']['loss'], 'Train', '#2ecc71'),
+            (trainer.metrics_history['val']['loss'], 'Val', '#3498db'),
+            (trainer.metrics_history['test']['loss'], 'Test', '#e74c3c')
         ], 'Loss'),
         
         ('Classification Accuracy', [
-            (trainer.train_accuracy_history, 'Train', '#2ecc71'),
-            (trainer.val_accuracy_history, 'Val', '#3498db'),
-            (trainer.test_accuracy_history, 'Test', '#e74c3c')
+            (trainer.metrics_history['train']['accuracy'], 'Train', '#2ecc71'),
+            (trainer.metrics_history['val']['accuracy'], 'Val', '#3498db'),
+            (trainer.metrics_history['test']['accuracy'], 'Test', '#e74c3c')
         ], 'Accuracy'),
         
         ('ROC-AUC Score', [
-            (trainer.train_auc_history, 'Train', '#2ecc71'),
-            (trainer.val_auc_history, 'Val', '#3498db'),
-            (trainer.test_auc_history, 'Test', '#e74c3c')
+            (trainer.metrics_history['train']['auc'], 'Train', '#2ecc71'),
+            (trainer.metrics_history['val']['auc'], 'Val', '#3498db'),
+            (trainer.metrics_history['test']['auc'], 'Test', '#e74c3c')
         ], 'AUC'),
         
         ('NDCG Score', [
-            (trainer.train_ndcg_history, 'Train', '#2ecc71'),
-            (trainer.val_ndcg_history, 'Val', '#3498db'),
-            (trainer.test_ndcg_history, 'Test', '#e74c3c')
+            (trainer.metrics_history['train']['ndcg'], 'Train', '#2ecc71'),
+            (trainer.metrics_history['val']['ndcg'], 'Val', '#3498db'),
+            (trainer.metrics_history['test']['ndcg'], 'Test', '#e74c3c')
         ], 'NDCG'),
         
         ('Precision@K', [
-            (trainer.train_precision_history, 'Train', '#2ecc71'),
-            (trainer.val_precision_history, 'Val', '#3498db'),
-            (trainer.test_precision_history, 'Test', '#e74c3c')
+            (trainer.metrics_history['train']['precision_at_k'], 'Train', '#2ecc71'),
+            (trainer.metrics_history['val']['precision_at_k'], 'Val', '#3498db'),
+            (trainer.metrics_history['test']['precision_at_k'], 'Test', '#e74c3c')
         ], 'P@K')
     ]
     
-    epochs = range(len(trainer.train_loss_history))
+    epochs = range(len(trainer.metrics_history['train']['loss']))
     
     # Plot performance metrics
     for title, data_series, ylabel in metrics:
@@ -85,7 +85,7 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
     plt.style.use('seaborn-v0_8-dark')
     
     # Get diagonal importance (individual feature effects)
-    diag_importance = np.diag(W)  # Remove abs() to preserve sign
+    diag_importance = np.diag(W)  
     diag_ranks = pd.DataFrame({
         'Feature': feature_names,
         'Importance': diag_importance,
@@ -108,7 +108,7 @@ def plot_ranked_feature_importance(W, feature_names, figsize=(15, 10)):
     # Combine and normalize while preserving sign
     all_ranks = pd.concat([diag_ranks, interaction_ranks])
     all_ranks['Importance'] = all_ranks.groupby('Type')['Importance'].transform(
-        lambda x: x / np.max(np.abs(x))  # Normalize by max absolute value to preserve sign
+        lambda x: x / np.max(np.abs(x)) 
     )
     
     # Plot
@@ -308,29 +308,28 @@ def display_final_metrics(trainer):
     # Get the final metrics
     final_metrics = {
         'Train': {
-            'NDCG': trainer.train_ndcg_history[-1],
-            'P@K': trainer.train_precision_history[-1],
-            'Accuracy': trainer.train_accuracy_history[-1],
-            'AUC': trainer.train_auc_history[-1]
+            'NDCG': trainer.metrics_history['train']['ndcg'][-1],
+            'P@K': trainer.metrics_history['train']['precision_at_k'][-1],
+            'Accuracy': trainer.metrics_history['train']['accuracy'][-1],
+            'AUC': trainer.metrics_history['train']['auc'][-1]
         },
         'Validation': {
-            'NDCG': trainer.val_ndcg_history[-1],
-            'P@K': trainer.val_precision_history[-1],
-            'Accuracy': trainer.val_accuracy_history[-1],
-            'AUC': trainer.val_auc_history[-1]
+            'NDCG': trainer.metrics_history['val']['ndcg'][-1],
+            'P@K': trainer.metrics_history['val']['precision_at_k'][-1],
+            'Accuracy': trainer.metrics_history['val']['accuracy'][-1],
+            'AUC': trainer.metrics_history['val']['auc'][-1]
         },
         'Test': {
-            'NDCG': trainer.test_ndcg_history[-1],
-            'P@K': trainer.test_precision_history[-1],
-            'Accuracy': trainer.test_accuracy_history[-1],
-            'AUC': trainer.test_auc_history[-1]
+            'NDCG': trainer.metrics_history['test']['ndcg'][-1],
+            'P@K': trainer.metrics_history['test']['precision_at_k'][-1],
+            'Accuracy': trainer.metrics_history['test']['accuracy'][-1],
+            'AUC': trainer.metrics_history['test']['auc'][-1]
         }
     }
     
     # Create a DataFrame for better display
     metrics_df = pd.DataFrame(final_metrics)
     
-
     # Create a bar chart for visual comparison
     plt.figure(figsize=(12, 6))
     metrics_df.plot(kind='bar', rot=0, figsize=(12, 6))
@@ -342,6 +341,63 @@ def display_final_metrics(trainer):
     # Add value labels on top of bars
     for container in plt.gca().containers:
         plt.gca().bar_label(container, fmt='%.3f', fontsize=9)
+    
+    plt.tight_layout()
+    plt.show()
+
+def plot_top_feature_interactions(W, feature_names, top_k=10, exclude_same_category=True):
+    """Plot top positive and negative feature interactions, excluding same-category combinations."""
+    plt.style.use('seaborn-v0_8-dark')
+    
+    # Create pairs of features and their interaction strengths
+    n = len(feature_names)
+    interactions = []
+    
+    for i in range(n):
+        for j in range(i+1, n):
+            # Extract category names from feature names (assuming format "CATEGORY_X")
+            cat1 = feature_names[i].split('_')[0]
+            cat2 = feature_names[j].split('_')[0]
+            
+            # Skip if features are from same category and we want to exclude those
+            if exclude_same_category and cat1 == cat2:
+                continue
+                
+            interaction_strength = W[i,j] + W[j,i]  # Symmetric interaction strength
+            interactions.append({
+                'pair': f"{feature_names[i]} × {feature_names[j]}",
+                'strength': interaction_strength,
+                'abs_strength': abs(interaction_strength)
+            })
+    
+    # Sort by absolute strength and get top_k positive and negative
+    interactions.sort(key=lambda x: x['strength'])
+    neg_interactions = interactions[:top_k]
+    interactions.sort(key=lambda x: x['strength'], reverse=True)
+    pos_interactions = interactions[:top_k]
+    
+    # Combine and plot
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 8))
+    
+    # Positive interactions
+    strengths = [x['strength'] for x in pos_interactions]
+    pairs = [x['pair'] for x in pos_interactions]
+    ax1.barh(range(len(strengths)), strengths, color='#2ecc71', alpha=0.7)
+    ax1.set_yticks(range(len(pairs)))
+    ax1.set_yticklabels(pairs, fontsize=10)
+    ax1.set_title('Top Positive Feature Interactions', fontsize=14, pad=15)
+    ax1.set_xlabel('Interaction Strength', fontsize=12)
+    ax1.grid(True, alpha=0.3)
+    
+    # Negative interactions
+    strengths = [x['strength'] for x in neg_interactions]
+    pairs = [x['pair'] for x in neg_interactions]
+    ax2.barh(range(len(strengths)), strengths, color='#e74c3c', alpha=0.7)
+    ax2.set_yticks(range(len(pairs)))
+    ax2.set_yticklabels(pairs, fontsize=10)
+    ax2.set_title('Top Negative Feature Interactions', fontsize=14, pad=15)
+    ax2.set_xlabel('Interaction Strength', fontsize=12)
+    ax2.grid(True, alpha=0.3)
     
     plt.tight_layout()
     plt.show()

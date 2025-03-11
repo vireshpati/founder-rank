@@ -30,7 +30,4 @@ def initialize_weight_matrix(
 
 
 def score_feature_matrix(feature_matrix, W):
-    return np.sum(
-        (feature_matrix @ W) * feature_matrix,
-        axis=1,
-    )
+    return np.sum((feature_matrix @ W) * feature_matrix, axis=1)

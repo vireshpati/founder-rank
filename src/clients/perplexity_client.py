@@ -22,11 +22,23 @@ class PerplexityClient:
                 messages=messages,
             )
             
-  
+        
             json_match = re.search(r"\{.*?\}", response.choices[0].message.content, re.DOTALL)
             
             if json_match:
                 result = json.loads(json_match.group())
+                
+                # Validate and round values for person evaluations
+                if all(k in result for k in ['exited_founder', 'previous_founder', 'startup_experience']):
+                    # Exit founder: round to nearest value between 0-3
+                    result['exited_founder'] = max(0, min(3, round(float(result['exited_founder']))))
+                    
+                    # Previous founder: round to nearest value between 1-3
+                    result['previous_founder'] = max(1, min(3, round(float(result['previous_founder']))))
+                    
+                    # Startup experience: round to nearest value between 1-3
+                    result['startup_experience'] = max(1, min(3, round(float(result['startup_experience']))))
+                    
                 return result
             else:
                 print(f"Could not extract JSON for {entity_name}. Full response: {response.choices[0].message.content}")

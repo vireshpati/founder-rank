@@ -1,7 +1,7 @@
 import numpy as np
 import os
 import pandas as pd
-from src.data.transforms import one_hot_encode_column
+from src.data.profile_transforms import one_hot_encode_column
 from src.config.config import cfg
 
 class DataGenerator:
@@ -12,7 +12,7 @@ class DataGenerator:
 
     def sample_ordinal_for_category(self, cat, sampling_probs):
         d = self.MATRIX[cat]["DIMENSION"]
-        p = sampling_probs[cat]
+        p = sampling_probs
         if d == 3:
             return np.random.choice([1, 2, 3], p=p)
         else:
@@ -33,7 +33,7 @@ class DataGenerator:
     def generate_subpopulation(self, num_samples, pop_cfg):
         X_list, e_list, f_list = [], [], []
         for _ in range(num_samples):
-            x_parts = []
+            x_ordinals = []
             for cat in self.MATRIX:
                 d = self.MATRIX[cat]["DIMENSION"]
                 
@@ -42,18 +42,16 @@ class DataGenerator:
                 if len(p) != d:
                     raise ValueError(f"Probability vector length ({len(p)}) doesn't match dimension ({d}) for category {cat}")
                 
-                p = p + np.random.normal(0, 0.1, size=d)
-                p = np.clip(p, 0.05, 0.95)
-                p = p / p.sum()  
+                # Add small noise while ensuring probabilities stay positive
+                noise = np.random.normal(0, 0.01, size=d)
+                p = p + noise
+                p = np.clip(p, 0.01, 0.99)  # Ensure strictly positive
+                p = p / p.sum()  # Renormalize
+                
+                val = self.sample_ordinal_for_category(cat, p)
+                x_ordinals.append(val)
             
-
-                
-                val = np.random.choice(range(1, d + 1), p=p) 
-                oh = np.zeros(d)
-                oh[val - 1] = 1 
-                x_parts.append(oh)
-                
-            x = np.concatenate(x_parts)
+            x = np.array(x_ordinals)
             
             # Sample exit and funding values
             e_val, f_val = self.sample_exit_and_funding(
@@ -88,10 +86,23 @@ class DataGenerator:
             f_all.append(f_sub)
             labels += [pop_name] * n_sub
 
-        X_final = np.vstack(X_all)
+        X_ordinal = np.vstack(X_all)
         exit_final = np.concatenate(e_all)
         fund_final = np.concatenate(f_all)
         labels = np.array(labels[: len(exit_final)])
+
+        # One-hot encode each column
+        X_encoded = []
+        for i, cat in enumerate(self.MATRIX):
+            ordinal_column = X_ordinal[:, i]
+            dim = self.MATRIX[cat]["DIMENSION"]
+            
+            # No need to adjust indexing - the function handles it
+            encoded_column = one_hot_encode_column(ordinal_column, dim)
+            X_encoded.append(encoded_column)
+        
+        # Combine the encoded columns
+        X_final = np.hstack(X_encoded)
 
         return X_final, exit_final, fund_final, labels
 

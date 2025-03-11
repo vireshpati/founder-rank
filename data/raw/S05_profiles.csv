@@ -1,0 +1,6 @@
+Name,Undergrad School,Graduate School,Current Company,Current Title,Previous Companies,Previous Titles,Linkedin,UNDERGRAD,GRADUATE,COMPANY,SENIORITY,EXPERTISE,EXIT,FOUNDER,STARTUP,feature_vector
+"Greg Gurevich, CFA",,,ClickFacts Inc,Co-Founder,[],[],https://www.linkedin.com/in/greggurevich,1,0,1,1,1,0,1,1,[1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0]
+Mikhail Gurevich,,,"ClickFacts, Inc.","CIO, Co-Founder",[],[],https://www.linkedin.com/in/mikhailgurevich,1,0,1,1,1,0,1,1,[1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0]
+Mikhail Ledvich,,,ClickFacts Inc,Co-Founder & Product Architect,[],[],https://www.linkedin.com/in/mledvich,1,0,1,1,1,0,1,1,[1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0]
+Philip Yuen,,Cornell University,TextPayMe - Acquired by Amazon (YC S06),Founder & CEO,['Microsoft'],['Program Manager'],https://www.linkedin.com/in/philipyuen,1,1,1,1,1,0,3,3,[1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 0 1 0 0 1]
+Zak Stone,Harvard University,,,,[],[],https://www.linkedin.com/in/zstone,3,0,1,1,1,0,1,1,[0 0 1 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0]

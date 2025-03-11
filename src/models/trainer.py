@@ -3,73 +3,78 @@ import torch.nn as nn
 import numpy as np
 from scipy import stats
 from typing import Dict, Any
-from sklearn.metrics import roc_auc_score, classification_report
+from sklearn.metrics import roc_auc_score
 from src.models.quadratic import QuadMLP, QuadraticModel
+import torch.nn.functional as F
+
+class FocalLoss(nn.Module):
+    def __init__(self, alpha=1, gamma=2):
+        super().__init__()
+        self.alpha = alpha
+        self.gamma = gamma
+        
+    def forward(self, inputs, targets):
+        bce_loss = F.binary_cross_entropy_with_logits(inputs, targets, reduction='none')
+        pt = torch.exp(-bce_loss)
+        focal_loss = self.alpha * (1-pt)**self.gamma * bce_loss
+        return focal_loss.mean()
 
 class ModelTrainer:
     def __init__(self, model, config: Dict[str, Any], pos_weight=None):
         self.model = model.to(config["device"])
         self.config = config
-        self.criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight.to(config["device"]))
-        self.optimizer = torch.optim.AdamW(
-            model.parameters(),
-            lr=config["lr"],
-            weight_decay=config["weight_decay"]
-        )
-        self.best_model_state = None
-        self.best_score = float("-inf")
-        # Initialize history tracking
-        self.train_loss_history = []
-        self.val_loss_history = []
-        self.test_loss_history = []
-        self.train_auc_history = []
-        self.val_auc_history = []
-        self.test_auc_history = []
-        self.train_ndcg_history = []
-        self.val_ndcg_history = []
-        self.test_ndcg_history = []
-        self.train_precision_history = []
-        self.val_precision_history = []
-        self.test_precision_history = []
-        self.train_accuracy_history = []
-        self.val_accuracy_history = []
-        self.test_accuracy_history = []
+        self.criterion = FocalLoss(alpha=2.0, gamma=2.0)
+        self.optimizer = torch.optim.AdamW(model.parameters(), lr=config["lr"], weight_decay=config["weight_decay"])
         
+        # Cosine annealing scheduler
+        self.scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(self.optimizer, T_max=config["epochs"], eta_min=config["lr"] * 0.01)
+        
+        # State tracking
+        self.best_model_state = None
+        self.best_val_metric = float("-inf")
+        self.metrics_history = {
+            'train': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []},
+            'val': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []},
+            'test': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []}
+        }
+
+        print(f"{'Epoch':>5} {'Train Loss':>10} {'Val Loss':>10} {'Test Loss':>10} "
+              f"{'Val AUC':>8} {'Val NDCG':>8} {'Val P@K':>8} {'Val Acc':>8} "
+              f"{'Test AUC':>8} {'Test NDCG':>8} {'Test P@K':>8} {'Test Acc':>8}")
+        print("-" * 120)
+
     def train_epoch(self, train_loader):
         self.model.train()
-        epoch_loss = 0
+        total_loss = 0
         
-        for X_batch, y_batch, _ in train_loader:
-            X_batch = X_batch.to(self.config["device"])
-            y_batch = y_batch.to(self.config["device"])
+        for X, y, _ in train_loader:
+            X, y = X.to(self.config["device"]), y.to(self.config["device"])
+            
+            # Apply label smoothing
+            y_smooth = self.smooth_labels(y, smoothing=0.03)
             
             self.optimizer.zero_grad()
-            outputs = self.model(X_batch)
+            outputs = self.model(X)
+            loss = self.criterion(outputs, y_smooth)
             
+            # Add regularization penalties
             W = self.model.get_W()
-            reg_loss = self.regularization_loss(W)
-            loss = self.criterion(outputs, y_batch) + reg_loss
+            penalties = (
+                self.config["diag_penalty"] * torch.sum(torch.square(torch.diag(W))) +
+                self.config["l1_penalty"] * torch.sum(torch.abs(W)) +
+                self.config["top_k_penalty"] * torch.sum(torch.topk(torch.abs(W).flatten(), self.config["top_k"])[0])
+            )
             
+            loss = loss + penalties
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.model.parameters(), 1.0)
-            self.optimizer.step()
             
-            epoch_loss += loss.item() * X_batch.size(0)
+            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=0.5)
+            
+            self.optimizer.step()
+            total_loss += loss.item()
         
-        return epoch_loss / len(train_loader.dataset)
-
-    def regularization_loss(self, W):
-        diag_penalty = torch.abs(torch.diag(W)).mean() * self.config.get("diag_penalty", 0.01)
-        off_diag = W - torch.diag(torch.diag(W))
-        l1_off_diag = torch.abs(off_diag).mean() * self.config.get("l1_penalty", 0.001)
-        
-        # Encourage top-k strongest interactions
-        k = self.config.get("top_k", 10)
-        top_k = torch.topk(torch.abs(off_diag).view(-1), k=k)
-        top_k_loss = -torch.abs(top_k.values).mean() * self.config.get("top_k_penalty", 0.01)
-        
-        return diag_penalty + l1_off_diag + top_k_loss
-
+        self.scheduler.step()
+        return total_loss / len(train_loader)
     @torch.no_grad()
     def evaluate(self, X, y):
         self.model.eval()
@@ -82,7 +87,7 @@ class ModelTrainer:
         preds = (probs > 0.5).astype(int)
         y = y.cpu().numpy()
         
-        metrics = {
+        return {
             'loss': loss,
             'auc': roc_auc_score(y, probs),
             'accuracy': (preds == y).mean(),
@@ -91,24 +96,6 @@ class ModelTrainer:
             'probs': probs,
             'preds': preds
         }
-        
-        if metrics['ndcg'] > self.best_score:
-            self.best_score = metrics['ndcg']
-            self.best_probs = probs
-            self.best_preds = preds
-            self.best_model_state = self.model.state_dict()
-        
-        return metrics
-
-    def safe_corr(self, x, y, method='spearman'):
-        if np.var(x) == 0 or np.var(y) == 0:
-            return 0.0
-        try:
-            if method == 'spearman':
-                return stats.spearmanr(x, y)[0]
-            return np.corrcoef(x, y)[0,1]
-        except:
-            return 0.0
 
     def ndcg_score(self, true_labels, pred_scores, k=None):
         k = k or len(true_labels)
@@ -124,92 +111,53 @@ class ModelTrainer:
         top_k = np.argsort(pred_scores)[::-1][:k]
         return np.mean(true_labels[top_k])
 
-    def train(self, train_loader, X_val, y_val, X_test=None, y_test=None):
-        for epoch in range(self.config["epochs"]):
-            train_loss = self.train_epoch(train_loader)
-            val_metrics = self.evaluate(X_val, y_val)
-            
-            # Track metrics history
-            self.train_loss_history.append(train_loss)
-            self.val_loss_history.append(val_metrics['loss'])
-            self.test_loss_history.append(val_metrics['loss'])
-            self.train_auc_history.append(val_metrics['auc'])
-            self.val_auc_history.append(val_metrics['auc'])
-            self.test_auc_history.append(val_metrics['auc'])
-            self.train_ndcg_history.append(val_metrics['ndcg'])
-            self.val_ndcg_history.append(val_metrics['ndcg'])
-            self.test_ndcg_history.append(val_metrics['ndcg'])
-            self.train_precision_history.append(val_metrics['precision_at_k'])
-            self.val_precision_history.append(val_metrics['precision_at_k'])
-            self.test_precision_history.append(val_metrics['precision_at_k'])
-            self.train_accuracy_history.append(val_metrics['accuracy'])
-            self.val_accuracy_history.append(val_metrics['accuracy'])
-            self.test_accuracy_history.append(val_metrics['accuracy'])
-            
-            if epoch % self.config.get("log_every", 5) == 0:
-                print(f"Epoch {epoch}: Train Loss = {train_loss:.4f}")
-                for metric, value in val_metrics.items():
-                    if isinstance(value, (float, int)):  # Only print numeric metrics
-                        print(f"Val {metric} = {value:.4f}")
-                print("---")
+    def smooth_labels(self, labels, smoothing=0.03):
+        labels = labels.float().to(self.config["device"])
+        return labels * (1 - smoothing) + 0.5 * smoothing
 
-    def train_with_test_tracking(self, train_loader, X_val, y_val, X_test=None, y_test=None):
-   
-        print(f"{'Epoch':>5} {'Train Loss':>10} {'Val Loss':>10} {'Test Loss':>10} {'Train Acc':>9} {'Val Acc':>9} "
-              f"{'Test Acc':>9} {'Val AUC':>8} {'Test AUC':>8} {'Val NDCG':>8} {'Test NDCG':>8} {'P@K':>8}")
-        print("-" * 120)
-        
-        # Save initial weights
+    def train(self, train_loader, X_val, y_val, X_test=None, y_test=None):
         W_init = self.model.get_W().detach().cpu().numpy()
-        
-        best_val_auc = float('-inf')
-        self.best_model_state = None
+        patience = self.config.get("early_stopping_patience", 50)
+        patience_counter = 0
         
         for epoch in range(self.config["epochs"]):
             train_loss = self.train_epoch(train_loader)
+            metrics = {
+                'train': self.evaluate(train_loader.dataset.tensors[0], train_loader.dataset.tensors[1]),
+                'val': self.evaluate(X_val, y_val),
+                'test': self.evaluate(X_test, y_test) if X_test is not None else None
+            }
             
-            with torch.no_grad():
-                train_metrics = self.evaluate(train_loader.dataset.tensors[0], train_loader.dataset.tensors[1])
-                val_metrics = self.evaluate(X_val, y_val)
-                
-                if X_test is not None and y_test is not None:
-                    test_metrics = self.evaluate(X_test, y_test)
-                else:
-                    test_metrics = {key: 0.0 for key in val_metrics.keys()}
+            # Update history
+            for split in metrics:
+                if metrics[split]:
+                    for metric, value in metrics[split].items():
+                        if metric not in ['probs', 'preds']:
+                            self.metrics_history[split][metric].append(value)
             
-            # Track metrics history
-            self.train_loss_history.append(train_loss)
-            self.val_loss_history.append(val_metrics['loss'])
-            self.test_loss_history.append(test_metrics['loss'])
-            
-            self.train_accuracy_history.append(train_metrics['accuracy'])
-            self.val_accuracy_history.append(val_metrics['accuracy'])
-            self.test_accuracy_history.append(test_metrics['accuracy'])
-            
-            self.train_auc_history.append(train_metrics['auc'])
-            self.val_auc_history.append(val_metrics['auc'])
-            self.test_auc_history.append(test_metrics['auc'])
-            
-            self.train_ndcg_history.append(train_metrics['ndcg'])
-            self.val_ndcg_history.append(val_metrics['ndcg'])
-            self.test_ndcg_history.append(test_metrics['ndcg'])
-            
-            self.train_precision_history.append(train_metrics['precision_at_k'])
-            self.val_precision_history.append(val_metrics['precision_at_k'])
-            self.test_precision_history.append(test_metrics['precision_at_k'])
-            
+            # Logging
             if epoch % self.config.get("log_every", 1) == 0:
-                print(f"{epoch:5d} {train_loss:10.4f} {val_metrics['loss']:10.4f} {test_metrics['loss']:10.4f} "
-                    f"{train_metrics['accuracy']:9.4f} {val_metrics['accuracy']:9.4f} {test_metrics['accuracy']:9.4f} "
-                    f"{val_metrics['auc']:8.4f} {test_metrics['auc']:8.4f} "
-                    f"{val_metrics['ndcg']:8.4f} {test_metrics['ndcg']:8.4f} "
-                    f"{val_metrics['precision_at_k']:8.4f}")
+                print(f"{epoch:5d} {train_loss:10.4f} {metrics['val']['loss']:10.4f} "
+                      f"{metrics['test']['loss'] if metrics['test'] else 0:10.4f} "
+                      f"{metrics['val']['auc']:8.4f} {metrics['val']['ndcg']:8.4f} "
+                      f"{metrics['val']['precision_at_k']:8.4f} {metrics['val']['accuracy']:8.4f} "
+                      f"{metrics['test']['auc'] if metrics['test'] else 0:8.4f} "
+                      f"{metrics['test']['ndcg'] if metrics['test'] else 0:8.4f} "
+                      f"{metrics['test']['precision_at_k'] if metrics['test'] else 0:8.4f} "
+                      f"{metrics['test']['accuracy'] if metrics['test'] else 0:8.4f}")
             
-            if val_metrics['auc'] > best_val_auc:
-                best_val_auc = val_metrics['auc']
+            # Early stopping on validation NDCG
+            if metrics['val']['ndcg'] > self.best_val_metric:
+                self.best_val_metric = metrics['val']['ndcg']
                 self.best_model_state = self.model.state_dict()
+                patience_counter = 0
+            else:
+                patience_counter += 1
+                if patience_counter >= patience:
+                    print(f"\nEarly stopping triggered after {epoch} epochs")
+                    break
         
-        if self.best_model_state is not None:
+        if self.best_model_state:
             self.model.load_state_dict(self.best_model_state)
         
         return W_init
