@@ -16,3 +16,4 @@ tqdm
 jupyter
 notebook
 tensorboard
+torchmetrics

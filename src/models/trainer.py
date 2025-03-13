@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 from scipy import stats
 from typing import Dict, Any
-from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_auc_score, ndcg_score
 from src.models.quadratic import QuadMLP, QuadraticModel
 import torch.nn.functional as F
 
@@ -29,19 +29,49 @@ class ModelTrainer:
         # Cosine annealing scheduler
         self.scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(self.optimizer, T_max=config["epochs"], eta_min=config["lr"] * 0.01)
         
+        # Get K values for metrics from config or use defaults
+        self.k_values = config.get("k_values", [10, 25, 50])
+        
         # State tracking
         self.best_model_state = None
         self.best_val_metric = float("-inf")
+        
+        # Initialize metrics history with dynamic K values
         self.metrics_history = {
-            'train': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []},
-            'val': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []},
-            'test': {'loss': [], 'auc': [], 'ndcg': [], 'precision_at_k': [], 'accuracy': []}
+            'train': {'loss': [], 'auc': [], 'ndcg': [], 'accuracy': []},
+            'val': {'loss': [], 'auc': [], 'ndcg': [], 'accuracy': []},
+            'test': {'loss': [], 'auc': [], 'ndcg': [], 'accuracy': []}
         }
-
-        print(f"{'Epoch':>5} {'Train Loss':>10} {'Val Loss':>10} {'Test Loss':>10} "
-              f"{'Val AUC':>8} {'Val NDCG':>8} {'Val P@K':>8} {'Val Acc':>8} "
-              f"{'Test AUC':>8} {'Test NDCG':>8} {'Test P@K':>8} {'Test Acc':>8}")
-        print("-" * 120)
+        
+        # Add precision and ndcg metrics for each K value
+        for split in self.metrics_history:
+            for k in self.k_values:
+                self.metrics_history[split][f'ndcg@{k}'] = []
+                self.metrics_history[split][f'precision@{k}'] = []
+        
+        # Create a better organized header grouped by train/val/test
+        header = f"{'Epoch':>5} "
+        
+        # Training metrics
+        header += f"{'Train Loss':>10} {'Train AUC':>10} {'Train NDCG':>10} "
+        for k in self.k_values:
+            header += f"{'Tr N@'+str(k):>8} {'Tr P@'+str(k):>8} "
+        header += f"{'Train Acc':>9} "
+        
+        # Validation metrics
+        header += f"{'Val Loss':>10} {'Val AUC':>10} {'Val NDCG':>10} "
+        for k in self.k_values:
+            header += f"{'Val N@'+str(k):>8} {'Val P@'+str(k):>8} "
+        header += f"{'Val Acc':>9} "
+        
+        # Test metrics
+        header += f"{'Test Loss':>10} {'Test AUC':>10} {'Test NDCG':>10} "
+        for k in self.k_values:
+            header += f"{'Tst N@'+str(k):>8} {'Tst P@'+str(k):>8} "
+        header += f"{'Test Acc':>9}"
+        
+        print(header)
+        print("-" * (180 + len(self.k_values) * 32))  # Adjust line length based on number of K values
 
     def train_epoch(self, train_loader):
         self.model.train()
@@ -87,29 +117,55 @@ class ModelTrainer:
         preds = (probs > 0.5).astype(int)
         y = y.cpu().numpy()
         
-        return {
+        # Calculate metrics using sklearn
+        y_true = y.reshape(1, -1)
+        y_score = probs.reshape(1, -1)
+        
+        # Only calculate if we have positive examples
+        has_positives = np.sum(y) > 0
+        has_negatives = np.sum(1 - y) > 0
+        
+        # Initialize all metrics to avoid KeyError
+        results = {
             'loss': loss,
-            'auc': roc_auc_score(y, probs),
             'accuracy': (preds == y).mean(),
-            'ndcg': self.ndcg_score(y, probs),
-            'precision_at_k': self.precision_at_k(y, probs, k=10),
+            'auc': 0.0,
+            'ndcg': 0.0,
             'probs': probs,
             'preds': preds
         }
-
-    def ndcg_score(self, true_labels, pred_scores, k=None):
-        k = k or len(true_labels)
-        sorted_idx = np.argsort(pred_scores)[::-1][:k]
-        dcg = np.sum((2**true_labels[sorted_idx] - 1) / np.log2(np.arange(2, len(sorted_idx) + 2)))
         
-        ideal_idx = np.argsort(true_labels)[::-1][:k]
-        idcg = np.sum((2**true_labels[ideal_idx] - 1) / np.log2(np.arange(2, len(ideal_idx) + 2)))
+        # Initialize all K-specific metrics
+        for k in self.k_values:
+            results[f'ndcg@{k}'] = 0.0
+            results[f'precision@{k}'] = 0.0
         
-        return dcg / idcg if idcg > 0 else 0.0
-
-    def precision_at_k(self, true_labels, pred_scores, k=10):
-        top_k = np.argsort(pred_scores)[::-1][:k]
-        return np.mean(true_labels[top_k])
+        # AUC requires both positive and negative examples
+        if has_positives and has_negatives:
+            results['auc'] = roc_auc_score(y, probs)
+        
+        # NDCG calculation
+        if has_positives:
+            # Overall NDCG (considers all items in the ranking)
+            results['ndcg'] = ndcg_score(y_true, y_score)  # k=None by default
+            
+            # Calculate NDCG for each K value
+            for k in self.k_values:
+                k_actual = min(k, len(y))  # Handle case where k is larger than dataset
+                if k_actual > 0:
+                    results[f'ndcg@{k}'] = ndcg_score(y_true, y_score, k=k_actual)
+        
+        # Precision@k calculation
+        if has_positives:
+            for k in self.k_values:
+                k_actual = min(k, len(y))  # Handle case where k is larger than dataset
+                if k_actual > 0:
+                    # Get indices of top k predictions
+                    top_k_indices = np.argsort(probs)[::-1][:k_actual]
+                    # Calculate precision at k (true positives / k)
+                    results[f'precision@{k}'] = np.sum(y[top_k_indices]) / k_actual
+        
+        return results
 
     def smooth_labels(self, labels, smoothing=0.03):
         labels = labels.float().to(self.config["device"])
@@ -119,6 +175,12 @@ class ModelTrainer:
         W_init = self.model.get_W().detach().cpu().numpy()
         patience = self.config.get("early_stopping_patience", 50)
         patience_counter = 0
+        
+        # Get the metric to use for early stopping
+        early_stopping_metric = self.config.get("early_stopping_metric", "ndcg")
+        self.best_val_metric = float("-inf")
+        
+        print(f"Using k_values: {self.k_values}")
         
         for epoch in range(self.config["epochs"]):
             train_loss = self.train_epoch(train_loader)
@@ -137,24 +199,47 @@ class ModelTrainer:
             
             # Logging
             if epoch % self.config.get("log_every", 1) == 0:
-                print(f"{epoch:5d} {train_loss:10.4f} {metrics['val']['loss']:10.4f} "
-                      f"{metrics['test']['loss'] if metrics['test'] else 0:10.4f} "
-                      f"{metrics['val']['auc']:8.4f} {metrics['val']['ndcg']:8.4f} "
-                      f"{metrics['val']['precision_at_k']:8.4f} {metrics['val']['accuracy']:8.4f} "
-                      f"{metrics['test']['auc'] if metrics['test'] else 0:8.4f} "
-                      f"{metrics['test']['ndcg'] if metrics['test'] else 0:8.4f} "
-                      f"{metrics['test']['precision_at_k'] if metrics['test'] else 0:8.4f} "
-                      f"{metrics['test']['accuracy'] if metrics['test'] else 0:8.4f}")
+                log_str = f"{epoch:5d} "
+                
+                # Training metrics
+                log_str += f"{train_loss:10.4f} {metrics['train']['auc']:10.4f} {metrics['train']['ndcg']:10.4f} "
+                for k in self.k_values:
+                    log_str += f"{metrics['train'][f'ndcg@{k}']:8.4f} {metrics['train'][f'precision@{k}']:8.4f} "
+                log_str += f"{metrics['train']['accuracy']:9.4f} "
+                
+                # Validation metrics
+                log_str += f"{metrics['val']['loss']:10.4f} {metrics['val']['auc']:10.4f} {metrics['val']['ndcg']:10.4f} "
+                for k in self.k_values:
+                    log_str += f"{metrics['val'][f'ndcg@{k}']:8.4f} {metrics['val'][f'precision@{k}']:8.4f} "
+                log_str += f"{metrics['val']['accuracy']:9.4f} "
+                
+                # Test metrics
+                test_loss = metrics['test']['loss'] if metrics['test'] else 0
+                test_auc = metrics['test']['auc'] if metrics['test'] else 0
+                test_ndcg = metrics['test']['ndcg'] if metrics['test'] else 0
+                test_acc = metrics['test']['accuracy'] if metrics['test'] else 0
+                
+                log_str += f"{test_loss:10.4f} {test_auc:10.4f} {test_ndcg:10.4f} "
+                
+                for k in self.k_values:
+                    test_ndcg_k = metrics['test'][f'ndcg@{k}'] if metrics['test'] else 0
+                    test_prec_k = metrics['test'][f'precision@{k}'] if metrics['test'] else 0
+                    log_str += f"{test_ndcg_k:8.4f} {test_prec_k:8.4f} "
+                
+                log_str += f"{test_acc:9.4f}"
+                
+                print(log_str)
             
-            # Early stopping on validation NDCG
-            if metrics['val']['ndcg'] > self.best_val_metric:
-                self.best_val_metric = metrics['val']['ndcg']
+            # Early stopping based on the specified metric
+            current_metric_value = metrics['val'][early_stopping_metric]
+            if current_metric_value > self.best_val_metric:
+                self.best_val_metric = current_metric_value
                 self.best_model_state = self.model.state_dict()
                 patience_counter = 0
             else:
                 patience_counter += 1
                 if patience_counter >= patience:
-                    print(f"\nEarly stopping triggered after {epoch} epochs")
+                    print(f"\nEarly stopping triggered after {epoch} epochs (no improvement in {early_stopping_metric})")
                     break
         
         if self.best_model_state:
