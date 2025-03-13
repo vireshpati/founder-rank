@@ -10,38 +10,43 @@ from src.models.trainer import create_model_and_trainer
 
 def train_model(data_path, output_path):
     """Train founder ranking model"""
+    # Define hyperparameters
     hyp = {
         "data_paths": [
-            "data/encoded/S21_encoded_with_outcomes.csv",
-            "data/encoded/W21_encoded_with_outcomes.csv",
-            "data/encoded/S17_encoded_with_outcomes.csv",
-            "data/encoded/W17_encoded_with_outcomes.csv",
-            "data/encoded/top_companies_encoded_with_outcomes.csv"
+            "../data/encoded/S21_encoded_with_outcomes.csv",
+            "../data/encoded/W21_encoded_with_outcomes.csv",
+            "../data/encoded/S17_encoded_with_outcomes.csv",
+            "../data/encoded/W17_encoded_with_outcomes.csv",
+            "../data/encoded/top_companies_encoded_with_outcomes.csv"
         ],
-        "synthetic_data_path": 'data/synth/encoded_founders_composites.csv',
-        "test_size": 0.125,  
-        "val_size": 0.125,   
+        "synthetic_data_path": '../data/synth/encoded_founders_composites.csv',
+        "test_size": 0.17,  
+        "val_size": 0.175,   
         "random_state": 42,
-        "batch_size": 32,     
+        "batch_size": 64,     
         "lr": 0.0005,         
-        "weight_decay": 1.8e-3,  
-        "epochs": 100,       
+        "weight_decay": 1.8e-3,  #l2
+        "epochs": 500,       
         "device": "cuda" if torch.cuda.is_available() else "cpu",
         "exclude_columns": ["success", "exit_value", "funding_amount", "batch"],
         "target_column": "success",
         
         # Regularization parameters
-        "diag_penalty": 0.0002,    
+        "diag_penalty": 0.0002,    # individual feature weights
         "l1_penalty": 0.0004,      
-        "top_k_penalty": 0.0005,   
-        "top_k": 15,               
+        "top_k_penalty": 0.0005,    # top k feature interactions
+        "top_k": 15,                
         "dropout": 0.15,           
         
         # Training parameters
         "log_every": 10,
-        "early_stopping_patience": 250, 
+        "early_stopping_patience": 250,
         
-        "pos_weight": 1.0
+        # Evaluation metrics parameters
+        "k_values": [10, 25, 50],  # K values for NDCG and Precision
+        "early_stopping_metric": "ndcg@50" ,
+        
+        'ranking_weight': 0.6
     }
     
 

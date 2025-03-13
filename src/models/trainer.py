@@ -119,13 +119,12 @@ class ModelTrainer:
             # Classification loss
             cls_loss = self.criterion(outputs, y_smooth)
             
-            # Ranking loss (only if we have enough samples in the batch)
+            # Ranking loss 
             if X.size(0) > 1:
                 rank_loss = self.ranking_criterion(outputs, y)
             else:
                 rank_loss = torch.tensor(0.0, device=self.config["device"])
             
-            # Combine losses
             loss = cls_loss + self.ranking_weight * rank_loss
             
             # Add regularization penalties
