@@ -194,15 +194,15 @@ class Config:
                     "FOUNDER": np.array([0.15, 0.25, 0.60]),
                     "STARTUP": np.array([0.05, 0.30, 0.65]),
                 },
-                "p_funding": 0.55,
-                "mu_funding": 15.0, # e^15 = $3,269017.37
-                "sigma_funding": 1.5,
-                "p_exit": 0.18,
-                "mu_exit": 16.5,
-                "sigma_exit": 1.8,
+                "p_funding": 0.85,
+                "mu_funding": 17.0,
+                "sigma_funding": 1.3,
+                "p_exit": 0.25,
+                "mu_exit": 17.5,
+                "sigma_exit": 1.5,
             },
             "midtier": {
-                "fraction": 0.30,
+                "fraction": 0.40,
                 "sampling_probs": {
                     "UNDERGRAD": np.array([0.70, 0.20, 0.10]),
                     "GRADUATE": np.array([0.40, 0.35, 0.20, 0.05]),
@@ -213,15 +213,15 @@ class Config:
                     "FOUNDER": np.array([0.40, 0.35, 0.25]),
                     "STARTUP": np.array([0.15, 0.40, 0.45]),
                 },
-                "p_funding": 0.35,
-                "mu_funding": 14.0,
-                "sigma_funding": 1.0,
-                "p_exit": 0.07,
-                "mu_exit": 15.0,
-                "sigma_exit": 1.2,
+                "p_funding": 0.65,
+                "mu_funding": 16.0,
+                "sigma_funding": 0.9,
+                "p_exit": 0.12,
+                "mu_exit": 16.5,
+                "sigma_exit": 1.0,
             },
             "control": {  
-                "fraction": 0.30,
+                "fraction": 0.20,
                 "sampling_probs": {
                     "UNDERGRAD": np.array([0.85, 0.10, 0.05]),
                     "GRADUATE": np.array([0.70, 0.20, 0.08, 0.02]),
@@ -232,12 +232,12 @@ class Config:
                     "FOUNDER": np.array([0.85, 0.10, 0.05]),
                     "STARTUP": np.array([0.50, 0.40, 0.10]),
                 },
-                "p_funding": 0.10, 
-                "mu_funding": 13.0,
-                "sigma_funding": 0.8,
-                "p_exit": 0.01,
-                "mu_exit": 14.0,
-                "sigma_exit": 1.0,
+                "p_funding": 0.30,
+                "mu_funding": 14.0,
+                "sigma_funding": 0.7,
+                "p_exit": 0.03,
+                "mu_exit": 15.0,
+                "sigma_exit": 0.9,
             }
         }
     }
@@ -254,5 +254,7 @@ class Config:
     
     UNDERGRAD_KEYWORDS = ["bs","ba","bachelor","bachelor's", "bse","bsba","computer science", "mathematics"]
     GRAD_KEYWORDS = ['master', 'mba', 'ms', 'phd', 'jd', 'mfa', 'mfe', "master's"]
+    
+    THRESHOLD = 0.5
 
 cfg = Config()

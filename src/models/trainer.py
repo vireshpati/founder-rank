@@ -5,6 +5,7 @@ from scipy import stats
 from typing import Dict, Any
 from sklearn.metrics import roc_auc_score, ndcg_score
 from src.models.quadratic import QuadMLP, QuadraticModel
+from src.config.config import cfg
 import torch.nn.functional as F
 
 class FocalLoss(nn.Module):
@@ -114,7 +115,7 @@ class ModelTrainer:
         outputs = self.model(X)
         loss = self.criterion(outputs, y).item()
         probs = torch.sigmoid(outputs).cpu().numpy()
-        preds = (probs > 0.5).astype(int)
+        preds = (probs > cfg.THRESHOLD).astype(int)
         y = y.cpu().numpy()
         
         # Calculate metrics using sklearn
@@ -252,8 +253,8 @@ class ModelTrainer:
             train_probs = torch.sigmoid(self.model(X_train)).cpu().numpy()
             val_probs = torch.sigmoid(self.model(X_val)).cpu().numpy()
             
-            train_preds = (train_probs > 0.5).astype(int)
-            val_preds = (val_probs > 0.5).astype(int)
+            train_preds = (train_probs > cfg.THRESHOLD).astype(int)
+            val_preds = (val_probs > cfg.THRESHOLD).astype(int)
             
             results = {
                 'train': (train_probs, train_preds),
@@ -262,7 +263,7 @@ class ModelTrainer:
             
             if X_test is not None:
                 test_probs = torch.sigmoid(self.model(X_test)).cpu().numpy()
-                test_preds = (test_probs > 0.5).astype(int)
+                test_preds = (test_probs > cfg.THRESHOLD).astype(int)
                 results['test'] = (test_probs, test_preds)
             
             return results
