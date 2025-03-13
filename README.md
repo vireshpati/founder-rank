@@ -34,15 +34,12 @@ Train using both synthetic and real data:
 # Basic training with default parameters
 python scripts/train_model.py --data_path data/synth/encoded_founders_composites.csv --output_path models/founder_rank.pkl
 
-# Train with combined synthetic and real data
-python scripts/train_model.py --data_path data/synth/encoded_founders_composites.csv --real_data data/encoded/real_founders.csv --output_path models/founder_rank_combined.pkl
-
-# Train with hyperparameter tuning enabled
-python scripts/train_model.py --data_path data/synth/encoded_founders_composites.csv --tune_hyperparams --output_path models/founder_rank_optimized.pkl
+# Train with combined synthetic and real data (real data is loaded automatically)
+python scripts/train_model.py --data_path data/synth/encoded_founders_composites.csv --output_path models/founder_rank_combined.pkl
 ```
 
+
 ### 3. Evaluate New Profiles
-Rank new founder profiles using the trained model:
 ```bash
 # Search for new founder profiles, save results, and use a specific model
 python scripts/evaluate_profiles.py --search --limit 15 --save --model-path models/founder_rank.pkl
@@ -50,31 +47,30 @@ python scripts/evaluate_profiles.py --search --limit 15 --save --model-path mode
 # Evaluate specific LinkedIn profiles with a custom list name
 python scripts/evaluate_profiles.py --urls "https://linkedin.com/in/username1" "https://linkedin.com/in/username2" --list-name "potential-founders" --save
 
-# Complete workflow: search, customize output name, save results, use optimized model
-python scripts/evaluate_profiles.py --search --limit 25 --list-name "tech-founders" --save --model-path models/founder_rank_optimized.pkl
+# Complete workflow: search, customize output name, save results
+python scripts/evaluate_profiles.py --search --limit 25 --list-name "tech-founders" --save --model-path models/founder_rank.pkl
 ```
+
 
 ## Data Directory Structure
 ```
 data/
-├── encoded/                    # Encoded founder profiles with outcomes (csv)
-├── live/                       # Live YC batch scrapes, some with targets (csv)
+├── encoded/                    # Encoded founder profiles with outcomes -- use for training (csv)
+├── live/                       # Live YC batch scrapes, (some with targets added via live-data.ipynb) (csv)
 ├── proxycurl/                  # Raw LinkedIn profile data (json)
-├── parsed/                     # Intermediate YC batch scrapes (csv)
-├── sample_encodings/           # Example encoded profiles (csv)
+├── parsed/                     # YC batch data with feature vectors (csv)
+├── sample_encodings/           # Example encoded profiles for testing (csv)
 ├── synth/                      # Synthetic training data (csv)         
-└── linkedin_profiles.json      # Linkedin profiles master json
+└── linkedin_profiles.json      # Linkedin profiles master json (move to db / airtable later)
 
 models/                         # Trained model files
 └── founder_rank.pkl            
 ```
-## Development
 
-Notebooks are available in `notebooks/` :
+## Development
 
 - `founder-rank.ipynb`: Main ranking workflow
 - `data.ipynb`: Data generation and YC EDA
 - `model.ipynb`: Model training and evaluation
 - `live-data.ipynb`: Live data processing
 - `matrix-pipeline.ipynb`: Naive untrained matrix implementation
-
