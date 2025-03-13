@@ -20,11 +20,40 @@ class FocalLoss(nn.Module):
         focal_loss = self.alpha * (1-pt)**self.gamma * bce_loss
         return focal_loss.mean()
 
+class PairwiseRankingLoss(nn.Module):
+    def __init__(self, margin=0.0):
+        super().__init__()
+        self.margin = margin
+        
+    def forward(self, scores, labels):
+        # Create all possible pairs of scores and corresponding labels
+        n = scores.size(0)
+        scores_i = scores.repeat_interleave(n, dim=0)
+        scores_j = scores.repeat(n)
+        labels_i = labels.repeat_interleave(n, dim=0)
+        labels_j = labels.repeat(n)
+        
+        # We only want pairs where labels_i > labels_j (positive should be ranked higher than negative)
+        mask = (labels_i > labels_j).float()
+        
+        if mask.sum() == 0:  # No valid pairs in this batch
+            return torch.tensor(0.0, device=scores.device)
+        
+        # Calculate pairwise ranking loss (similar to RankNet)
+        # We want scores_i > scores_j when labels_i > labels_j
+        diff = scores_i - scores_j
+        loss = -torch.log(torch.sigmoid(diff) + 1e-8) * mask
+        
+        # Return mean loss over all valid pairs
+        return loss.sum() / (mask.sum() + 1e-8)
+
 class ModelTrainer:
     def __init__(self, model, config: Dict[str, Any], pos_weight=None):
         self.model = model.to(config["device"])
         self.config = config
         self.criterion = FocalLoss(alpha=2.0, gamma=2.0)
+        self.ranking_criterion = PairwiseRankingLoss(margin=0.0)
+        self.ranking_weight = config.get("ranking_weight", 0.5)
         self.optimizer = torch.optim.AdamW(model.parameters(), lr=config["lr"], weight_decay=config["weight_decay"])
         
         # Cosine annealing scheduler
@@ -86,7 +115,18 @@ class ModelTrainer:
             
             self.optimizer.zero_grad()
             outputs = self.model(X)
-            loss = self.criterion(outputs, y_smooth)
+            
+            # Classification loss
+            cls_loss = self.criterion(outputs, y_smooth)
+            
+            # Ranking loss (only if we have enough samples in the batch)
+            if X.size(0) > 1:
+                rank_loss = self.ranking_criterion(outputs, y)
+            else:
+                rank_loss = torch.tensor(0.0, device=self.config["device"])
+            
+            # Combine losses
+            loss = cls_loss + self.ranking_weight * rank_loss
             
             # Add regularization penalties
             W = self.model.get_W()
