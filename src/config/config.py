@@ -246,9 +246,9 @@ class Config:
     FOUNDER_SEARCH_PARAMS = {
         "country": 'US',
         "education_school_name": 'Georgia Institute of Technology',  
-        "current_role_title": 'Founder OR Co-Founder OR "Founding Engineer" OR CEO OR CTO OR Stealth',
+        "current_role_title": "Founder OR Co-Founder OR 'Founding Engineer' OR CEO OR CTO OR Stealth",
         "enrich_profiles": "enrich",
-        "page_size": 1,
+        "page_size": 10,
         "use_cache": "if-present",
     }
     

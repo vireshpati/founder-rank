@@ -5,10 +5,10 @@ from src.config.config import cfg
 import pickle
 from src.models.quadratic import QuadMLP
 
-def search_founders(px, limit=10):
+def search_founders(px, limit=10, ids=None):
     """Search for founders based on parameters and return their LinkedIn profiles"""
     
-    data = px.person_search(params=cfg.FOUNDER_SEARCH_PARAMS, N=limit)
+    data = px.person_search(params=cfg.FOUNDER_SEARCH_PARAMS, N=limit, ids=ids)
     print(f"Found {len(data.get('results', []))} profiles")
     
     return data

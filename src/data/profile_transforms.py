@@ -345,7 +345,7 @@ class ProfileTransforms:
         
     def _save_to_csv(self, df, output_dir, batch_code=None,):
         os.makedirs(output_dir, exist_ok=True)  
-        batch_suffix = f"{batch_code}_" if batch_code else ""
+        batch_suffix = f"{batch_code}" if batch_code else ""
         output_path = os.path.join(output_dir, f"{batch_suffix}-profiles.csv")
         df.to_csv(output_path, index=False)
         print(f"Saved encoded profiles to {output_path}")

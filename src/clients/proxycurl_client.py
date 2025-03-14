@@ -15,11 +15,14 @@ class ProxycurlClient:
         self.base_url = "https://nubela.co/proxycurl/api/v2/"
         self.headers = {"Authorization": f"Bearer {self.api_key}"}
 
-    def person_search(self, params, use_cache="if-present", N=1):
+    def person_search(self, params, use_cache="if-present", N=10, ids=None):
         """Search for a person using the provided parameters."""
         params["page_size"] = N
         params["use_cache"] = use_cache
-
+        if ids:
+            params["public_identifier_not_in_list"] = ids
+        
+  
         try:
             response = requests.get(
                 f"{self.base_url}search/person",

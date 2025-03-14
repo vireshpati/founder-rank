@@ -67,7 +67,7 @@ def main():
                     print(f'already processed {url} ... skipping')
                     continue
                 print(f"Fetching profile: {url}")
-                profile = px.fetch_linkedin_profile(url, use_cache="if-recent")
+                profile = px.fetch_linkedin_profile(url, use_cache="if-present")
                 if profile:
                     data.append({"profile": profile})
         except FileNotFoundError:

@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-`scripts/` provides some easy usage of core functions, but all pipelines are implemented in `notebooks/` as well.
+`scripts/` provides some easy usage of core functions, but all pipelines are implemented in `notebooks/` as well (notebooks are probably preferred to work with).
 
 ### 1. Generate Synthetic Training Data
 Generate synthetic founder profiles for training:
